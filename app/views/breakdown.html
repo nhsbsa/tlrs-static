@@ -1,0 +1,526 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay or challenge a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <p>
+    <a href="/"> Back to all prototypes</a>
+  </p>
+  
+<div class="heading-group">
+     <p>Challenge Prototype</p>
+     <h1 class="heading-xlarge">
+      Page by page breakdown
+     </h1>
+   </div>
+
+    <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Start of service pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="breakdown/start/start">Start</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/start/enter-pcn-number">Enter PCN number</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/start/validate-dob">Verification step 1</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                  <tr>
+         <td><a href="breakdown/start/validate-charge">Verification step 2</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+    <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Penalty view pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+
+                                  <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-presc">Penalty view PECS</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+         
+                                           <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-decs">Penalty view DECS</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+         
+                                                    <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-medic">Penalty view MEDEX</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+         
+                                                    <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-matern">Penalty view MATEX</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+         
+                                                    <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-ppc">Penalty view PPC</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                             <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-creds">Penalty view tax credit</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                             <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-hc2">Penalty view HC2</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+         
+                                                    <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-jsa">Penalty view JSA</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+         
+                                                    <tr>
+         <td><a href="breakdown/penaltyView/penalty-view-esa">Penalty view ESA</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+
+     </tbody>
+   </table>
+    
+        <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Info page</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="breakdown/info-page">Info page</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+    <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>'Did you have' pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="breakdown/didYou/did-you-medical">Did You have Medical Exemption?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+       <tr>
+         <td><a href="breakdown/didYou/did-you-mat">Did You have Maternity Exemption?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/didYou/did-you-ppc">Did You have PPC?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/didYou/did-you-jsa">Did You have JSA?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/didYou/did-you-esa">Did You have ESA?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/didYou/did-you-bsa">Did You have any of these BSA exemptions?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                  <tr>
+         <td><a href="breakdown/didYou/dwp-exemptions">Did You have any of these DWP benefits?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+        <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Enter Certificate number pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="breakdown/enterCert/cert-number-med">Enter MEDEX number</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+       <tr>
+         <td><a href="breakdown/enterCert/cert-number-mat">Enter MATEX number</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/enterCert/cert-number-ppc">Enter PPC number</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/enterCert/cert-number-hc2">Enter HC2 number</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/enterCert/cert-number-creds">Enter Tax credit number</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+                <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>'How should we contact you?' pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="breakdown/contact/contactMED">How should we contact you about MEDEX?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+       <tr>
+         <td><a href="breakdown/contact/contactMat">How should we contact you about MATEX?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/contact/contactPPC">How should we contact you about PPC?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/contact/contactHC2">How should we contact you about HC2?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/contact/contactCreds">How should we contact you about Tax credit?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/contact/update-email">What is your email address?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                  <tr>
+         <td><a href="breakdown/contact/update-telephone">What is your phone number?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+
+     </tbody>
+   </table>
+    
+                            <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>'Check your answers' pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+                                                    <tr>
+         <td><a href="breakdown/checkAns/checkPost">Check your answers post</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                             <tr>
+         <td><a href="breakdown/checkAns/checkEmail">Check your answers email</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                             <tr>
+         <td><a href="breakdown/checkAns/checkText">Check your answers text</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                             <tr>
+         <td><a href="breakdown/checkAns/checkBoth">Check your answers both</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                           <tr>
+         <td><a href="breakdown/checkAns/checkMed">Check your answers MEDEX</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                    <tr>
+         <td><a href="breakdown/checkAns/checkMat">Check your answers MATEX</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                    <tr>
+         <td><a href="breakdown/checkAns/checkPPC">Check your answers PPC</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                    <tr>
+         <td><a href="breakdown/checkAns/checkHc2">Check your answers HC2</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                                    <tr>
+         <td><a href="breakdown/checkAns/checkCreds">Check your answers Tax credit</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+                                <br>
+            <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Disability or long term illness pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+
+                                  <tr>
+         <td><a href="breakdown/ill/medical">Do you have a long-term medical condition or physical disability?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                  <tr>
+         <td><a href="breakdown/ill/illnesses">Do you have any of these long-term medical conditions or disabilities?</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+
+     </tbody>
+   </table>
+    <br>
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>End pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+                <tr>
+         <td><a href="breakdown/thanks/found-med">We found MEDEX</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+       <tr>
+         <td><a href="breakdown/thanks/found-mat">We found MATEX</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/thanks/found-ppc">We found PPC</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/thanks/found-hc2">We found HC2</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/thanks/found-creds">We found Tax credit</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+       <tr>
+         <td><a href="breakdown/hold/contact">PCN is on hold for 2 days</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+       <tr>
+         <td><a href="breakdown/hold/mat-ben">PCN is on hold for 60 days for Matex</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/hold/med-ben">DWP ben and PCN is on hold for 60 days for Medex</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/hold/medex">PCN is on hold for 60 days, apply for Medex</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/endPages/over-uc">You were not entitled to UC</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/endPages/cant-find">We can't find your details</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/endPages/matex">We MATEX not found</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/endPages/out-of-date-med">MEDEX has expired</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                  <tr>
+         <td><a href="breakdown/endPages/out-of-date-mat">MATEX has expired</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                  <tr>
+         <td><a href="breakdown/endPages/out-of-date-ppc">PPC has expired</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                  <tr>
+         <td><a href="breakdown/endPages/out-of-date-hc2">HC2 has expired</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                                  <tr>
+         <td><a href="breakdown/endPages/out-of-date-cred">Tax Credit has expired</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+       <tr>
+         <td><a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+       <tr>
+         <td><a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+                            <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Error pages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="breakdown/error/unav">Service unavailable</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/error/wrong">Something's gone wrong</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/error/wrong-start">Something's gone wrong, go to start page</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+                                <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Validation error messages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="breakdown/validation/invalidError">Invalid PCN number error</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/validation/expiredError">Expired PCN number error</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+
+
+  
+</main>
+
+{% endblock %}

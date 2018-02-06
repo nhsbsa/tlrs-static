@@ -1,0 +1,113 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay or challenge a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <p>
+    <a href="/"> Back to all prototypes</a>
+  </p>
+  
+<div class="heading-group">
+     <p>Challenge Prototype</p>
+     <h1 class="heading-xlarge">
+      Static journeys
+     </h1>
+   </div>
+    
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Prove exemption Journey</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;"></th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="challenge/found/start">Prescription prepayment certificate found</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                <tr>
+         <td><a href="challenge/not-found/start">Prescription prepayment certificate not found</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                <tr>
+         <td><a href="challenge/found-part/start">Prescription prepayment certificate found but with a partial match to patient details</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+    <br>
+    
+            <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Prove benefit Journey</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;"></th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="challenge/proof-needed/start">DWP mean-tested benefits- Proof needed</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+    <br>
+
+    <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Verification Journey</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;"></th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="challenge/verify/start">User fails verification</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+     </tbody>
+   </table>
+    
+    <br>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Re-entering PCN reference</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;"></th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="challenge/closed/start">PCN is closed</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                <tr>
+         <td><a href="challenge/held/start">PCN is on hold</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+     </tbody>
+   </table> 
+</main>
+
+{% endblock %}

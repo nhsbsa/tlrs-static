@@ -1,0 +1,53 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay or challenge a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <p>
+    <a href="index"> Back to all prototypes</a>
+  </p>
+  
+<div class="heading-group">
+     <p>Challenge Prototype</p>
+     <h1 class="heading-xlarge">
+      Validation responses
+     </h1>
+   </div>
+    
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th>Validation error messages</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="breakdown/validation/invalidError">Invalid PCN number error</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                <tr>
+         <td><a href="breakdown/validation/invalidDOB">Invalid date of birth</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+                         <tr>
+         <td><a href="breakdown/validation/invalidAmount">Invalid total amount</a></td>
+           <td></td>
+         <td class="right"><a href="#">JIRA</a></td>
+       </tr>
+     </tbody>
+   </table>
+
+
+  
+</main>
+
+{% endblock %}

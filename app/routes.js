@@ -5,7 +5,6 @@ module.exports = router;
 
 router.get('/challenge/verify/attempt-handler/', function (req, res) {
     
-    
     var result = attempt++;
     
     console.log(result);
@@ -16,4 +15,14 @@ router.get('/challenge/verify/attempt-handler/', function (req, res) {
  else {
     res.redirect('nextGo');
   }
+});
+
+router.get('/', function (req, res) {
+  attempt = 0;
+  res.render('index');
+});
+
+router.get(/index/, function (req, res) {
+  attempt = 0;
+  res.render('index');
 });

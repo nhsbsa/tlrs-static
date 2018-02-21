@@ -27,11 +27,20 @@
         <div class="heading-group">
           <p>Challenge a Penalty Charge Notice</p>
           <h1 class="heading-large">
-              Did you have a valid NHS medical exemption certificate between 1 November and 30 November 2017?
+            Was your take-home pay £935 or less between 1 November and 30 November 2017?
           </h1>
         </div>
+        
+        <p>
+          If you didn't work, your take home pay would have been £0.
+        </p>
+<!--
+      <p>
+        {{description}} was ticked on the prescription we checked.
+      </p>
+-->
       
-      <form action="cert-number-ppc" method="get" class="form">
+      <form action="take-home-handler" method="get" class="form">
 
           <div class="form-group">
 
@@ -40,12 +49,12 @@
               </legend>
 
               <div class="multiple-choice">
-                <input id="yes" type="radio" name="exemption" value="yes" checked="checked">
+                <input id="yes" type="radio" name="data" value="yes">
                 <label for="yes">Yes</label>
               </div>
 
               <div class="multiple-choice">
-                <input id="no" type="radio" name="exemption" value="no">
+                <input id="no" type="radio" name="data" value="no">
                 <label for="no">No</label>
               </div>
 

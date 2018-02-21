@@ -27,11 +27,23 @@
         <div class="heading-group">
           <p>Challenge a Penalty Charge Notice</p>
           <h1 class="heading-large">
-              Did you have a valid NHS medical exemption certificate between 1 November and 30 November 2017?
+            Did your Universal Credit include a payment for any of these between 1 November and 30 November 2017?
           </h1>
         </div>
+        <ul class="list list-bullet">
+          <li>
+            a child or young person who lives with you</li>
+          <li>
+            a disability or health condition that makes it hard to work - this is called limited capability for work
+          </li>
+        </ul>
+<!--
+      <p>
+        {{description}} was ticked on the prescription we checked.
+      </p>
+-->
       
-      <form action="cert-number-ppc" method="get" class="form">
+      <form action="uc-includes-handler" method="get" class="form">
 
           <div class="form-group">
 
@@ -40,12 +52,12 @@
               </legend>
 
               <div class="multiple-choice">
-                <input id="yes" type="radio" name="exemption" value="yes" checked="checked">
+                <input id="yes" type="radio" name="details" value="yes">
                 <label for="yes">Yes</label>
               </div>
 
               <div class="multiple-choice">
-                <input id="no" type="radio" name="exemption" value="no">
+                <input id="no" type="radio" name="details" value="no">
                 <label for="no">No</label>
               </div>
 
@@ -64,8 +76,6 @@
     </div>
       
   </div>
-  
-
           
 </main>
 

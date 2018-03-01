@@ -33,28 +33,16 @@
     </div>
     
     <div class="review">
-            
-      {% if (cert === 2)  %}
-      <div class="review-row">
-        <div>
-          <p>{{title}} reference</p>
-        </div>
-        <div>
-          <p>2345678910111</p>
-        </div>
-        <div>
-          <p><a href="">Change</a></p>
-        </div>
-      </div>
-      {% endif %}
+
+
       
-    {% if (cert !== 2) and (proofrequired !== true)  %}
+
       <div class="review-row">
         <div>
           <p>Name</p>
         </div>
         <div>
-          <p>{{name}}</p>
+          <p>Michelle Doe</p>
         </div>
         <div>
           <p><a href="">Change</a></p>
@@ -65,7 +53,7 @@
           <p>Date of birth</p>
         </div>
         <div>
-          <p>{{dob}}</p>
+          <p>21 December 1985</p>
         </div>
         <div>
           <p><a href="">Change</a></p>
@@ -76,103 +64,19 @@
           <p>Address</p>
         </div>
         <div>
-          <p>{{address}}</p>
+          <p>3 Old Street, Old Town, NE1 0LD</p>
         </div>
         <div>
           <p><a href="">Change</a></p>
         </div>
       </div>
-      {% endif %}
-      
-      {% if updated != 1  %}
 
-      <div class="review-row">
-        <div>
-          <p>How should we contact you?</p>
-        </div>
-        <div>
-          <p>
-            {% if hasemail === true %}
-            Email
-            {% endif %}
-            {% if (hasemail === true) and (hastext === true) %}
-             and 
-            {% endif %}
-            {% if hastext === true %}
-            Text messages
-            {% endif %}
-            {% if (hasemail != true) and (hastext != true) %}
-             Post 
-            {% endif %}
-          </p>
-        </div>
-        <div>
-          <p><a href="">Change</a></p>
-        </div>
-      </div>
-          
-      {% if hasemail === true %}
-      <div class="review-row">
-        <div>
-          <p>Email address</p>
-        </div>
-        <div>
-          <p>{{email}}</p>
-        </div>
-        <div>
-          <p><a href="">Change</a></p>
-        </div>
-      </div>
-    {% endif %}
+
     
-    {% if hastext === true %}
-      <div class="review-row">
-        <div>
-          <p>Telephone number</p>
-        </div>
-        <div>
-          <p>{{telephone}}</p>
-        </div>
-        <div>
-          <p><a href="">Change</a></p>
-        </div>
-      </div>
+
     </div>      
-    {% endif %}
-    
-  {% endif %}
 
 
-<!--
-      <div class="review-row">
-        <div>
-          <p>When are you are available?</p>
-        </div>
-        <div>
-          <p>
-            9am to 12 noon <br>
-            12 noon to 1pm <br>
-            1pm to 5pm <br>
-            5pm to 7pm
-          </p>
-        </div>
-        <div>
-          <p><a href="">Change</a></p>
-        </div>
-      </div>
--->
-
-
-<!--
-    <table id="review-table-one">
-       about you 
-      <tr>
-        <td>Address</td>
-        <td>1 New Street, New Town, NE1 1HH</td>
-        <td><a href="post-address">Change</a></td>
-      </tr>
-    </table>
--->
 
     <br>
 

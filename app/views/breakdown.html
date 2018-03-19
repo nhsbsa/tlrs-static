@@ -6,6 +6,26 @@
 
 {% block content %}
 
+<!-- bsa table style overrides -->
+<style>
+table tr td {
+    border: none;
+    display: table-cell;
+    vertical-align: text-top;
+    padding: 2rem 3rem 0 0;
+  }
+  table tr td:nth-child(1) {
+    width: 30%;
+}
+  table tr td:nth-child(2) {
+     padding-right: 3rem;
+     width: 30%; 
+}
+table tr td:nth-child(3) {
+     padding-right: 3rem;
+}
+</style>
+
 <main id="content" role="main">
   
   <p>
@@ -34,8 +54,8 @@
           <td>
             <a href="breakdown/start/start">Start</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Pay or Challenge a Penalty Charge Notice</td>
+          <td>/start</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-729">PA233-729</a>
           </td>
@@ -57,8 +77,8 @@
           <td>
             <a href="breakdown/start/enter-pcn-number">Enter PCN number</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>What is your Penalty Charge Notice reference number</td>
+          <td>/enter-pcn-number</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730</a>
           </td>
@@ -67,8 +87,8 @@
           <td>
             <a href="breakdown/start/validate-dob">Verify date of birth</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>What is your date of birth</td>
+          <td>/date-of-birth</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731</a>
           </td>
@@ -77,8 +97,8 @@
           <td>
             <a href="breakdown/start/validate-charge">Verify PCN total amount</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Enter the total amount on your Penalty Charge Notice</td>
+          <td>/pcn-total-amount</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732</a>
           </td>
@@ -87,8 +107,8 @@
           <td>
             <a href="challenge/verify/nextGo">Check your answers</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Check answers- unable to confirm identity</td>
+          <td>/unable-to-confirm-identity</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-865">PA233-865</a>
           </td>
@@ -97,8 +117,8 @@
           <td>
             <a href="challenge/verify/fail">Failed to verify</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Further identity verification required</td>
+          <td>/more-infomation-needed</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-866">PA233-866</a>
           </td>
@@ -120,8 +140,8 @@
           <td>
             <a href="breakdown/already-closed">Case already closed</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice already closed</td>
+          <td>/pcn-closed</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-864">PA233-864</a>
           </td>
@@ -130,8 +150,8 @@
           <td>
             <a href="breakdown/already-closedDecs">Case already closed DECS</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice already closed</td>
+          <td>/pcn-closed</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-864">PA233-864</a>
           </td>
@@ -140,8 +160,8 @@
           <td>
             <a href="#">Case already held</a>
           </td>
-          <td></td>
-          <td></td>
+          <td><span style="color:red">No prototype link</span></td>
+          <td><span style="color:red">No prototype link</span></td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
@@ -163,8 +183,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-decs">Penalty view DECS and UC</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -173,8 +193,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-decshc2">Penalty view DECS and HC2</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -183,8 +203,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-hc3">Penalty view DECS and HC3</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -193,8 +213,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-decsinc">Penalty view DECS and Income Support</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -203,8 +223,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-decsesa">Penalty view DECS and income-related Employment and Support Allowance</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -213,8 +233,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-decscred">Penalty view DECS and tax credits</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -223,8 +243,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-decsjsa">Penalty view DECS and Income-based JSA</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -233,8 +253,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-decspcgc">Penalty view DECS and PCGC</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -243,8 +263,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-decsur">Penalty view DECS and surcharge</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -253,8 +273,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-sur">Penalty view with surcharge</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -263,8 +283,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-medic">Penalty view MEDEX</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -273,8 +293,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-matern">Penalty view MATEX</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -283,8 +303,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-ppc">Penalty view PPC</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -293,8 +313,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-creds">Penalty view tax credit</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -303,8 +323,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-hc2">Penalty view HC2</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -313,8 +333,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-jsa">Penalty view JSA</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -323,8 +343,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-esa">Penalty view ESA</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -333,8 +353,8 @@
           <td>
             <a href="breakdown/penaltyView/penalty-view-pcgc">Penalty view PCGC</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
           </td>
@@ -527,8 +547,8 @@
           <td>
             <a href="breakdown/enterCert/cert-number-med">Enter MEDEX number</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>What is your exemption certificate number</td>
+          <td>/exemption-certificate-number</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
           </td>
@@ -537,8 +557,8 @@
           <td>
             <a href="breakdown/enterCert/cert-number-mat">Enter MATEX number</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>What is your exemption certificate number</td>
+          <td>/exemption-certificate-number</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
           </td>
@@ -547,8 +567,8 @@
           <td>
             <a href="breakdown/enterCert/cert-number-ppc">Enter PPC number</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>What is your exemption certificate number</td>
+          <td>/exemption-certificate-number</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
           </td>
@@ -557,8 +577,8 @@
           <td>
             <a href="breakdown/enterCert/cert-number-hc2">Enter HC2 number</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>What is your exemption certificate number</td>
+          <td>/exemption-certificate-number</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
           </td>
@@ -567,8 +587,8 @@
           <td>
             <a href="breakdown/enterCert/cert-number-creds">Enter Tax credit number</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>What is your exemption certificate number</td>
+          <td>/exemption-certificate-number</td>
           <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
           </td>
@@ -737,7 +757,7 @@
         </tr>
         <tr>
           <td>
-            <a href="breakdown/checkAns/checkText">Check your answers text</a>
+            <a href="breakdown/checkAns/checkText">Check your answers phone call</a>
           </td>
           <td></td>
           <td></td>
@@ -865,70 +885,79 @@
       <tbody>
         <tr>
           <td>
-            <a href="breakdown/thanks/found-med">We found MEDEX</a>
+          <!-- old version -->
+            <!-- <a href="breakdown/thanks/found-med">We found MEDEX</a> -->
+          <!--  updated -->
+            <a href="breakdown/endPages/end-pages-updated/found/med-updated">We found MEDEX</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>No charges to pay- matched details</td>
+          <td>/found-exemption</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="breakdown/thanks/found-mat">We found MATEX</a>
+            <!-- <a href="breakdown/thanks/found-mat">We found MATEX</a> -->
+            <a href="breakdown/endPages/end-pages-updated/found/mat-updated">We found MATEX</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>No charges to pay- matched details</td>
+          <td>/found-exemption</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="breakdown/thanks/found-ppc">We found PPC</a>
+        <!--     <a href="breakdown/thanks/found-ppc">We found PPC</a> -->
+            <a href="breakdown/endPages/end-pages-updated/found/ppc-updated">We found PPC</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>No charges to pay- matched details</td>
+          <td>/found-exemption</td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+           <!--  <a href="breakdown/thanks/found-hc2">We found HC2</a> -->
+             <a href="breakdown/endPages/end-pages-updated/found/hc2-updated">We found HC2</a>
+          </td>
+          <td>No charges to pay- matched details</td>
+          <td>/found-exemption</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td><!-- 
+            <a href="breakdown/thanks/found-creds">We found Tax credit</a> -->
+            <a href="breakdown/endPages/end-pages-updated/found/taxcredit-updated">We found Tax Credit</a
+          </td>
+          <td>No charges to pay- matched details</td>
+          <td>/found-exemption</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="breakdown/thanks/found-hc2">We found HC2</a>
+            <!-- <a href="breakdown/endPages/no-med">MEDEX not found</a> -->
+            <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-med">MEDEX not found</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>We cannot find your medical exemption certificate</td>
+          <td>/cannot-find-medical-exemption</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="breakdown/thanks/found-creds">We found Tax credit</a>
+            <!-- <a href="breakdown/endPages/matex">MATEX not found</a> -->
+            <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-mat">MATEX not found</a>
           </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/no-med">MEDEX not found</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/matex">MATEX not found</a>
-          </td>
-          <td></td>
-          <td></td>
+          <td>We cannot find your maternity exemption certificate</td>
+          <td>/cannot-find-maternity-exemption</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
@@ -951,7 +980,85 @@
 -->
         <tr>
           <td>
-            <a href="breakdown/endPages/out-of-date-med">MEDEX has expired</a>
+            <!-- <a href="breakdown/endPages/out-of-date-med">MEDEX has expired</a> -->
+            <a href="breakdown/endPages/end-pages-updated/expired/med-expired">MEDEX has expired</a>
+          </td>
+          <td>Exemption certificate expired</td>
+          <td>/exemption-expired</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <!-- <a href="breakdown/endPages/out-of-date-mat">MATEX has expired</a> -->
+          <a href="breakdown/endPages/end-pages-updated/expired/mat-expired">MATEX has expired</a>
+          </td>
+          <td>Exemption certificate expired</td>
+          <td>/exemption-expired</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- <a href="breakdown/endPages/out-of-date-ppc">PPC has expired</a> -->
+            <a href="breakdown/endPages/end-pages-updated/expired/ppc-expired">PPC has expired</a>
+          </td>
+          <td>Exemption certificate expired</td>
+          <td>/exemption-expired</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- <a href="breakdown/endPages/out-of-date-hc2">HC2 has expired</a> -->
+            <a href="breakdown/endPages/end-pages-updated/expired/hc2-expired">HC2 has expired</a>
+          </td>
+          <td>Exemption certificate expired</td>
+          <td>/exemption-expired</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <!-- <a href="breakdown/endPages/out-of-date-cred">Tax Credit has expired</a> -->
+          <a href="breakdown/endPages/end-pages-updated/expired/taxcredit-expired">Tax Credit has expired</a>
+          </td>
+          <td>Exemption certificate expired</td>
+          <td>/exemption-expired</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+<!--      <a href="breakdown/hold/contact">PCN is on hold for 2 days</a> -->
+          <a href="breakdown/endPages/end-pages-updated/on-hold/contact">PCN is on hold for 2 days</a>
+          </td>
+          <td>Reviewing your case</td>
+          <td>/we-will-contact-you</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+<!--             <a href="breakdown/hold/mat-ben">PCN is on hold for 60 days for Matex</a> -->
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-mat">PCN is on hold for 60 days, apply for Matex</a>
+          </td>
+          <td>Cannot find maternity exemption certificate but you can still apply</td>
+          <td>on-hold-maternity-exemption-apply</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+           <!--  <a href="breakdown/hold/med-ben">DWP ben and PCN is on hold for 60 days for Medex</a> -->
+           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat">DWP ben and PCN is on hold for 60 days for Matex</a>
           </td>
           <td></td>
           <td></td>
@@ -961,7 +1068,51 @@
         </tr>
         <tr>
           <td>
-            <a href="breakdown/endPages/out-of-date-mat">MATEX has expired</a>
+            <!-- <a href="breakdown/hold/medex">PCN is on hold for 60 days, apply for Medex</a> -->
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-med">PCN is on hold for 60 days, apply for Medex</a>
+          </td>
+          <td>Cannot find medical exemption certificate but you can still apply</td>
+          <td>/on-hold-medical-exemption-apply</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+        <td>
+           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med">DWP ben and PCN is on hold for 60 days for Medex</a>
+           </td>
+          <td></td>
+          <td></td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- <a href="breakdown/endPages/over-uc">You were not entitled to UC</a> -->
+            <a href="breakdown/endPages/end-pages-updated/on-hold/over-uc">You were not entitled to UC</a>
+          </td>
+          <td>Not entitled under Universal Credit</td>
+          <td>/not-entitled-under-uc</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- <a href="breakdown/endPages/cant-find">We can't find your details</a> -->
+            <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-cert"> We can't find your details</a>
+          </td>
+          <td>We cannot find your details</td>
+          <td>/cannot-find-details</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> -->
+            <a href="breakdown/endPages/end-pages-updated/proof/jsa-proof">We need proof of JSA</a>
           </td>
           <td></td>
           <td></td>
@@ -971,7 +1122,9 @@
         </tr>
         <tr>
           <td>
-            <a href="breakdown/endPages/out-of-date-ppc">PPC has expired</a>
+            <!-- <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> -->
+            <a href="breakdown/endPages/end-pages-updated/proof/esa-proof">We need proof of ESA</a>
+          </td>
           </td>
           <td></td>
           <td></td>
@@ -981,7 +1134,9 @@
         </tr>
         <tr>
           <td>
-            <a href="breakdown/endPages/out-of-date-hc2">HC2 has expired</a>
+            <!-- <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> -->
+            <a href="breakdown/endPages/end-pages-updated/proof/pcgc-proof">We need proof of PCGC</a>
+          </td>
           </td>
           <td></td>
           <td></td>
@@ -991,100 +1146,40 @@
         </tr>
         <tr>
           <td>
-            <a href="breakdown/endPages/out-of-date-cred">Tax Credit has expired</a>
+            <a href="breakdown/endPages/end-pages-updated/exep-circs/exep-circs">Exceptional circumstances </a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Who can ask for a Penalty Charge Notice review</td>
+          <td>/exceptional-circumstances</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="breakdown/hold/contact">PCN is on hold for 2 days</a>
+            <a href="breakdown/endPages/end-pages-updated/exep-circs/how-review2">Penalty Charge Notice review</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>Asking for a Penalty Charge Notice review</td>
+          <td>/pcn-review</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="breakdown/hold/mat-ben">PCN is on hold for 60 days for Matex</a>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/mat-apply">How to pay and apply for matex</a>
           </td>
-          <td></td>
-          <td></td>
+          <td>How to pay and apply - maternity exemption</td>
+          <td>/maternity-exemption-pay-apply</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="breakdown/hold/med-ben">DWP ben and PCN is on hold for 60 days for Medex</a>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/med-apply">How to pay and apply for medex</a>
           </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/hold/medex">PCN is on hold for 60 days, apply for Medex</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/over-uc">You were not entitled to UC</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/cant-find">We can't find your details</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a>
-          </td>
-          <td></td>
-          <td></td>
+          <td>How to pay and apply - medical exemption</td>
+          <td>/medical-exemption-pay-apply</td>
           <td class="right">
             <a href="#">JIRA</a>
           </td>
@@ -1184,7 +1279,7 @@
           <td></td>
           <td></td>
           <td class="right">
-            <a href="#">JIRA</a>
+            <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730 (covered in Acceptance Criteria)</a>
           </td>
         </tr>
         <tr>
@@ -1194,7 +1289,7 @@
           <td></td>
           <td></td>
           <td class="right">
-            <a href="#">JIRA</a>
+            <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731 (covered in Acceptance Criteria)</a>
           </td>
         </tr>
         <tr>
@@ -1204,7 +1299,7 @@
           <td></td>
           <td></td>
           <td class="right">
-            <a href="#">JIRA</a>
+            <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732 (covered in Acceptance Criteria)</a>
           </td>
         </tr>
         <tr>
@@ -1214,7 +1309,7 @@
           <td></td>
           <td></td>
           <td class="right">
-            <a href="#">JIRA</a>
+            <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730 (covered in Acceptance Criteria)</a>
           </td>
         </tr>
         <tr>
@@ -1224,7 +1319,7 @@
           <td></td>
           <td></td>
           <td class="right">
-            <a href="#">JIRA</a>
+            <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731 (covered in Acceptance Criteria)</a>
           </td>
         </tr>
         <tr>
@@ -1234,7 +1329,7 @@
           <td></td>
           <td></td>
           <td class="right">
-            <a href="#">JIRA</a>
+            <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732 (covered in Acceptance Criteria)</a>
           </td>
         </tr>
       </tbody>

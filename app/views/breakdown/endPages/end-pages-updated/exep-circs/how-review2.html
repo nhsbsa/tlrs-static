@@ -14,6 +14,9 @@
   .contactTable td{
   border-bottom: 1px solid #bfc1c3;
 }
+table tr td:nth-child(1) {
+    width: 25%
+    }
 </style>
 
 <main id="content" role="main">
@@ -95,7 +98,7 @@
                         Lines are available Monday to Friday from 8am to 6pm, and Saturday from 9am to 3pm, UK time
                     </p>
                     <p>
-                        If you're deaf or hard of hearing and you have a textphone (sometimes called a minicom), you can contact us using the Text Relay Service. Dial 18001 and then {% if (ticked == 'K') %}
+                        If you're deaf or hard of hearing and you have a textphone (sometimes called a minicom), you can contact us using the Text Relay Service. <br>Dial 18001 and then {% if (ticked == 'K') %}
                         0300 330 1293.
                         {% else %}
                         0300 330 9291
@@ -106,12 +109,13 @@
               <tr>
                 <td>Post</td>
                 <td>
-                <P>Write to us at:  {% if (ticked == 'K') %}
-                    Dental
-                    {% else %}
-                    Prescriptions
-                    {% endif %}
-                    Penalty Charges Team, NHSBSA, Bridge House, 152 Pilgrim Street, Newcastle Upon Tyne, NE1 6SN</P>
+                <p>Write to us at:</p>
+                    <p class="panel" style="border:none; padding-top: 0px">Prescriptions Penalty Charges Team,
+                    <br>NHSBSA, 
+                    <br>Bridge House, 
+                    <br>152 Pilgrim Street, 
+                    <br>Newcastle Upon Tyne, 
+                    <br>NE1 6SN</p>
                     </td> 
               </tr>
         </table>

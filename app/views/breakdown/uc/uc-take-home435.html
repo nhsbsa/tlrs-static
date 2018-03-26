@@ -27,23 +27,20 @@
         <div class="heading-group">
           <p>Challenge a Penalty Charge Notice</p>
           <h1 class="heading-large">
-            Did your Universal Credit include a payment for any of these between 1 November and 30 November 2017?
+            Was your take-home pay £435 or less between 1 November and 30 November 2017?
           </h1>
         </div>
-        <ul class="list list-bullet">
-          <li>
-            A child or young person who lives with you</li>
-          <li>
-            A disability or health condition that makes it hard for you to work – this is called limited capacity for work
-          </li>
-        </ul>
+        
+        <p>
+          If you didn’t work during this time, your take-home pay would have been £0.
+        </p>
 <!--
       <p>
         {{description}} was ticked on the prescription we checked.
       </p>
 -->
       
-      <form action="uc-includes-handler" method="get" class="form">
+      <form action="take-home-handler" method="get" class="form">
 
           <div class="form-group">
 
@@ -52,12 +49,12 @@
               </legend>
 
               <div class="multiple-choice">
-                <input id="yes" type="radio" name="details" value="yes">
+                <input id="yes" type="radio" name="data" value="yes">
                 <label for="yes">Yes</label>
               </div>
 
               <div class="multiple-choice">
-                <input id="no" type="radio" name="details" value="no">
+                <input id="no" type="radio" name="data" value="no">
                 <label for="no">No</label>
               </div>
 
@@ -76,6 +73,8 @@
     </div>
       
   </div>
+  
+
           
 </main>
 

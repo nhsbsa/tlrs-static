@@ -744,3 +744,34 @@ table {
   resize: none;
 }
 
+  .panel2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    border-left-style: none;
+    padding-left:0em;
+    margin-bottom:1.2em;
+    }
+
+.panel2 :first-child {
+    padding-top: 10px;
+    }
+
+.callout--attention {
+    border: 8px solid #0072ce;
+}
+.callout--subtle {
+    background-color: #e6eff8;
+}
+
+.callout {
+    padding: 16px;
+}
+
+.callout .heading-small {
+    margin-top:0px
+}
+.panel2 :only-child, .panel2 :last-child {
+    margin-bottom: 0;
+}

@@ -9,15 +9,6 @@
 <main id="content" role="main">
 
   <div class="grid-row">
-      
-          <div class="column-full">
-      <div class="phase-banner">
-        <p>
-          <strong class="phase-tag">BETA</strong>
-          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
-        </p>
-      </div>
-    </div>
 
     <div class="column-third right-floater">
 
@@ -25,41 +16,22 @@
 
         <h2>Payment summary</h2>
 
-<!--        <p class="payment-info">PCN number 123456789</p>-->
+        <p class="payment-info">PCN number {{pcnnumber}}</p>
 
-        <h3>6 Monthly payments of:</h3>
-          
-        <p class="payment-info">£26.50</p>
-          
-          <a href="options">Change</a>
-          
-          <br>  
-          <br>  
-          
-          <h3>Starting on:</h3>
-          
-          <p class="payment-info">18th November 2017</p>
-          
-          <a href="options">Change</a>
-          
+        <h3>Payment today:</h3>
+
+        <p class="payment-amount">£{{payment}}</p>
+
       </div>
 
     </div>
 
       <div class="column-two-thirds left-floater">
-              <div id="back">
-        <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
-        <script type="text/javascript">
-            document.getElementById('back-button');
-        </script>
-	</div>
 
       <h1 class="heading-large">Enter card details</h1>
-          
 
-            <form class="form" method="get" action="contact-option-full">
+      <form class="form" method="get" action="reduce-handler">
 
-              
         <div class="form-group">
 
           <label class="form-label-bold" for="cardnumber">
@@ -135,7 +107,7 @@
 
         </div>
 
-      </form>          
+      </form>
 
     </div>
 

@@ -30,30 +30,47 @@ router.get(/index/, function (req, res) {
 router.get(/instalment-handler/, function (req, res) {
   if (req.query.plan == "2") {
     account.instalments = 6;
-    payer.plan = 172;
+    plan = 172;
   } else {
     account.instalments = 12;
-    payer.plan = 86;
+    plan = 86;
   }
   res.redirect('dates');
 });
 
 router.get('/payments/dd/contact-handler/', function (req, res) {
-  payer.hasText = false;
-  payer.hasEmail = false;
+  hasText = false;
+  hasEmail = false;
   if (req.query.text == 'true') {
-    payer.hasText = true;
+    hasText = true;
   }
   if (req.query.email == 'true') {
-    payer.hasEmail = true;
+    hasEmail = true;
   }
-  if (payer.hasText) {
+  if (hasText) {
     res.redirect('text-value');
-  } else if (payer.hasEmail) {
+  } else if (hasEmail) {
      res.redirect('mail-value');
   } else {
-    payer.hasText = false;
-    payer.hasEmail = false;
+    hasText = false;
+    hasEmail = false;
     res.redirect('accept');
   }
 });
+
+router.get(/haha-handler/, function (req, res) {
+  if (hasEmail) {
+    res.redirect('mail-value');
+  } else {
+     res.redirect('accept');
+  }
+});
+
+//router.get('/payments/dd/accept/', function (req, res) {
+//  res.render('payments/dd/accept', {
+//
+//    text : text,
+//
+//    email : email
+//  })
+//})

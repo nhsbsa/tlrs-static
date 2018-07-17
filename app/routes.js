@@ -58,6 +58,46 @@ router.get('/payments/dd/contact-handler/', function (req, res) {
   }
 });
 
+router.get('/payments/rp/contact-handler/', function (req, res) {
+  hasText = false;
+  hasEmail = false;
+  if (req.query.text == 'true') {
+    hasText = true;
+  }
+  if (req.query.email == 'true') {
+    hasEmail = true;
+  }
+  if (hasText) {
+    res.redirect('text-value');
+  } else if (hasEmail) {
+     res.redirect('mail-value');
+  } else {
+    hasText = false;
+    hasEmail = false;
+    res.redirect('accept');
+  }
+});
+
+router.get('/payments/so/contact-handler/', function (req, res) {
+  hasText = false;
+  hasEmail = false;
+  if (req.query.text == 'true') {
+    hasText = true;
+  }
+  if (req.query.email == 'true') {
+    hasEmail = true;
+  }
+  if (hasText) {
+    res.redirect('text-value');
+  } else if (hasEmail) {
+     res.redirect('mail-value');
+  } else {
+    hasText = false;
+    hasEmail = false;
+    res.redirect('accept');
+  }
+});
+
 router.get(/haha-handler/, function (req, res) {
   if (hasEmail) {
     res.redirect('mail-value');

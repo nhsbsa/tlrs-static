@@ -38,6 +38,8 @@ table tr td:nth-child(3) {
       Page by page breakdown
      </h1>
    </div>
+    
+
 
     <table class="check-table" id="review-table-one">
       <thead>
@@ -53,6 +55,16 @@ table tr td:nth-child(3) {
         <tr>
           <td>
             <a href="breakdown/start/start">Start</a>
+          </td>
+          <td>Pay or Challenge a Penalty Charge Notice</td>
+          <td>/start</td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-729">PA233-729</a>
+          </td>
+        </tr>
+                  <tr>
+          <td>
+            <a href="breakdown/start/startHc3">(New) Start kickout info updated</a>
           </td>
           <td>Pay or Challenge a Penalty Charge Notice</td>
           <td>/start</td>
@@ -593,6 +605,7 @@ table tr td:nth-child(3) {
         </tr>
       </thead>
       <tbody>
+<!--
                   <tr>
           <td>
             <a href="breakdown/uc/uc-kickout">Universal Credit or HC3 kickout page</a>
@@ -603,9 +616,10 @@ table tr td:nth-child(3) {
             <a href="#">JIRA</a>
           </td>
         </tr>
+-->
                             <tr>
           <td>
-            <a href="breakdown/uc/uchc3-kickout">New UC and HC3 kick out page (i)</a>
+            <a href="breakdown/uc/uchc3-kickout">UC and HC3 kick out page</a>
           </td>
           <td>Penalty Charge Notice details</td>
           <td>/view-your-pcn</td>
@@ -613,6 +627,17 @@ table tr td:nth-child(3) {
             <a href="#">JIRA</a>
           </td>
         </tr>
+                                      <tr>
+          <td>
+            <a href="breakdown/uc/uc-kickout2">(New) UC kick out page</a>
+          </td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
+          <td class="right">
+            <a href="#">JIRA</a>
+          </td>
+        </tr>
+<!--
                             <tr>
           <td>
             <a href="breakdown/uc/uchc3-kickout2">New UC and HC3 kick out page (ii)</a>
@@ -623,6 +648,7 @@ table tr td:nth-child(3) {
             <a href="#">JIRA</a>
           </td>
         </tr>
+-->
 <!--
         <tr>
           <td>
@@ -1030,6 +1056,41 @@ table tr td:nth-child(3) {
         </tr>
       </tbody>
     </table><br>
+    
+            <table class="check-table" id="review-table-one">
+      <thead>
+        <tr>
+          <th>HC3 end pages</th>
+          <th>Page Title</th>
+          <th>URL</th>
+          <th class="right">JIRA ticket number</th>
+        </tr>
+      </thead>
+
+      <tbody>
+                            <tr>
+          <td>
+            <a href="breakdown/hc3/tooMuch">We found an HC3 for you but you have paid too much money</a>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="breakdown/hc3/tooLittle">We found an HC3 for you but you have paid too little money</a>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
 
 
     <table class="check-table" id="review-table-one">
@@ -1052,11 +1113,9 @@ table tr td:nth-child(3) {
             <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
           </td>
         </tr>
+<!--
         <tr>
           <td>
-          <!-- old version -->
-            <!-- <a href="breakdown/thanks/found-med">We found MEDEX</a> -->
-          <!--  updated -->
             <a href="breakdown/endPages/end-pages-updated/found/med-updated">We found MEDEX</a>
           </td>
           <td>No charges to pay- matched details</td>
@@ -1067,7 +1126,6 @@ table tr td:nth-child(3) {
         </tr>
         <tr>
           <td>
-            <!-- <a href="breakdown/thanks/found-mat">We found MATEX</a> -->
             <a href="breakdown/endPages/end-pages-updated/found/mat-updated">We found MATEX</a>
           </td>
           <td>No charges to pay- matched details</td>
@@ -1078,7 +1136,6 @@ table tr td:nth-child(3) {
         </tr>
         <tr>
           <td>
-        <!--     <a href="breakdown/thanks/found-ppc">We found PPC</a> -->
             <a href="breakdown/endPages/end-pages-updated/found/ppc-updated">We found PPC</a>
           </td>
           <td>No charges to pay- matched details</td>
@@ -1089,7 +1146,6 @@ table tr td:nth-child(3) {
         </tr>
         <tr>
           <td>
-           <!--  <a href="breakdown/thanks/found-hc2">We found HC2</a> -->
              <a href="breakdown/endPages/end-pages-updated/found/hc2-updated">We found HC2</a>
           </td>
           <td>No charges to pay- matched details</td>
@@ -1099,8 +1155,7 @@ table tr td:nth-child(3) {
           </td>
         </tr>
         <tr>
-          <td><!-- 
-            <a href="breakdown/thanks/found-creds">We found Tax credit</a> -->
+          <td>
             <a href="breakdown/endPages/end-pages-updated/found/taxcredit-updated">We found Tax Credit</a>
           </td>
           <td>No charges to pay- matched details</td>
@@ -1112,7 +1167,6 @@ table tr td:nth-child(3) {
 
         <tr>
           <td>
-            <!-- <a href="breakdown/endPages/no-med">MEDEX not found</a> -->
             <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-med">MEDEX not found</a>
           </td>
           <td>We cannot find your medical exemption certificate</td>
@@ -1123,7 +1177,6 @@ table tr td:nth-child(3) {
         </tr>
         <tr>
           <td>
-            <!-- <a href="breakdown/endPages/matex">MATEX not found</a> -->
             <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-mat">MATEX not found</a>
           </td>
           <td>We cannot find your maternity exemption certificate</td>
@@ -1132,6 +1185,7 @@ table tr td:nth-child(3) {
             <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
           </td>
         </tr>        
+-->
               
               <!--
                                   <tr>
@@ -1394,9 +1448,9 @@ table tr td:nth-child(3) {
             <a href="https://bsa2468.atlassian.net/browse/PA233-1024">PA233-1024</a>
           </td>
         </tr>
-
+<!--
+              <tr>
           <td>
-            <!-- <a href="breakdown/endPages/over-uc">You were not entitled to UC</a> -->
             <a href="breakdown/endPages/end-pages-updated/on-hold/over-uc">You were not entitled to UC</a>
           </td>
           <td>Not entitled under Universal Credit</td>
@@ -1405,6 +1459,7 @@ table tr td:nth-child(3) {
             <a href="#">JIRA</a>
           </td>
         </tr>
+-->
         <tr>
           <td>
             <!-- <a href="breakdown/endPages/cant-find">We can't find your details</a> -->

@@ -1,0 +1,106 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">BETA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+      
+
+      <div class="done-panel">
+        
+        <h1 class="heading-large"><span id="done-tick"> </span>Thank you</h1>
+        <h2 class="heading-medium">You do not have to pay any charges.</h2>
+    
+      </div>
+
+    
+      <p class="">We have matched your exemption to an HC2 certificate (full help with health costs)</p>
+      
+      <p class="panel panel-border-wide"><span class="">Michelle Doe</span><br><br>
+      Penalty charge notice 7489202837 has now been cancelled.</p>
+        
+      
+      <ul class="list options-list">
+        <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+      </ul>
+    
+
+      <h3 class="heading-medium">
+        How to avoid a future Penalty Charge Notice
+      </h3>
+        
+        <p>Make sure your name and address are correct:</p>
+      
+      <ul class="list list-bullet">
+        <li>
+          at your GP surgery, dental practice, and any benefits organisations
+        </li>
+       <li>
+         on your NHS exemption
+        </li>
+      </ul>
+        
+                 <div class="panel2">
+      <div class="callout callout--subtle" >
+        <details>
+          <summary><span class="summary">Contact us to check the name and address on your NHS exemption</span></summary>
+          <div class="panel panel-border-narrow">
+
+<h3 class="heading-small">For medical and maternity exemption certificates, and prescription prepayment certificates</h3>
+<ul class="list list-bullet"> 
+<li>Call us on 0300 330 1341</li>
+</ul>
+
+<h3 class="heading-small">For NHS tax credit exemption certificates</h3>
+<ul class="list list-bullet"> 
+<li>Call us on 0300 330 1347</li>
+</ul>
+              
+              <h3 class="heading-small">For HC2 and HC3 certificates</h3>
+<ul class="list list-bullet"> 
+<li>Call us on 0300 330 1343</li>
+</ul>
+              
+              <p>Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm (Your call will be charged at a local rate).</p>
+ 
+          </div>
+        </details>
+
+  </div>
+  </div>
+        
+  <h2 class="heading-medium">Feedback</h2>
+  
+  <p>
+    Leaving feedback only takes 5 minutes. Your comments are extremely helpful and will help us to provide a better service.
+  </p>
+  <p>
+    <a class="" href="feedback">Leave feedback</a>
+  </p> 
+      
+  <p id="usermail"class="visually-hidden">{{hasmail}}</p>
+      </div>
+    
+  </div>
+
+</main>
+
+{% endblock %}

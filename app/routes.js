@@ -3,6 +3,35 @@ var router = express.Router();
 var attempt = 0;
 module.exports = router;
 
+//import the content
+var Content = require('./content.js');
+var content = Content.content;
+
+var hasBen;
+
+var resetAll = function () {
+
+    content.updateContent("D");
+    content.hasBen = 'no';
+    console.log(hasBen);
+    
+};
+
+// Route index page
+router.get('/', function (req, res) {
+    var hasBen;
+  resetAll();
+  res.render('index');
+    console.log(hasBen);
+});
+
+router.get(/index/, function (req, res) {
+  var hasBen;
+    resetAll();
+  res.render('index');
+    console.log(hasBen);
+});
+
 router.get('/challenge/verify/attempt-handler/', function (req, res) {
     
     var result = attempt++;
@@ -106,11 +135,59 @@ router.get(/haha-handler/, function (req, res) {
   }
 });
 
-//router.get('/payments/dd/accept/', function (req, res) {
-//  res.render('payments/dd/accept', {
-//
-//    text : text,
-//
-//    email : email
-//  })
-//})
+router.get(/pregnancy-handler/, function (req, res) {
+  
+  if (req.query.pregnant == 'yes'){ 
+    content.pregnant = 'yes';
+      res.redirect('mat-ben');
+  } else {
+      content.pregnant = 'no';
+    res.redirect('endHc3');
+  }
+});
+
+router.get(/mat-ben/, function (req, res) {
+  res.render('hc3/lower2/mat-ben', {
+    title : content.title,
+      pregnant : content.pregnant,
+      hasBen : content.hasBen,
+      bens: req.query.benefits
+  });
+});
+
+router.get(/endHc3/, function (req, res) {
+  res.render('hc3/lower2/endHc3', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+
+router.get(/dwp-exemptions-handler/, function (req, res) {
+  var bens = req.query.benefits;
+  var topCat;
+    var hasBen;
+  if (bens != "no") {
+      console.log(hasBen);
+    if (bens == "is") {
+      topCat = "IS";
+        content.updateContent(topCat);
+    } else if (bens == "esa") {
+      topCat = "ESA";
+        content.updateContent(topCat);
+    } else if (bens == "jsa") {
+      topCat = "JSA";
+        content.updateContent(topCat);
+    } else if (bens == "pc") {
+      topCat = "PC";
+        content.updateContent(topCat);
+    } else if (bens == "uc") {
+      topCat = "UC";
+        content.updateContent(topCat);
+    }       
+      console.log(hasBen);
+  }
+
+    res.redirect('pregnant');
+    
+});

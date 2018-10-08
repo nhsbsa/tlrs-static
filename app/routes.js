@@ -142,7 +142,7 @@ router.get(/pregnancy-handler/, function (req, res) {
       res.redirect('mat-ben');
   } else {
       content.pregnant = 'no';
-    res.redirect('endHc3');
+    res.redirect('dwpDecisionDecs');
   }
 });
 
@@ -161,6 +161,84 @@ router.get(/endHc3/, function (req, res) {
     benType : content.benType
   });
 });
+
+router.get(/dwpDecisionDecs/, function (req, res) {
+  res.render('hc3/lower2/dwpDecisionDecs', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+router.get(/mat-ben/, function (req, res) {
+  res.render('hc3/higher/mat-ben', {
+    title : content.title,
+      pregnant : content.pregnant,
+      hasBen : content.hasBen,
+      bens: req.query.benefits
+  });
+});
+
+router.get(/endHc3/, function (req, res) {
+  res.render('hc3/higher/endHc3', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+router.get(/dwpDecisionDecs/, function (req, res) {
+  res.render('hc3/higher/dwpDecisionDecs', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+router.get(/mat-ben/, function (req, res) {
+  res.render('hc3/noPayment/mat-ben', {
+    title : content.title,
+      pregnant : content.pregnant,
+      hasBen : content.hasBen,
+      bens: req.query.benefits
+  });
+});
+
+router.get(/endHc3/, function (req, res) {
+  res.render('hc3/noPayment/endHc3', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+router.get(/dwpDecisionDecs/, function (req, res) {
+  res.render('hc3/noPayment/dwpDecisionDecs', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+router.get(/mat-ben/, function (req, res) {
+  res.render('hc3/same/mat-ben', {
+    title : content.title,
+      pregnant : content.pregnant,
+      hasBen : content.hasBen,
+      bens: req.query.benefits
+  });
+});
+
+router.get(/endHc3/, function (req, res) {
+  res.render('hc3/same/endHc3', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+router.get(/dwpDecisionDecs/, function (req, res) {
+  res.render('hc3/same/dwpDecisionDecs', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+
 
 
 router.get(/dwp-exemptions-handler/, function (req, res) {

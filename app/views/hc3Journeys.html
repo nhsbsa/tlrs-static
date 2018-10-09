@@ -1,0 +1,111 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay or challenge a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<!-- bsa table style overrides -->
+<style>
+table tr td {
+    border: none;
+    display: table-cell;
+    vertical-align: text-top;
+    padding: 2rem 3rem 0 0;
+  }
+  table tr td:nth-child(1) {
+    width: 30%;
+}
+  table tr td:nth-child(2) {
+     padding-right: 3rem;
+     width: 30%; 
+}
+table tr td:nth-child(3) {
+     padding-right: 3rem;
+}
+</style>
+
+<main id="content" role="main">
+  
+  <p>
+    <a href="index"> Back to all prototypes</a>
+  </p>
+  
+<div class="heading-group">
+     <p>Challenge Prototype</p>
+     <h1 class="heading-xlarge">
+      Page by page breakdown
+     </h1>
+   </div>
+    
+    <div class="panel panel-border-narrow">
+        <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
+    </div>
+        
+        <table id="review-table-one" class="check-table">
+     <thead>
+       <tr>
+         <th id="Hc3Journeys">HC3 Journeys</th>
+           <th></th>
+         <th class="right" style="padding-right:0px;"></th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><a href="hc3/lower/startHc3">2i.	New HC3 found – Contribution is lower than original PCN calculation (patient has paid enough)</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                <tr>
+         <td><a href="hc3/lower2/startHc3">2i.	New HC3 found – Contribution is lower than original PCN calculation (patient hasn't paid enough)</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                <tr>
+         <td><a href="hc3/higher/startHc3">2ii.	New HC3 found – Contribution is higher than original PCN calculation</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                <tr>
+         <td><a href="hc3/same/startHc3">2iii.	Same HC3 found – Contribution is the same as original PCN calculation</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                <tr>
+         <td><a href="hc3/full/startHc3">2iv.	Full exemption found</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                         <tr>
+         <td><a href="hc3/refund/startHc3">2iv.	Full exemption found (they've started to pay penalty)</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                <tr>
+         <td><a href="hc3/noPayment/startHc3">2v.	HC3 not originally found, no payment at time of treatment, but HC3 found by Challenge – Recalculation of PCN</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                         <tr>
+         <td><a href="hc3/paymentMade/startHc3">2vi.	HC3 not originally found, payment made at time of treatment, but HC3 found by Challenge – Recalculation of PCN</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                                  <tr>
+         <td><a href="hc3/EnoughPaymentMade/startHc3">2vi.	HC3 not originally found, payment made at time of treatment, but HC3 found by Challenge – enough was paid</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+                         <tr>
+         <td><a href="hc3/otherExClaimed/startHc3">2vii.	Other exemption claimed and not found, HC3 found by Challenge – Recalculation of PCN	</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+     </tbody>
+   </table>
+
+  
+</main>
+
+{% endblock %}

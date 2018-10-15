@@ -23,60 +23,41 @@
                     <p>
                         Challenge a Penalty Charge Notice
                     </p>
-                    <h1 class="heading-large">We cannot find your details</h1>
+                    <h1 class="heading-large">You’ve told us that you were pregnant at the time you claimed free or reduced cost dental treatment, or had given birth in the previous 12 months</h1>
                 </div>
     
-        <p>The information you've given us does not prove you were entitled to free dental treatment between 17 May 2018 and 22 May 2018</p>
+                <p>You've told us about a different HC3 and we recalculated your HC3 amount.</p>
+
         
-        {% if (hasBen == "yes") %}
-                
-        <p class="">You’ve also told us that you get {{title}}, and were pregnant or had given birth in the previous 12 months at the time you had claimed.</p>
-                
-        {% else %}
+
                 
                 <p class="">
                     You’ve also told us that you were pregnant or had given birth in the previous 12 months at the time you had claimed.
                 </p>
                 
-        {% endif %}
+                                    <div class="panel panel-border-wide">   <p>     You now have 60 days from today to send us your proof.   </p> </div>
         
-   
-    <h2 class="heading-medium">What to do next</h2>
+                <form action="end-pages-updated/proof/is-proofDecs-scen0">
+                  
 
-    <p>
-     Choose one of the following options:
-    </p>
+       
+        <div class="form-group" style="margin-top:0.5em">
+                        <input class="button" type="submit" value="How to send proof">
+        </div>
 
-    <ul class="list list-bullet">
-        {% if (hasBen == "yes") %}
-       <li>
-        Send us proof that you were named on a claim for {{title}} at the time you claimed free dental treatment. If you send us valid proof, you won’t have to pay anything.
-        <br>
-        <p style="margin-top:0.5em">
-          <a class="button" href="examplesDecs" id="next">How to send proof</a>
-        </p>
-      </li>
-                {% else %}
+        </form>
         
-        {% endif %}
-        
-      <li>
-        Send proof that you were pregnant at the time you claimed free dental treatment, or had given birth in the previous 12 months. If you send us valid proof, you won’t have to pay anything.
-        <br>
-        <p style="margin-top:0.5em">
-          <a class="button" href="examplesDecs" id="next">How to send proof</a>
-        </p>
-      </li>
+           
+    <h2 class="heading-medium">If you were not pregnant or had not given birth in the previous 12 months at the time you had claimed.</h2>
 
-    <li>
+
+
         Pay the total amount of £60.
         <br>
         <div class="form-group" style="margin-top:0.5em">
             <input class="button" type="submit" value="Pay now">
         </div>
-      </li>
 
-    </ul>
 
         <p>If you were not entitled to free prescriptions but have an exceptional reason why you made the claim, you can ask us to review your Penalty Charge Notice. <a href="">Find out if you can ask for a review.</a></p>
         

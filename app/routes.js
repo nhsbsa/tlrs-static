@@ -142,7 +142,7 @@ router.get(/pregnancy-handler/, function (req, res) {
       res.redirect('mat-ben');
   } else {
       content.pregnant = 'no';
-    res.redirect('dwpDecisionDecs');
+    res.redirect('cant-find-cert-decs');
   }
 });
 
@@ -238,34 +238,30 @@ router.get(/dwpDecisionDecs/, function (req, res) {
   });
 });
 
-
-
-
 router.get(/dwp-exemptions-handler/, function (req, res) {
   var bens = req.query.benefits;
   var topCat;
     var hasBen;
-  if (bens != "no") {
-      console.log(hasBen);
+
     if (bens == "is") {
       topCat = "IS";
         content.updateContent(topCat);
+        res.redirect('dwpDecisionDecs');
     } else if (bens == "esa") {
       topCat = "ESA";
         content.updateContent(topCat);
+        res.redirect('dwpDecisionDecs');
     } else if (bens == "jsa") {
       topCat = "JSA";
         content.updateContent(topCat);
+        res.redirect('dwpDecisionDecs');
     } else if (bens == "pc") {
       topCat = "PC";
         content.updateContent(topCat);
-    } else if (bens == "uc") {
-      topCat = "UC";
-        content.updateContent(topCat);
-    }       
-      console.log(hasBen);
-  }
+        res.redirect('dwpDecisionDecs');
+    } else if (bens == "no") {
+        res.redirect('pregnant');
+    }      
 
-    res.redirect('pregnant');
     
 });

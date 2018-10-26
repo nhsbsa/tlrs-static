@@ -1,0 +1,229 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHS Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    
+    <div class="column-full">
+      
+      <div class="phase-banner">
+        
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+        
+      </div>
+      
+      <div class="heading-group">
+        
+        <p>Pay or Challenge a Penalty Charge Notice</p>
+        
+        <h1 class="heading-xlarge">Penalty Charge Notice 01234567890</h1>
+        
+      </div>
+      
+      <div class="panel panel-border-wide">
+        
+        <h3 class="heading-medium">Don’t delay</h3>
+        
+        <p>
+          You now have <span class="strong">28 days</span> to pay or challenge this Penalty Charge Notice (by 28 March 2018). If you don’t respond, an extra surcharge of up to £50 will be added to these charges.
+        </p>
+        
+      </div>
+        
+      
+    </div>
+      
+      
+    
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-half">
+      
+      <div class="info-panel highlight ">
+        
+        <h2 class="heading-large">Penalty Charge Notice amount</h2>
+        
+          <table class="chargesTable">
+              
+                                            <tr>
+    <td>Outstanding Treatment Charge</td>
+      <td></td>
+    <td>£20</td> 
+  </tr>
+              
+                <tr>
+    <th>Penalty charge</th>
+      <th></th>
+    <th>£100</th> 
+  </tr>
+                <tr>
+    <th><span class="strong">Total amount</span></th>
+      <th></th>
+    <th><span class="strong">£120</span></th> 
+  </tr>
+              
+
+
+</table>
+        <br>
+    
+        <details>
+          <summary><span class="summary">How is this worked out?</span></summary>
+                      <table class="chargesTable">
+  <tr>
+            <td>The cost of your Dental treatment charges</td>
+      <td></td>
+    <td>£59.10</td> 
+  </tr>
+  <tr>
+    <td>The HC3 Contribution amount you were meant to pay instead</td>
+      <td></td>
+    <td>£30</td> 
+  
+              </tr>
+                                          <tr>
+    <td>This means you should’ve paid</td>
+      <td></td>
+    <td>£30</td> 
+              </tr>
+              
+                              <tr>
+    <td>But you only paid</td>
+      <td></td>
+    <td>£10</td> 
+  </tr>
+</table>
+            <br>
+            <p>You now must pay the outstanding amount as well as a penalty charge amount</p>
+        </details>
+
+
+
+
+                    <br>
+
+                         
+      </div>   
+      
+    </div>
+
+    
+    <div class="column-half">
+      
+      <div class="info-panel">
+        
+          <h2 class="heading-medium"> 
+        Date dental treatment was claimed
+          </h2>
+          
+          <p>Between 1 November and 30 November 2017</p>
+          
+          <h2 class="heading-medium">
+            Details on the dental charge form
+          </h2>
+          
+                    <table>
+
+  <tr>
+    <td><span class="strong">Name</span></td>
+
+    <td>Michelle Doe</td> 
+  </tr>
+  <tr>
+    <td><span class="strong">Address</span></td>
+
+    <td>12 Old Oak Road, Throckley, NE67 9AD</td> 
+  </tr>
+
+                                        <tr>
+    <td><span class="strong">Exemption reason submitted</span></td>
+
+<td>Has a valid HC3 certificate -  limited help with health costs</td> 
+  </tr>
+</table>
+                
+        </div>
+          
+        </div>
+        
+      </div>
+    
+      <div class="grid-row">
+    
+    <div class="column-half">
+      
+      <div class="info-panel highlight">
+        
+        <h2 class="heading-large">Pay</h2>
+
+        
+        <p>
+          You will need a debit or credit card.
+        </p>
+          
+          <p>Your current balance will be shown when you click the ‘pay’ button.</p>
+          
+          
+       
+          
+          
+          <form class="form" action="../../payments/amount">
+              
+        <div class="form-group">
+          <input class="button" type="submit" value="Pay">
+        </div>
+                                                  </form>
+          <br>
+          <br>
+                    <br>
+                         
+      </div>   
+      
+    </div>
+
+    
+    <div class="column-half">
+      
+      <div class="info-panel highlight">
+        
+          <h2 class="heading-large head-2">
+            Challenge
+          </h2>
+          
+          <p>You can challenge if you were entitled to free or reduced cost dental treatment.</p>
+          
+                    <form class="form" action="info-page">
+                        
+                        <br>
+                        <br>
+              
+        <div class="form-group">
+          <input class="button" type="submit" value="Challenge">
+        </div>
+          
+                                            <br>                     <br>                     <br>                                                                                                          </form>
+
+ 
+
+          
+        </div>
+          
+        </div>
+        
+      </div>
+      
+  
+</main>
+
+{% endblock %}

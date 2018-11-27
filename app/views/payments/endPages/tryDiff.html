@@ -1,0 +1,77 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Challenge a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+    <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">BETA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+    </div>
+  </div>
+
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+      <div class="heading-group">
+        <h1 class="heading-xlarge">Payment failed</h1>
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <div class="text">
+                
+        <p>
+         Your payment method was rejected
+        </p>
+          
+                    <p>You can try to make the payment again. You may need a different debit or credit card.</p>
+          
+          <form class="form" action="amount">
+              
+        <div class="form-group">
+          <input class="button" type="submit" value="Pay">
+        </div>
+                                                  </form>
+        
+
+                            <p>
+          If you want to pay over the phone or have any questions, contact us:
+
+        </p>
+        
+              <div class="panel panel-border-wide">        
+
+                  
+                                 <p>
+Phone: 0300 330 9291 (this call will be charged at a local rate)
+        </p> 
+                  <p>Opening hours are Monday to Friday 8am to 6pm, and Saturday 9am to 3pm.</p>
+                    <p>Email us at: nhsbsa.pecs@nhsbsa.nhs.uk</p>
+                  
+                  
+                  
+      </div>
+        
+
+        
+      </div>
+      
+ </div>
+      
+    </div>
+  
+</main>
+
+{% endblock %}

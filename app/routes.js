@@ -83,14 +83,14 @@ router.get('/payments/dd/contact-handler/', function (req, res) {
   } else {
     hasText = false;
     hasEmail = false;
-    res.redirect('accept');
+    res.redirect('yourplan');
   }
 });
 
 router.get('/payments/rp/contact-handler/', function (req, res) {
   hasText = false;
   hasEmail = false;
-  if (req.query.text == 'true') {
+  if (req.query.text == 'true') { 
     hasText = true;
   }
   if (req.query.email == 'true') {
@@ -131,7 +131,7 @@ router.get(/haha-handler/, function (req, res) {
   if (hasEmail) {
     res.redirect('mail-value');
   } else {
-     res.redirect('accept');
+     res.redirect('yourplan');
   }
 });
 

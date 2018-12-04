@@ -34,7 +34,7 @@
         <h3 class="heading-medium">Don’t delay</h3>
         
         <p>
-          You now have <span class="strong">60 days</span> to pay or challenge this Penalty Charge Notice (by 9 February 2018). If you don’t respond, an extra surcharge of up to £50 will be added to these charges.
+          You now have <span class="strong">60 days</span> to pay or challenge this Penalty Charge Notice (by 9 February 2019). If you don’t respond, an extra surcharge of up to £50 will be added to these charges.
         </p>
         
       </div>
@@ -55,36 +55,34 @@
         <h2 class="heading-large">Penalty Charge Notice amount</h2>
         
           <table class="chargesTable">
-  <tr>
-            {% if (ticked == 'K') %}
-            <td>Dental treatment charges</td>
-        {% else %}
-            <td>Prescription charges</td>
-        {% endif %}
-      <td></td>
-    <td>£8.60</td> 
-  </tr>
-  <tr>
-    <td>Penalty charge</td>
-      <td></td>
-    <td>£60</td> 
-  </tr>
-                <tr>
-    <td><span class="strong">Total amount</span></td>
-      <td></td>
-    <td><span class="strong">£68.60</span></td> 
-  </tr>
-</table>
+          <tr>
+                    {% if (ticked == 'K') %}
+                    <td>Dental treatment charges</td>
+                {% else %}
+                    <td>Prescription charges</td>
+                {% endif %}
+              <td></td>
+            <td>£17.60</td> 
+          </tr>
+          <tr>
+            <td>Penalty charge</td>
+              <td></td>
+            <td>£88.00</td> 
+          </tr>
+              <tr>
+                <td><span class="strong">Total amount</span></td>
+                  <td></td>
+                <td><span class="strong">£105.60</span></td> 
+              </tr>
+            </table>
         
           <br>
           <br>
-                    <br>
           <br>
-                    <br>
           <br>
-                    <br>
-
-                         
+          <br>
+          <br>
+          <br>   
       </div>   
       
     </div>
@@ -97,30 +95,26 @@
             Date prescription was claimed
           </h2>
           
-          <p>Between 1 November and 30 November 2017</p>
+          <p>Between 1 November and 30 November 2018</p>
           
           <h2 class="heading-medium">
             Details on the prescription
           </h2>
           
-                    <table>
-
-  <tr>
-    <td><span class="strong">Name</span></td>
-
-    <td>Bill Smith</td> 
-  </tr>
-  <tr>
-    <td><span class="strong">Address</span></td>
-
-    <td>12 Old Oak Road, Throckley, NE67 9AD</td> 
-  </tr>
-                                        <tr>
-    <td><span class="strong">Exemption reason ticked</span></td>
-
-<td>Has a valid medical exemption certificate (Box 'E')</td> 
-  </tr>
-</table>
+              <table>
+                <tr>
+                  <td><span class="strong">Name</span></td>
+                  <td>Bill Smith</td> 
+                </tr>
+                <tr>
+                  <td><span class="strong">Address</span></td>
+                  <td>12 Old Oak Road, Throckley, NE67 9AD</td> 
+                </tr>
+                <tr>
+                  <td><span class="strong">Exemption reason ticked</span></td>
+                  <td>Has a valid medical exemption certificate (Box 'E')</td> 
+                </tr>
+              </table>
                 
         </div>
           
@@ -149,17 +143,19 @@
 
           
           
-          <form class="form" action="#">
-              
-        <div class="form-group">
-          <input class="button" type="submit" value="Pay in full">
-            
-        </div>
+          <!--<form class="form" action="#">
+            <div class="form-group">
+              <input class="button" type="submit" value="Pay in full">
+            </div>
               <a href="plan-info">Pay by Direct Debit</a>
-                                                  </form>
+          </form> -->
+          <form class="form" action="plan-info">
+            <div class="form-group">
+              <input class="button" type="submit" value="Pay">
+            </div>
+          </form>
        
-
-                    <br>
+        <br><br><br>
                          
       </div>   
       
@@ -170,29 +166,22 @@
       
       <div class="info-panel highlight">
         
-          <h2 class="heading-large head-2">
-            Challenge
-          </h2>
+        <h2 class="heading-large head-2">Challenge</h2>
           
-          <p>You can challenge if you were entitled to free prescriptions, or had a valid prescription prepayment certificate.</p>
+        <p>You can challenge if you were entitled to free prescriptions, or had a valid prescription prepayment certificate.</p>
           
-                    <form class="form" action="info-page">
-                        
-                        <br>
-                        <br>
-                        <br>
-                        
-                        
-              
+        <form class="form" action="info-page">
+                      
+        <br><br><br>
+                      
         <div class="form-group">
           <input class="button" type="submit" value="Challenge">
         </div>
           
-                                          <br> <br> <br>                     <br>                     <br>                                                                                                          </form>
+        <br> <br> <br>
+      </form>
 
- 
 
-          
         </div>
           
         </div>

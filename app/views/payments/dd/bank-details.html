@@ -29,7 +29,7 @@
 
         <h3>6 Monthly payments of:</h3>
           
-        <p class="payment-info">£26.50</p>
+        <p class="payment-info">£17.60</p>
           
           <a href="options">Change</a>
           
@@ -38,7 +38,7 @@
           
           <h3>Starting on:</h3>
           
-          <p class="payment-info">18th November 2017</p>
+          <p class="payment-info">18 December 2018</p>
           
           <a href="options">Change</a>
           
@@ -64,28 +64,40 @@
         </script>
 	</div>
 
-      <h1 class="heading-large">Enter card details</h1>
+      <h1 class="heading-large">Enter bank details</h1>
           
-
-            <form class="form" method="get" action="contact-option-full">
+        <form class="form" method="get" action="accept">
 
               
         <div class="form-group">
-
-          <label class="form-label-bold" for="cardnumber">
-            Card number
-          </label>
-
+          <label class="form-label-bold" for="cardnumber">Account number</label>
           <input class="form-control medium-width" id="cardnumber" name="cardnumber" type="number">
-          <div class="card-images">
-            <img class="original-accepted" id="original-accepted" src="/public/images/bsa/accepted-cards-x2.png">
+        </div>
+          
+        
+        <div class="form-group">
+          <legend>
+            <span class="form-label-bold">Sort code</span>
+          </legend>
+
+          <div class="form-date">
+
+            <div class="form-group form-group-day">
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
+            </div>
+
+            <div class="form-group form-group-day">
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
+            </div>
+
+            <div class="form-group form-group-day">
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
+            </div>
+
           </div>
-
-          <p class="form-hint">Accepted debit and credit card types</p>
-
         </div>
 
-        <div class="form-group">
+        <!--<div class="form-group">
 
           <fieldset>
 
@@ -112,19 +124,19 @@
           </div>
           </fieldset>
 
-        </div>
+        </div> -->
 
         <div class="form-group">
 
           <label class="form-label-bold" for="holdername">
-            Name on card
+            Account name
           </label>
 
           <input class="form-control max-width" id="holdername" name="holdername" type="text">
 
         </div>
 
-        <div class="form-group">
+        <!--<div class="form-group">
 
           <label class="form-label-bold" for="card-security-number">
             Card security code
@@ -133,7 +145,7 @@
 
           <input class="form-control" id="security-number" type="number"><img class="card-image" src="/public/images/bsa/card-security-code-2.png">
 
-        </div>
+        </div> -->
 
       <div class="form-group">
         <input class="button" type="submit"  value="Next">
@@ -141,7 +153,7 @@
 
         <div class="back">
 
-          <a href="#">Cancel payment</a>
+          <a href="#">Cancel</a>
 
         </div>
 

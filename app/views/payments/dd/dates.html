@@ -32,7 +32,7 @@
     
       <p>Pay an NHS Penalty Charge Notice</p>
       
-      <h1 class="heading-large">What date do you want your payments to be taken each month</h1>
+      <h1 class="heading-large">What date do you want your payments to be taken each month?</h1>
 
     </div>
           
@@ -41,45 +41,48 @@
 <div class="form-group">
             <fieldset>
               <legend>
-                <span class="form-label-bold">Enter the date you want the payments to come out</span>
-                <span class="form-hint">For example, 31 3 2018</span>
+               <!-- <span class="form-label-bold">Enter the date you want the payments to come out</span> -->
+                <span class="form-hint">For example, 15 1 2019</span>
               </legend>
               <div class="form-date">
                 <div class="form-group form-group-day">
                   <label class="form-label" for="dob-day">Day</label>
-                    
-                  <select class="form-control" id="dob-month" name="dob-month" style="width: inherit; margin-top: 10px">
-              <option>01</option>
-              <option>02</option>
-              <option>03</option>
-              <option>04</option>
-              <option>05</option>
-              <option>06</option>
-              <option>07</option>
-              <option>08</option>
-              <option>09</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16<option>
-            </select>
+                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
+
+                  <!--<select class="form-control" id="dob-month" name="dob-month" style="width: inherit; margin-top: 10px">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16<option>
+                  </select> -->
+
                 </div>
+
                 <div class="form-group form-group-month">
                   <label class="form-label" for="dob-month">Month</label>
-                  <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" value="07">
+                  <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" value="">
                 </div>
                 <div class="form-group form-group-year">
                   <label class="form-label" for="dob-year">Year</label>
-                  <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" value="2018">
+                  <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" value="">
                 </div>
               </div>
             </fieldset>
           </div>
             
-            <form action="yourplan">
+            <form action="contact-option-full">
                     <div class="form-item-wrapper">
           <div class="form-group">
             <input class="button" type="submit" value="Next">

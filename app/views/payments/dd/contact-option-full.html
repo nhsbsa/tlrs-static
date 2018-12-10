@@ -28,7 +28,7 @@
           {% if (instalments == 1) %}
           <h1 class="heading-large">How would you like to get your receipt?</h1>
           {% else %}
-          <h1 class="heading-large">How would you like to get payment reminders and receipts?</h1>
+          <h1 class="heading-large">How would you like to receive confirmation of your Direct Debit?</h1>
           {% endif %}
           
       </div>
@@ -44,16 +44,23 @@
           </legend>
           <div class="multiple-choice multiple-radio">
             <input id="text" name="text" type="checkbox" value="true">
-            <label for="text">Get text messages</label>
+            <label for="text">By text message</label>
           </div>
           <div class="multiple-choice multiple-radio">
             <input id="email" name="email" type="checkbox" value="true">
-            <label for="email">Get emails</label>
+            <label for="email">By email</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="letter" name="letter" type="checkbox" value="true">
+            <label for="letter">By letter</label>
+          </div> <!--
+          <div class="form-group or-block">
+            <p>or</p>
           </div>
           <div class="multiple-choice multiple-radio">
             <input id="post" name="post" type="checkbox" value="true">
-            <label for="post">Get neither</label>
-          </div>
+            <label for="post">I do not want to receive confirmation of my Direct Debit</label>
+          </div> -->
         </fieldset>
         <div class="form-group">
           <input class="button" type="submit" value="Next">

@@ -1,103 +1,81 @@
 {% extends "layout_bsa.html" %}
-
 {% block page_title %}
-  Pay a Penalty Charge Notice
+Pay a Penalty Charge Notice
 {% endblock %}
-
 {% block content %}
-
 <main id="content" role="main">
-
-<div class="grid-row">
-    
-        <div class="column-full">
-      <div class="phase-banner">
-        <p>
-          <strong class="phase-tag">BETA</strong>
-          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
-        </p>
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
       </div>
-    </div>
-    
-        <div class="column-two-thirds">
-
-			<div id="back">
-		<a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
-		<script type="text/javascript">
-			document.getElementById('back-button');
-		</script>
-	</div>
-
-    <div class="heading-group">
-    
-      <p>Pay an NHS Penalty Charge Notice</p>
-      
-      <h1 class="heading-large">What date do you want your payments to be taken each month?</h1>
-
-    </div>
-          
-          <p>You're first payment will be taken as soon as possible. Subsequent payments will be taken on your chosen date. You can contact us later to change this date.</p>
-
-<div class="form-group">
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Pay an NHS Penalty Charge Notice</p>
+            <h1 class="heading-large">What date do you want your payments to be taken each month?</h1>
+         </div>
+         <p>You're first payment will be taken as soon as possible. Subsequent payments will be taken on your chosen date. You can contact us later to change this date.</p>
+         <div class="form-group">
             <fieldset>
-              <legend>
-               <!-- <span class="form-label-bold">Enter the date you want the payments to come out</span> -->
-                <span class="form-hint">For example, 15 1 2019</span>
-              </legend>
-              <div class="form-date">
-                <div class="form-group form-group-day">
-                  <label class="form-label" for="dob-day">Day</label>
-                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
-
-                  <!--<select class="form-control" id="dob-month" name="dob-month" style="width: inherit; margin-top: 10px">
-                    <option>01</option>
-                    <option>02</option>
-                    <option>03</option>
-                    <option>04</option>
-                    <option>05</option>
-                    <option>06</option>
-                    <option>07</option>
-                    <option>08</option>
-                    <option>09</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16<option>
-                  </select> -->
-
-                </div>
-
-                <div class="form-group form-group-month">
-                  <label class="form-label" for="dob-month">Month</label>
-                  <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" value="">
-                </div>
-                <div class="form-group form-group-year">
-                  <label class="form-label" for="dob-year">Year</label>
-                  <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" value="">
-                </div>
-              </div>
+               <legend>
+                  <!-- <span class="form-label-bold">Enter the date you want the payments to come out</span> -->
+                  <span class="form-hint">For example, 15 1 2019</span>
+               </legend>
+               <div class="form-date">
+                  <div class="form-group form-group-day">
+                     <label class="form-label" for="dob-day">Day</label>
+                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
+                     <!--<select class="form-control" id="dob-month" name="dob-month" style="width: inherit; margin-top: 10px">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16<option>
+                        </select> -->
+                  </div>
+                  <div class="form-group form-group-month">
+                     <label class="form-label" for="dob-month">Month</label>
+                     <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" value="">
+                  </div>
+                  <div class="form-group form-group-year">
+                     <label class="form-label" for="dob-year">Year</label>
+                     <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" value="">
+                  </div>
+               </div>
             </fieldset>
-          </div>
-            
-            <form action="contact-option-full">
-                    <div class="form-item-wrapper">
-          <div class="form-group">
-            <input class="button" type="submit" value="Next">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
-        </div>
-                
-                </form>
-
-        </div>
-    </div>
-
+         </div>
+         <form action="contact-option-full">
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Next">
+               </div>
+            </div>
+            <div class="form-group">
+               <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
 </main>
-
 {% endblock %}

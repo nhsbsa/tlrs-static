@@ -70,19 +70,26 @@ router.get(/instalment-handler/, function (req, res) {
 router.get('/payments/dd/contact-handler/', function (req, res) {
   hasText = false;
   hasEmail = false;
+  hasLetter = false;
   if (req.query.text == 'true') {
     hasText = true;
   }
   if (req.query.email == 'true') {
     hasEmail = true;
   }
+  if (req.query.letter == 'true') {
+    hasLetter = true;
+  }
   if (hasText) {
     res.redirect('text-value');
   } else if (hasEmail) {
      res.redirect('mail-value');
+  } else if (hasLetter) {
+     res.redirect('valueAddress');
   } else {
     hasText = false;
     hasEmail = false;
+    hasLetter = false;
     res.redirect('yourplan');
   }
 });

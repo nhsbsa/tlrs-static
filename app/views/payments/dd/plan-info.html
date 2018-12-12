@@ -1,53 +1,35 @@
 {% extends "layout_bsa.html" %}
-
 {% block page_title %}
-  Pay a Penalty Charge Notice
+Pay a Penalty Charge Notice
 {% endblock %}
-
 {% block content %}
-
 <main id="content" role="main">
-
-<div class="grid-row">
-    
-        <div class="column-full">
-      <div class="phase-banner">
-        <p>
-          <strong class="phase-tag">BETA</strong>
-          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
-        </p>
-      </div>
-    </div>
-    
-        <div class="column-two-thirds">
-
-			<div id="back">
-		<a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
-		<script type="text/javascript">
-			document.getElementById('back-button');
-		</script>
-	</div>
-
-    <div class="heading-group">
-    
-      <p>Pay an NHS Penalty Charge Notice</p>
-
-      <h1 class="heading-large">Paying by Direct Debit</h1>
-
-    </div>
-            
-         <p>Direct Debit helps you pay your penalty charge by spreading the payment over a number of months, on a date that suits you.</p>
-
-          <p> Before starting you can read the <a href="https://www.directdebit.co.uk/DirectDebitExplained/pages/directdebitguarantee.aspx" target="_blank">Direct Debit Guarantee</a></p>
-       
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
             <p>
-                <a href="options" class="button">Pay by Direct Debit</a>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
             </p>
-
-
-        </div>
-    </div>
-
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Pay an NHS Penalty Charge Notice</p>
+            <h1 class="heading-large">Paying by Direct Debit</h1>
+         </div>
+         <p>Direct Debit helps you pay your penalty charge by spreading the payment over a number of months, on a date that suits you.</p>
+         <p> Before starting you can read the <a href="https://www.directdebit.co.uk/DirectDebitExplained/pages/directdebitguarantee.aspx" target="_blank">Direct Debit Guarantee</a></p>
+         <p>
+            <a href="options" class="button">Pay by Direct Debit</a>
+         </p>
+      </div>
+   </div>
 </main>
-
 {% endblock %}

@@ -22,13 +22,18 @@ Pay a Penalty Charge Notice
          </div>
          <div class="heading-group">
             <p>Pay an NHS Penalty Charge Notice</p>
-            <h1 class="heading-large">What is your email address?</h1>
+            <h1 class="heading-large">What is your address?</h1>
          </div>
-         <form action="yourplan" method="get" class="form">
-            <div class="form-item-wrapper">
-               <div class="form-group">
-                  <input class="form-control" id="email" name="email" type="text">
-               </div>
+         <form action="contact-handler" method="get" class="form">
+            <div class="form-group">
+               <label class="form-label" for="postcode">
+               Postcode
+               </label>
+               <input class="form-control" name="find-postcode" id="find-postcode" type="text"> <!-- required -->
+               <a href="address-list" class="button">Find address</a>
+            </div>
+            <div class="form-group">
+               <a href="manualAddress">Enter address manually</a>
             </div>
             <div class="form-item-wrapper">
                <div class="form-group">

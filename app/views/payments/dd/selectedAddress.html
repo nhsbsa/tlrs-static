@@ -26,14 +26,26 @@ Pay a Penalty Charge Notice
          </div>
          <form action="contact-handler" method="get" class="form">
             <div class="form-group">
+               <label class="form-label" for="lineone">
+               Building and street
+               </label>
+               <input class="form-control" id="lineone" name="lineone" type="text" value="12 Old Oak Road">
+            </div>
+            <div class="form-group">
+               <input class="form-control" id="linetwo" name="linetwo" type="text">
+            </div>
+            <div class="form-group">
+               <label class="form-label" for="town">
+               Town or city
+               </label>
+               <input class="form-control" id="town" name="town" type="text" value="Throckley">
+            </div>
+            <div class="form-group">
                <label class="form-label" for="postcode">
                Postcode
                </label>
-               <input class="form-control" name="find-postcode" id="find-postcode" type="text"> <!-- required -->
+               <input class="form-control" name="postcode" id="postcode" value="NE67 9AD" type="text" > <!-- required -->
                <a href="addressList" class="button">Find address</a>
-            </div>
-            <div class="form-group">
-               <a href="manualAddress">Enter address manually</a>
             </div>
             <div class="form-item-wrapper">
                <div class="form-group">

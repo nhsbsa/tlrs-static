@@ -29,26 +29,54 @@ Pay an NHS Penalty Charge Notice
             {% endif %}
          </div>
          <p class="form-hint">
-            Tick all that apply
+            <!--Tick all that apply -->
          </p>
+         <form action="plan-info" method="get" class="form">
+            <div class="form-group">
+               <div class="form-item-wrapper">
+                  <div class="multiple-choice single-line">
+                     <input type="radio" id="2" value="2" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="2">
+                     By text message
+                     </label>
+                  </div>
+                  <div class="multiple-choice single-line" data-target="pay-dd">
+                     <input type="radio" id="3" value="3" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="3">
+                     By email
+                     </label>
+                  </div>
+                  <div class="multiple-choice single-line" data-target="pay-dd">
+                     <input type="radio" id="4" value="4" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="4">
+                     By letter
+                     </label>
+                  </div>
+                  <!--   <div class="panel panel-border-narrow js-hidden" id="pay-dd">
+                     <p>Direct Debit helps you pay your penalty charge by spreading the payment over a number of months, on a date that suits you</p>
+                     <p>Before starting you can read the <a href="https://www.directdebit.co.uk/DirectDebitExplained/pages/directdebitguarantee.aspx" target="_blank">Direct Debit Guarantee</a></p>
+                     </div> -->
+               </div>
+            </div>
+         </form>
          <form class="form" action="contact-handler" id="contact-boxes">
             <fieldset class="form-group">
                <legend class="visually-hidden">
                   Get a copy of your prepayment details sent by text message and email
                </legend>
-              <!-- <div class="multiple-choice multiple-radio">
+               <!-- <div class="multiple-choice multiple-radio">
                   <input id="text" name="text" type="checkbox" value="true">
                   <label for="text">By text message</label>
-               </div>
-               <div class="multiple-choice multiple-radio">
+                  </div>
+                  <div class="multiple-choice multiple-radio">
                   <input id="email" name="email" type="checkbox" value="true">
                   <label for="email">By email</label>
-               </div>
-               <div class="multiple-choice multiple-radio">
+                  </div>
+                  <div class="multiple-choice multiple-radio">
                   <input id="letter" name="letter" type="checkbox" value="true">
                   <label for="letter">By letter</label>
-               </div>
-               
+                  </div>
+                  
                   <div class="form-group or-block">
                     <p>or</p>
                   </div>
@@ -56,25 +84,20 @@ Pay an NHS Penalty Charge Notice
                     <input id="post" name="post" type="checkbox" value="true">
                     <label for="post">I do not want to receive confirmation of my Direct Debit</label>
                   </div> -->
-
-
-
-                  <div class="multiple-choice" data-target="contact-by-email">
-              <input id="text" type="radio" name="text" value="true">
-              <label class="single-line" for="today">By text message</label>
-            </div>
-
-            <div class="multiple-choice" data-target="next-prescription">
-              <input id="email" type="radio" name="email" value="true">
-              <label class="single-line" for="next">By email</label>
-            </div>
-
-            <div class="multiple-choice" data-target="next-prescription">
-              <input id="letter" type="radio" name="letter" value="true">
-              <label class="single-line" for="next">By letter</label>
-            </div>
-
-
+               <!--  <div class="multiple-choice" data-target="contact-by-email">
+                  <input id="text" type="radio" name="text" value="true">
+                  <label class="single-line" for="today">By text message</label>
+                  </div>
+                  
+                  <div class="multiple-choice" data-target="next-prescription">
+                  <input id="email" type="radio" name="email" value="true">
+                  <label class="single-line" for="next">By email</label>
+                  </div>
+                  
+                  <div class="multiple-choice" data-target="next-prescription">
+                  <input id="letter" type="radio" name="letter" value="true">
+                  <label class="single-line" for="next">By letter</label>
+                  </div> -->
             </fieldset>
             <div class="form-group">
                <input class="button" type="submit" value="Next">

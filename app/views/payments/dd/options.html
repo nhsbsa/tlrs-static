@@ -27,27 +27,45 @@ Pay a Penalty Charge Notice
          <form action="dates" method="get" class="form">
             <div class="form-group">
                <div class="form-item-wrapper">
-                  <div class="multiple-choice single-line">
+
+                  <div class="multiple-choice single-line" data-target="3mth">
                      <input type="radio" id="2" value="2" name="plan">
-                     <label class="form-control-radio minor-checkbox" style="line-height: 150%;" for="2">
-                        <span class="strong">3 months</span>
-                        <br>3 payments of<span class="strong">£35.20</span>
+                     <label class="form-control-radio minor-checkbox" for="2">
+                        3 months
                      </label>
                   </div>
-                  <div class="multiple-choice single-line">
+                     <div class="panel panel-border js-hidden" id="3mth">
+                        <p>
+                          Your first payment will be <span class="strong">£35.20</span> followed by 5 payments of
+                           <span class="strong">£35.20</span>
+                        </p>
+                      </div>
+
+                  <div class="multiple-choice single-line" data-target="6mth">
                      <input type="radio" id="3" value="3" name="plan">
-                     <label class="form-control-radio minor-checkbox" style="line-height: 150%;" for="3">
-                        <span class="strong">6 months</span>
-                        <br>6 payments of<span class="strong">£17.60</span>
+                     <label class="form-control-radio minor-checkbox" for="3">
+                        6 months
                      </label>
                   </div>
-                  <div class="multiple-choice single-line">
+                     <div class="panel panel-border js-hidden" id="6mth">
+                        <p>
+                          Your first payment will be <span class="strong">£17.60</span> followed by 5 payments of <span class="strong">£17.60</span>
+                        </p>
+                      </div>
+
+                  <div class="multiple-choice single-line" data-target="12mth">
                      <input type="radio" id="4" value="4" name="plan">
-                     <label class="form-control-radio minor-checkbox" style="line-height: 150%;" for="4">
-                        <span class="strong">12 months</span>
-                        <br>12 payments of<span class="strong">£8.80</span>
+                     <label class="form-control-radio minor-checkbox" for="4">
+                        12 months
                      </label>
                   </div>
+                     <div class="panel panel-border js-hidden" id="12mth">
+                        <p>
+                          Your first payment will be <span class="strong">£8.80</span> followed by 5 payments of <span class="strong">£8.80</span>
+                        </p>
+                      </div>
+
+
                </div>
             </div>
             <div class="form-item-wrapper">

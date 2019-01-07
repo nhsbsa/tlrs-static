@@ -1,0 +1,61 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Pay an NHS Penalty Charge Notice</p>
+            <h1 class="heading-large">How would you like to pay your Penalty Charge?</h1>
+         </div>
+         
+         <form action="plan-info" method="get" class="form">
+            <div class="form-group">
+               <div class="form-item-wrapper">
+                  <div class="multiple-choice single-line">
+                     <input type="radio" id="2" value="2" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="2">
+                    Debit or credit card
+                     </label>
+                  </div>
+                  <div class="multiple-choice single-line" data-target="pay-dd">
+                     <input type="radio" id="3" value="3" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="3">
+                     Direct Debit
+                     </label>
+                  </div>
+               <!--   <div class="panel panel-border-narrow js-hidden" id="pay-dd">
+                     <p>Direct Debit helps you pay your penalty charge by spreading the payment over a number of months, on a date that suits you</p>
+                     <p>Before starting you can read the <a href="https://www.directdebit.co.uk/DirectDebitExplained/pages/directdebitguarantee.aspx" target="_blank">Direct Debit Guarantee</a></p>
+                  </div> -->
+               </div>
+            </div>
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Next">
+               </div>
+            </div>
+            <div class="form-group">
+               <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
+</main>
+{% endblock %}

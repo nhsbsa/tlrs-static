@@ -1,0 +1,59 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Pay an NHS Penalty Charge Notice</p>
+            <h1 class="heading-large">Paying by Direct Debit</h1>
+         </div>
+         <p>Direct Debit helps you pay your penalty charge by spreading the payment over a number of months, on a date that suits you.</p>
+        
+        <div class="notice">
+            <i class="icon icon-information">
+              <span class="visually-hidden">Information</span>
+            </i>
+            <strong>
+              <span class="bold">If you fail to make a payment, you may have to pay additional charges.</span> If you repeatedly fail to make payments, you may not be able to pay by Direct Debit in the future.
+            </strong>
+          </div>
+          <br>
+         <p>Your must provide details of your own bank account.</p>
+
+         <form class="form" action="contact-handler" id="contact-boxes">
+            <fieldset class="form-group">
+               <legend class="visually-hidden">
+                  Get a copy of your prepayment details sent by text message and email
+               </legend>
+                <div class="multiple-choice multiple-radio">
+                  <input id="text" name="text" type="checkbox" value="true">
+                  <label for="text">I am using my own bank account</label>
+                </div>
+            </fieldset>
+
+         <p>Before starting you can read the <a href="https://www.directdebit.co.uk/DirectDebitExplained/pages/directdebitguarantee.aspx" target="_blank">Direct Debit Guarantee</a></p>
+
+         <p>
+            <a href="options" class="button">Pay by Direct Debit</a>
+         </p>
+      </div>
+   </div>
+</main>
+{% endblock %}

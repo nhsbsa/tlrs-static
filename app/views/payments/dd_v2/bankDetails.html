@@ -15,13 +15,21 @@ Pay a Penalty Charge Notice
       </div>
       <div class="column-third right-floater">
          <div class="payment-summary-small">
-            <h2>Payment summary</h2>
-            <!--    <p class="payment-info">PCN number 123456789</p>-->
+            <!--<h2>Payment summary</h2>
             <h3>6 monthly payments of:</h3>
             <p class="payment-info">£17.60</p>
             <h3>First payment:</h3>
             <p class="payment-info">18 December 2018</p>
             <h3>Last payment:</h3>
+            <p class="payment-info">18 May 2019</p>-->
+            <h2>Payment summary</h2>
+            <h3>First payment</h3>
+            <p class="payment-info">£17.60</p>
+            <h3>Followed by 5 monthly payments of</h3>
+            <p class="payment-info">£17.60</p>
+            <h3>First payment</h3>
+            <p class="payment-info">18 December 2018</p>
+            <h3>Last payment</h3>
             <p class="payment-info">18 May 2019</p>
          </div>
       </div>
@@ -33,6 +41,8 @@ Pay a Penalty Charge Notice
             </script>
          </div>
          <h1 class="heading-large">Enter bank details</h1>
+
+
          <form class="form" method="get" action="queryAddress">
             <div class="form-group">
                <label class="form-label-bold" for="cardnumber">Account number</label>
@@ -60,6 +70,12 @@ Pay a Penalty Charge Notice
                </label>
                <input class="form-control max-width" id="holdername" name="holdername" type="text">
             </div>
+            <div class="form-group">
+               <label class="form-label-bold" for="holdername">
+               Bank name
+               </label>
+               <input class="form-control max-width" id="holdername" name="holdername" type="text">
+            </div>
             <details>
                <summary>
                   <span class="summary">View the Direct Debit Guarantee</span>
@@ -84,6 +100,30 @@ Pay a Penalty Charge Notice
                </div>
             </details>
             <br>
+
+ <div class="notice">
+          <i class="icon icon-information">
+            <span class="visually-hidden">Information</span>
+          </i>
+          <strong>
+            <span class="bold">Remember,</span> you must provide details of your own bank account
+          </strong>
+        </div>
+        <br>
+
+
+            <form class="form" action="contact-handler" id="contact-boxes">
+            <fieldset class="form-group">
+               <legend class="visually-hidden">
+                  Get a copy of your prepayment details sent by text message and email
+               </legend>
+                <div class="multiple-choice multiple-radio">
+                  <input id="text" name="text" type="checkbox" value="true">
+                  <label for="text">I am using my own bank account</label>
+                </div>
+            </fieldset>
+
+
             <div class="form-group">
                <input class="button" type="submit"  value="Next">
             </div>

@@ -94,6 +94,27 @@ router.get('/payments/dd/contact-handler/', function (req, res) {
   }
 });
 
+
+// ADDRESS HANDLER FOR DIRECT DEBITS //////////////////////////////////////////////////////////////
+
+router.get('/payments/dd_v2/update-address-handler/', function (req, res) {
+  if (req.query.yes == 'yes') {
+    hasYes = true;
+    res.redirect('summary');
+  }
+   if (req.query.no == 'no') {
+    hasNo = true;
+    res.redirect('valueAddress');
+  }
+  else {
+   hasYes = false
+    hasNo = false
+    res.redirect('summary');
+  }
+});
+
+
+
 router.get('/payments/rp/contact-handler/', function (req, res) {
   hasText = false;
   hasEmail = false;

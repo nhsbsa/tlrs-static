@@ -16,29 +16,39 @@
             <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
           </p>
         </div>
+        <a class="link-back" href="">Back</a>
     </div>
   </div>
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <div id="back">
-            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
-            <script type="text/javascript">
-               document.getElementById('back-button');
-            </script>
-         </div>
 
   <div class="text">
-
     <div class="heading-group">
         <p>Challenge a Penalty Charge Notice</p>
       <h1 class="heading-large">
         Check your answers
       </h1>
     </div>
+
+    <br>
+
+   <!-- <div class="notice">
+          <i class="icon icon-information">
+            <span class="visually-hidden">Information</span>
+          </i>
+          <br>
+         <strong>
+            <span class="bold">We have been unable to find a Penalty Charge Notice using the information you’ve provided. Please check your answers below and try again.</span>
+          </strong>
+        </div> -->
+    
+
+    <div class="panel panel-border-wide">        
+      <p>We have been unable to find a Penalty Charge Notice using the information you’ve provided. Please check your answers below and try again.</p>
+    </div>
     
     <div class="review">
-
       <div class="review-row"></div>
       <div class="review-row">
         <div>
@@ -48,7 +58,7 @@
           <p>2345678910111</p>
         </div>
         <div>
-          <p><a href="enter-pcn-number">Change</a></p>
+          <p><a href="">Change</a></p>
         </div>
       </div>
       <div class="review-row">
@@ -59,7 +69,7 @@
           <p>21 December 1985</p>
         </div>
         <div>
-          <p><a href="validate-dob">Change</a></p>
+          <p><a href="">Change</a></p>
         </div>
       </div>
       <div class="review-row">
@@ -70,27 +80,14 @@
           <p>£105.60</p>
         </div>
         <div>
-          <p><a href="validate-charge">Change</a></p>
+          <p><a href="">Change</a></p>
         </div>
       </div>
-      <!--
-      <div class="review-row">
-        <div>
-          <p>Date your letter was received</p>
-        </div>
-        <div>
-          <p>7 December 2018</p>
-        </div>
-        <div>
-          <p><a href="validate-charge">Change</a></p>
-        </div>
-      </div> -->
-
     </div>      
 
     <br>
 
-    <form action="checkYourAnswersPcnUnverified" method="get" class="form">
+    <form action="pcnPage" method="get" class="form">
       <div class="form-item-wrapper">
         <div class="form-group">
           <input class="button" type="submit" value="Next">

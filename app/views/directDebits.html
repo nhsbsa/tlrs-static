@@ -1,0 +1,90 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay or challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Challenge Prototype</p>
+      <h1 class="heading-xlarge">
+         Direct Debits
+      </h1>
+   </div>
+   <div class="panel panel-border-narrow">
+      <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
+   </div>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>January 2019</th>
+            <th></th>
+            <th class="right" style="padding-right:0px;"></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+              <ul class="list list-bullet">
+                <li><a href="payments/dd_v2/start">Full journey - version 2</a></li>
+              </td>
+            </ul>
+         </tr>
+        
+         <tr>
+            <td>
+              <p>Secure PCN verification</p>
+              <ul class="list list-bullet">
+                <li><a href="payments/dd_v2/pcnVerifV1">v.1 - User inputs PCN number twice on the same screen</a></li>
+                <li><a href="payments/dd_v2/pcnVerifV2_1">v.2 - User re-enters PCN number on next screen</a></li>
+              </ul>
+            </td>
+         </tr>
+
+         <!--
+         <tr>
+            <td>
+              <p>Kick-out pages</p>
+              <ul class="list list-bullet">
+                <li><a href="#">-</a></li>
+              </ul>
+            </td>
+         </tr>         
+         <!--<tr>
+            <td><a href="payments/dd_v2/start">Version 2</a></td>
+            <td class="right"><a href="#"></a></td>
+         </tr>-->         
+
+      </tbody>
+   </table>
+   <br>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>December 2018</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+              <ul class="list list-bullet">
+                <li><a href="payments/dd/start">Full journey - version 1</a></li>
+              </ul>
+            </td>
+         </tr>
+         <tr>
+            <td>
+              <p>Check Your Answers pages</p>
+              <ul class="list list-bullet">
+                <li><a href="payments/dd/checkYourAnswersPcn">Check Your Answers</a></li>
+                <li><a href="payments/dd/checkYourAnswersPcnUnverified">Answers not verified</a></li>
+              </ul>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+</main>
+{% endblock %}

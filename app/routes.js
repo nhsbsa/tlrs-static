@@ -8,6 +8,7 @@ var Content = require('./content.js');
 var content = Content.content;
 
 var hasBen;
+var dd;
 
 var resetAll = function () {
 

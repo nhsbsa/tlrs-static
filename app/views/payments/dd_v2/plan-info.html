@@ -31,11 +31,21 @@ Pay a Penalty Charge Notice
             <span class="visually-hidden">Information</span>
           </i>
           <strong>
-            <span class="bold">If we are unable to take a payment, you may have to pay extra charges.</span> If we are unable to take payments on more than one occasion, you may not be able to pay by Direct Debit in the future.
+            <span class="bold">If we are unable to take a payment, you may have to pay extra charges.</span>
           </strong>
         </div>
+
           <br>
-         <p>You must give us your own bank account details.</p>
+
+          <p>If we are unable to take payments on more than one occasion, your Direct Debit plan may be cancelled and you will need to pay the amount you owe in full.</p>
+
+
+
+
+
+         
+
+          <h3 class="heading-medium">You must confirm the following before you continue</h3>
 
          <form class="form" action="contact-handler" id="contact-boxes">
             <fieldset class="form-group">
@@ -43,10 +53,32 @@ Pay a Penalty Charge Notice
                   Get a copy of your prepayment details sent by text message and email
                </legend>
                 <div class="multiple-choice multiple-radio">
-                  <input id="text" name="text" type="checkbox" value="true">
-                  <label for="text">I am using my own bank account</label>
+                  <input id="opt1" name="opt1" type="checkbox" value="true">
+                  <label for="opt1">I am using my own bank account</label>
                 </div>
             </fieldset>
+
+            <form class="form" action="contact-handler" id="contact-boxes">
+            <fieldset class="form-group">
+               <legend class="visually-hidden">
+                  Get a copy of your prepayment details sent by text message and email
+               </legend>
+                <div class="multiple-choice multiple-radio">
+                  <input id="opt2" name="opt2" type="checkbox" value="true">
+                  <label for="opt2">I am the only person required to authorise debits on this account.</label>
+                </div>
+            </fieldset>
+
+            <form class="form" action="contact-handler" id="contact-boxes">
+            <fieldset class="form-group">
+               <legend class="visually-hidden">
+                  Get a copy of your prepayment details sent by text message and email
+               </legend>
+                <div class="multiple-choice multiple-radio">
+                  <input id="opt3" name="opt3" type="checkbox" value="true">
+                  <label for="opt3">I understand that repeated failure to make a payment may result in additional charges and the removal of being able to pay by Direct Debit</label>
+                </div>
+            </fieldset> 
 
          <p>Before starting you can read the <a href="https://www.directdebit.co.uk/DirectDebitExplained/pages/directdebitguarantee.aspx" target="_blank">Direct Debit Guarantee</a></p>
 

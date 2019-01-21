@@ -103,7 +103,7 @@ router.get('/payments/dd_v2/update-address-handler/', function (req, res) {
     res.redirect('summary');
   }
   else if (req.query.exemption == 'no') {
-    res.redirect('valueAddress');
+    res.redirect('manualAddress');
   }
   else {
     res.redirect('summary');

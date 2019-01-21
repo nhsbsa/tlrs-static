@@ -1,9 +1,21 @@
 /* global $ */
 
+/*
 $(document).ready(function() {
 	if (document.location.href.includes("/payments/dd_v2/dates", true)) {
 		$("input").on("change", function() {
 			var dates = document.getElementById("dob-day");
+
+			sessionStorage.dd = dates.value;
+		})
+	}
+*/
+
+
+$(document).ready(function() {
+	if (document.location.href.includes("/payments/dd_v2/dates", true)) {
+		$("select").on("change", function() {
+			var dates = document.getElementById("dob-month");
 
 			sessionStorage.dd = dates.value;
 		})

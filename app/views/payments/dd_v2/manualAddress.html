@@ -24,10 +24,11 @@ Pay a Penalty Charge Notice
             <p>Pay an NHS Penalty Charge Notice</p>
             <h1 class="heading-large">What is your address?</h1>
          </div>
+         <p>This address will be updated on your record.</p>
          <form action="update-address-handler" method="get" class="form">
             <div class="form-group">
                <label class="form-label" for="lineone">
-               Building and street
+                  Building and street
                </label>
                <input class="form-control" id="lineone" name="lineone" type="text">
             </div>
@@ -35,17 +36,20 @@ Pay a Penalty Charge Notice
                <input class="form-control" id="linetwo" name="linetwo" type="text">
             </div>
             <div class="form-group">
+               <input class="form-control" id="linethree" name="linetwo" type="text">
+            </div>
+            <div class="form-group">
                <label class="form-label" for="town">
-               Town or city
+                  Town or city
                </label>
                <input class="form-control" id="town" name="town" type="text">
             </div>
             <div class="form-group">
                <label class="form-label" for="postcode">
-               Postcode
+                  Postcode
                </label>
-               <input class="form-control" name="postcode" id="postcode" value="" type="text" > <!-- required -->
-               <a href="addressList" class="button">Find address</a>
+               <input class="form-control" style="width: 200px" name="postcode" id="postcode" value="" type="text" > <!-- required -->
+               <!--<a href="addressList" class="button">Find address</a>-->
             </div>
             <div class="form-item-wrapper">
                <div class="form-group">

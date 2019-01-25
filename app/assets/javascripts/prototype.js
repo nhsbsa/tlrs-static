@@ -21,7 +21,8 @@ $(document).ready(function() {
 		})
 	}
 
-	if (document.location.href.includes("/payments/dd_v2/summary", true)) {
+	if (document.location.href.includes("/payments/dd_v2/summary", true))
+	   (document.location.href.includes("/payments/dd_v2/summaryV2", true)) {
 		var ddSpan = $(".capturedDd");
 
 		$(".review-row div p")[4].innerHTML = sessionStorage.getItem("dd")

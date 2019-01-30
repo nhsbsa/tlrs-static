@@ -1,0 +1,213 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="text">
+            <h1 class="heading-large">
+               Check your direct debit details
+            </h1>
+            <div class="review">
+               <p class="strong" style="padding:0 0 20px 0; border-bottom: 1px solid #bfc1c3;">Your payments</p>
+               <!--<div class="review-row">
+                  <div>
+                    <p>Your plan</p>
+                  </div>
+                  <div>
+                    <p>6 monthly payments of £17.60</p>
+                  </div>
+                  </div> -->
+               <div class="review-row">
+                  <div>
+                     <p>Number of payments</p>
+                  </div>
+                  <div>
+                     <p>6</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>Payment amount</p>
+                  </div>
+                  <div>
+                     <p>£17.60</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>First payment</p>
+                  </div>
+                  <div>
+                     <p>18 December 2018</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>Last payment</p>
+                  </div>
+                  <div>
+                     <p>18 May 2019</p>
+                  </div>
+               </div>
+               <p class="strong" style="padding:50px 0 20px 0; border-bottom: 1px solid #bfc1c3;">Your account details</p>
+               <div class="review-row">
+                  <div>
+                     <p>Account holder's name</p>
+                  </div>
+                  <div>
+                     <p>Mr B Smith</p>
+                  </div>
+                  <div>
+                     <p><a href="bankDetails">Change</a></p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>Account number</p>
+                  </div>
+                  <div>
+                     <p>987654321</p>
+                  </div>
+                  <div>
+                     <p><a href="bankDetails">Change</a></p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>Sort code</p>
+                  </div>
+                  <div>
+                     <p>01 10 01</p>
+                  </div>
+                  <div>
+                     <p><a href="bankDetails">Change</a></p>
+                  </div>
+               </div>
+              <p class="strong" style="padding:50px 0 20px 0; border-bottom: 1px solid #bfc1c3;">We will send confirmation of your Direct Debit to this address</p>
+              
+
+            <!--
+              <div class="review-row">
+                  <div>
+                     <p>Receive confirmation of your Direct Debit by text?</p>
+                  </div>
+                  <div>
+                     <p id="hastext">Yes</p>
+                  </div>
+                  <div>
+                     <p><a href="contact-option-full">Change</a></p>
+                  </div>
+               </div>            
+               <div class="review-row">
+                  <div>
+                     <p>Mobile Number</p>
+                  </div>
+                  <div>
+                     <p>07837881678</p>
+                  </div>
+                  <div>
+                     <p><a href="text-value">Change</a></p>
+                  </div>
+               </div>
+               
+
+
+               <div class="review-row">
+                  <div>
+                     <p>Receive confirmation of your Direct Debit by email?</p>
+                  </div>
+                  <div>
+                     <p id="hasmail">Yes</p>
+                  </div>
+                  <div>
+                     <p><a href="contact-option-full">Change</a></p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>Email address</p>
+                  </div>
+                  <div>
+                     <p>bsmith@jmail.com</p>
+                  </div>
+                  <div>
+                     <p><a href="mail-value">Change</a></p>
+                  </div>
+               </div>
+               
+
+
+               <div class="review-row">
+                  <div>
+                     <p>Receive confirmation of your Direct Debit by letter?</p>
+                  </div>
+                  <div>
+                     <p id="hasmail">Yes</p>
+                  </div>
+                  <div>
+                     <p><a href="contact-option-full">Change</a></p>
+                  </div>
+               </div> -->
+               <div class="review-row">
+                  <div>
+                     <p>Address</p>
+                  </div>
+                  <div>
+                     <p>12 Old Oak Road<br>Throckley<br>NE67 9AD</p>
+                  </div>
+                  <div>
+                     <p><a href="selectedAddress">Change</a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="payment-summary-small">
+               <p>
+                  <img src="/public/images/ddlogo.png">
+               </p>
+               <p>We will send this Direct Debit instruction to: <br>
+                  <span class="bold">Your Bank, Their St. Theirtown</span>
+               </p>
+               <p>
+                  Please pay the NHS Business Services Authority Direct Debits from the account detailed in this instruction subject to the safeguards assured by the Direct Debit Guarantee. I understand that this instruction may remain with the Prescription prepayment Issue Office of the NHS Business Services Authority, and if so, details will be passed electronically to my Bank/Building Society.
+               </p>
+               <p>
+                  Originator:<br>
+                  NHS Business Services Authority, PPC, Bridge House,<br>
+                  152 Pilgrim Street, Newcastle upon Tyne, NE1 6SN
+               </p>
+               <p>
+                  Service User Number (SUN): 242785E
+               </p>
+               <p>Telephone: 0191 232 5371</p>
+            </div>
+            <br>
+            <form action="confirmSubmit" method="get" class="form">
+               <div class="form-item-wrapper">
+                  <div class="form-group">
+                     <input class="button" type="submit" value="Confirm">
+                  </div>
+               </div>
+            </form>
+            <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

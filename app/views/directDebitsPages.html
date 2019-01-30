@@ -1,0 +1,210 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay or challenge a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<!-- bsa table style overrides -->
+<style>
+table tr td {
+    border: none;
+    display: table-cell;
+    vertical-align: text-top;
+    padding: 2rem 3rem 0 0;
+  }
+  table tr td:nth-child(1) {
+    width: 30%;
+}
+  table tr td:nth-child(2) {
+     padding-right: 3rem;
+     width: 30%; 
+}
+table tr td:nth-child(3) {
+     padding-right: 3rem;
+}
+</style>
+
+<main id="content" role="main">
+  
+  <p>
+    <a href="index"> Back to all prototypes</a>
+  </p>
+  
+<div class="heading-group">
+     <p>Direct Debit Prototype</p>
+     <h1 class="heading-xlarge">
+      Page by page breakdown
+     </h1>
+   </div>
+    
+    <div class="panel panel-border-narrow">
+        <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
+    </div>
+    
+    <table class="check-table" id="review-table-one">
+      <thead>
+        <tr>
+          <th id="viewPages">Penalty view pages</th>
+          <th>Page Title</th>
+          <th>URL</th>
+          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+        </tr>
+      </thead>
+      <tbody>
+                  <tr>
+          <td>
+            <a href="breakdown/penaltyView/pen-view-hc3-notFound">Penalty view DECS and HC3 (haven't found)</a>
+          </td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="breakdown/penaltyView/penalty-view-hc3">Penalty view DECS and HC3 (already found, haven't paid correct amount)</a>
+          </td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+          </td>
+        </tr>
+                  <tr>
+          <td>
+            <a href="breakdown/penaltyView/penalty-view-exp">Experimental penalty view</a>
+          </td>
+          <td>Penalty Charge Notice details</td>
+          <td>/view-your-pcn</td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+          </td>
+        </tr>
+      </tbody>
+    </table><br>
+    
+        <table class="check-table" id="review-table-one">
+      <thead>
+        <tr>
+          <th id="didPage">'Did you have' pages</th>
+          <th>Page Title</th>
+          <th>URL</th>
+          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+        </tr>
+      </thead>
+      <tbody>
+                  <tr>
+          <td>
+            <a href="breakdown/didYou/did-you-hc3">Did You have HC3?</a>
+          </td>
+          <td>Confirm your exemption or benefit</td>
+          <td>/did-you-have</td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
+          </td>
+        </tr>
+
+      </tbody>
+    </table><br>
+    
+        <table class="check-table" id="review-table-one">
+      <thead>
+        <tr>
+          <th id="enterPage">Enter Certificate number pages</th>
+          <th>Page Title</th>
+          <th>URL</th>
+          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+        </tr>
+      </thead>
+      <tbody>
+                  <tr>
+          <td>
+            <a href="breakdown/enterCert/cert-number-hc3">Enter HC3 number</a>
+          </td>
+          <td>What is your exemption certificate number</td>
+          <td>/exemption-certificate-number-hc3</td>
+          <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
+          </td>
+        </tr>
+      </tbody>
+    </table><br>
+
+            <table class="check-table" id="review-table-one">
+      <thead>
+        <tr>
+          <th id="endPages">HC3 end pages</th>
+          <th>Page Title</th>
+          <th>URL</th>
+          <th class="right">JIRA ticket number</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          
+                  <tr>
+          <td>
+            <a href="breakdown/endPages/end-pages-updated/found/found">Exemption found and enough paid or don't have to pay</a>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="right">
+            <a href=""></a>
+          </td>
+        </tr>
+          
+                            <tr>
+          <td>
+            <a href="hc3/noPayment/result">Recalculation - Exemption not originally found, HC3 found by challenge</a>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="right">
+            <a href=""></a>
+          </td>
+        </tr>
+          
+                                      <tr>
+          <td>
+            <a href="hc3/lower2/result">Recalculation - HC3 with lower cont.</a>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="right">
+            <a href=""></a>
+          </td>
+        </tr>
+          
+                                      <tr>
+          <td>
+            <a href="hc3/higher/result">Still owe original pcn - HC3 with higher cont.</a>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="right">
+            <a href=""></a>
+          </td>
+        </tr>
+          
+                                                <tr>
+          <td>
+            <a href="hc3/same/result">Still owe original pcn - Same HC3</a>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="right">
+            <a href=""></a>
+          </td>
+        </tr>
+          
+      </tbody>
+    </table>
+
+
+  
+</main>
+
+{% endblock %}

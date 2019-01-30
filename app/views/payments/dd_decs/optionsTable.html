@@ -1,0 +1,246 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Pay an NHS Penalty Charge Notice</p>
+            <h1 class="heading-large">How many months would you like to pay over?  </h1>
+         </div>
+         <form action="dates" method="get" class="form">
+            <div class="form-group" style="margin-bottom: 70px;">
+               <div class="form-item-wrapper">
+                  <div class="multiple-choice single-line" data-target="3mth">
+                     <input type="radio" id="2" value="2" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="2">
+                     3 months
+                     </label>
+                  </div>
+                 <!-- <div class="panel panel-border js-hidden" id="3mth">
+                     <p>
+                        Your first payment will be <span class="strong">£35.20</span> followed by 5 payments of
+                        <span class="strong">£35.20</span>
+                     </p>
+                  </div> -->
+                  <div class="multiple-choice single-line" data-target="6mth">
+                     <input type="radio" id="3" value="3" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="3">
+                     6 months
+                     </label>
+                  </div>
+                  <!--<div class="panel panel-border js-hidden" id="6mth">
+                     <p>
+                        Your first payment will be <span class="strong">£17.60</span> followed by 5 payments of <span class="strong">£17.60</span>
+                     </p>
+                  </div> -->
+                  <div class="multiple-choice single-line" data-target="12mth">
+                     <input type="radio" id="4" value="4" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="4">
+                     12 months
+                     </label>
+                  </div>
+                  <!--<div class="panel panel-border js-hidden" id="12mth">
+                     <p>
+                        Your first payment will be <span class="strong">£8.80</span> followed by 5 payments of <span class="strong">£8.80</span>
+                     </p>
+                  </div> -->
+               </div>
+            </div>
+
+         </form>
+
+             
+            <h1 class="heading-medium">
+               Payment breakdown
+            </h1>
+               
+            <div class="review" style="margin-top: 30px; ">
+               <div class="review-row">
+                  <div>
+                     <p style="font-weight:bold;">3 months</p>
+                  </div>
+                  <div>
+                     <p style="font-weight:bold;">6 months</p>
+                  </div>
+                  <div>
+                     <p style="font-weight:bold; float: left; text-align: left;">12 months</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p style="font-weight:normal;">£42.14</p>
+                  </div>
+                  <div>
+                     <p>£21.10</p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.57</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p style="font-weight:normal;">£42.13</p>
+                  </div>
+                  <div>
+                     <p>£21.06</p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p style="font-weight:normal;">£42.13</p>
+                  </div>
+                  <div>
+                     <p>£21.06</p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>£126.40</p>
+                  </div>
+                  <div>
+                     <p>£21.06</p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p>£21.06</p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p>£21.06</p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p style="font-weight:bold;">£126.40</p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p style="float: left; text-align: left;">£10.53</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p></p>
+                  </div>
+                  <div>
+                     <p style="font-weight:bold; float: left; text-align: left;">£126.40</p>
+                  </div>
+               </div>
+
+            </div>
+               
+              
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Next">
+               </div>
+            </div>
+            <div class="form-group">
+               <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
+</main>
+{% endblock %}

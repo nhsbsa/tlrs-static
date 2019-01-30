@@ -1,6 +1,6 @@
-﻿{% extends "layout_bsa.html" %}
+{% extends "layout_bsa.html" %}
 {% block page_title %}
-Challenge a Penalty Charge Notice
+Pay a Penalty Charge Notice
 {% endblock %}
 {% block content %}
 <style>
@@ -102,57 +102,65 @@ Challenge a Penalty Charge Notice
                <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
             </p>
          </div>
-         <a class="link-back" href="penalty-view">Back</a>
       </div>
-   </div>
-   <div class="grid-row">
       <div class="column-two-thirds">
-         <div class="heading-group">
-            <p>Challenge a Penalty Charge Notice</p>
-            <h1 class="heading-large">What happens next?</h1>
+         <div class="done-panel">
+            <!-- If the user is paying the full amount or they are making a single instalment payment then display the amount paid -->
+            <h1 class="heading-large"><span id="done-tick"> </span>Done</h1>
+            <h2 class="heading-medium">
+               You have set up a Direct Debit to pay your penalty charge
+            </h2>
          </div>
-         <p>We will ask you a few simple questions. It may help to have your exemption certificate or benefits information ready.</p>
-         <p>We’ll just:</p>
-      </div>
-      <div class="column-two-thirds">
+
+         <h3 class="heading-medium">What happens next?</h3>
+
          <ol class="standard">
             <li style="border-top: none;">
                <span class="circle circle-step">1</span>
                <div class="point">
-                  <p>Ask for a few details about your exemption or benefit.</p>
+                  <p>You will receive a letter confirming your Direct Debit details.</p>
                </div>
             </li>
             <li>
-               <span class="circle circle-step" style="margin-top:0.8em">2</span>
+               <span class="circle circle-step" >2</span>
                <div class="point">
-                  <p>Ask about other exemptions you may have had, as this may be quicker for us to check.</p>
+                  <p>Your first payment of £XX.XX will be taken on XX January 2019.</p>
                </div>
             </li>
             <li>
-               <span class="circle circle-step" style="margin-top:0.8em">3</span>
+               <span class="circle circle-step">3</span>
                <div class="point">
-                  <p>Tell you how to send us proof if we can’t confirm your exemption straight away.</p>
-               </div>
-            </li>
-            <li>
-               <span class="circle circle-step">4</span>
-               <div class="point">
-                  <p>Let you know the next steps.<br></p>
+                  <p>Your next X payments will be taken on or just after the date you have chosen.</p>
                </div>
             </li>
          </ol>
+
          <br>
+
+         <p>As long as you keep up payments there will be no further charges added to your account.</p>
+
+         <h3 class="heading-medium">How to avoid penalties in the future</h3>
+         <ul class="list list-bullet">
+            <li>Make sure that your GP and dentist have your correct home address</li>
+            <li>If you receive benefits or have an exemption certificate, make sure that the relevant organisations have your correct home address</li>
+            <li>If you have an exemption certificate, make sure it does not expire</li>
+            <li>For more information visit <a href="https://www.nhsbsa.nhs.uk/penaltycharges" target="_blank">www.nhsbsa.nhs.uk/penaltycharges</a></li>
+         </ul>
+         {% if (instalments != 1) %}
+      
+        
+         {% endif %}
+         <h2 class="heading-medium">Feedback</h2>
+         <p>
+            Help us improve the service by <a class="" href="">answering some questions</a> about it.
+         </p>
+
+          <ul class="list options-list">
+            <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+         </ul>
       </div>
-      <form action="did-you-have" method="get" class="form">
-         <div class="form-item-wrapper">
-            <div class="form-group">
-               <input class="button" type="submit" value="Next">
-               <br>
-               <br>
-               <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
-            </div>
-         </div>
-      </form>
+
    </div>
+   <p id="usermail"class="visually-hidden">{{hasmail}}</p>
 </main>
 {% endblock %}

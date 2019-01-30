@@ -1,0 +1,44 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay an NHS Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="text">
+            <div class="heading-group">
+               <p>Pay an NHS Penalty Charge Notice</p>
+               <h1 class="heading-large">
+                  Paper mandate requested
+               </h1>
+            </div>
+            <p>If we are unable to take a payment, you may have to pay extra charges. If we are unable to take payments on more than one occasion, you may not be able to pay by Direct Debit in the future.</p>
+         </div>
+         <ul class="list options-list">
+            <li><a class="icon print-icon" href="#">Print paper mandate</a></li>
+         </ul>
+         <!--<ul class="list options-list">
+            <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+            </ul>-->
+         <!--<p><a href="end" class="button">Submit</a></p>-->
+         <p class="navigation"><a class="cancel" href="pcnPage">Cancel</a></p>
+      </div>
+   </div>
+   </div>
+</main>
+{% endblock %}

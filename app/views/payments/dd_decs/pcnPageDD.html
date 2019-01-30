@@ -1,0 +1,119 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+NHS Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+         <div class="heading-group">
+            <p>Pay or Challenge a Penalty Charge Notice</p>
+            <h1 class="heading-xlarge">Penalty Charge Notice 02895593233</h1>
+         </div>
+         <div class="panel panel-border-wide">
+            <h3 class="heading-medium">A Direct Debit has been set up to pay this Penalty Charge</h3>
+            <p>
+               If you think you may have been entitled to free prescriptions and want to Challenge your Penalty Charge Notice, call us on 0300 330 9291.
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-half">
+         <div class="info-panel highlight ">
+            <h2 class="heading-large">Penalty Charge Notice amount</h2>
+            <table class="chargesTable">
+               <tr>
+                  {% if (ticked == 'K') %}
+                  <td>Dental treatment charges</td>
+                  {% else %}
+                  <td>Prescription charges</td>
+                  {% endif %}
+                  <td></td>
+                  <td>£26.40</td>
+               </tr>
+               <tr>
+                  <td>Penalty charge</td>
+                  <td></td>
+                  <td>£100.00</td>
+               </tr>
+               <tr>
+                  <td><span class="strong">Total amount</span></td>
+                  <td></td>
+                  <td><span class="strong">£126.40</span></td>
+               </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>   
+         </div>
+      </div>
+      <div class="column-half">
+         <div class="info-panel">
+            <h2 class="heading-medium">
+               Date prescription was claimed
+            </h2>
+            <p>Between 1 December and 31 December 2018</p>
+            <h2 class="heading-medium">
+               Details on the prescription
+            </h2>
+            <table>
+               <tr>
+                  <td><span class="strong">Name</span></td>
+                  <td>John Marshall</td>
+               </tr>
+               <tr>
+                  <td><span class="strong">Address</span></td>
+                  <td>12 Old Oak Road, Throckley, Newcastle upon Tyne, NE15 9AD</td>
+               </tr>
+               <tr>
+                  <td><span class="strong">Exemption reason ticked</span></td>
+                  <td>Has a valid medical exemption certificate (Box 'E')</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </div>
+   <!--
+   <div class="grid-row">
+      <div class="column-half">
+         <div class="info-panel highlight">
+            <h2 class="heading-large">Pay</h2>
+            <p>You can pay by debit or credit card, or Direct Debit.</p> 
+            <br>
+            <br>
+            <form class="form" action="#">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Pay">
+               </div>
+            </form>
+            <br><br>
+         </div>
+      </div>
+      <div class="column-half">
+         <div class="info-panel highlight">
+            <h2 class="heading-large head-2">Challenge</h2>
+            <p>You can challenge if you were entitled to free prescriptions, or had a valid prescription prepayment certificate.</p>
+            <form class="form" action="#">
+               <br>
+               <div class="form-group">
+                  <input class="button" type="submit" value="Challenge">
+               </div>
+               <br> <br>
+            </form>
+         </div>
+      </div>
+   </div>
+   -->
+</main>
+{% endblock %}

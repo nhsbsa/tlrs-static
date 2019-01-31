@@ -35,6 +35,126 @@ Pay or challenge a Penalty Charge Notice
    <div class="panel panel-border-narrow">
       <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
    </div>
+
+   <p style="color: #005EB8; font-weight: 700;">Pages marked with (*) have not been signed off</p>
+
+<!-- Start and verification pages -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">Start and verification pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/start">Start</a>
+            </td>
+            <td>Pay or Challenge a Penalty Charge Notice</td>
+            <td>/start</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/enter-pcn-number">Enter PCN number</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/validate-dob">Verify date of birth</a>
+            </td>
+            <td>What is your date of birth?</td>
+            <td>/date-of-birth</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/validate-charge">Verify PCN total amount</a>
+            </td>
+            <td>Enter the total amount on your Penalty Charge Notice</td>
+            <td>/pcn-total-amount</td>
+            <td class="right">
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+<!-- Secure PCN verification -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">Secure PCN verification work</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/checkYourAnswersPcn">* Check your answers</a>
+            </td>
+            <td>Check your answers</td>
+            <td>/check-your-answers</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/checkYourAnswersPcnUnverified">* Check your answers (unverified)</a>
+            </td>
+            <td>Check your answers</td>
+            <td>/check-your-answers</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePaid">* v.1 - Input PCN ref. twice on the same screen</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePartialPaid">* v.2 - Re-enter PCN ref. on next screen</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePartialPaid">* v.3 - Re-enter PCN ref. at end of verification process (4 screens)</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+<!-- PCN view pages -->
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
@@ -47,41 +167,31 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="breakdown/penaltyView/pen-view-hc3-notFound">Penalty view DECS and HC3 (haven't found)</a>
+               <a href="payments/dd_v2/pcnPage">Penalty view (3 prescription items)</a>
             </td>
             <td>Penalty Charge Notice details</td>
             <td>/view-your-pcn</td>
             <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
             </td>
          </tr>
          <tr>
             <td>
-               <a href="breakdown/penaltyView/penalty-view-hc3">Penalty view DECS and HC3 (already found, haven't paid correct amount)</a>
+               <a href="payments/dd_decs/pcnPage">Penalty view (DECS - Band 3)</a>
             </td>
             <td>Penalty Charge Notice details</td>
             <td>/view-your-pcn</td>
             <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="breakdown/penaltyView/penalty-view-exp">Experimental penalty view</a>
-            </td>
-            <td>Penalty Charge Notice details</td>
-            <td>/view-your-pcn</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
             </td>
          </tr>
       </tbody>
    </table>
    <br>
+
+<!-- PCN return journey pages -->
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
-            <th id="didPage">'Did you have' pages</th>
+            <th id="viewPages">Penalty view return journey pages</th>
             <th>Page Title</th>
             <th>URL</th>
             <th class="right" style="padding-right:0px;">JIRA ticket number</th>
@@ -90,21 +200,49 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="breakdown/didYou/did-you-hc3">Did You have HC3?</a>
+               <a href="payments/dd_v2/pcnPagePaid">* Penalty Charge paid in full</a>
             </td>
-            <td>Confirm your exemption or benefit</td>
-            <td>/did-you-have</td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
             <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePartialPaid">* Penalty Charge partially paid (one-off payment received)</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPageDD">* Direct Debit successfully set up</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPageDefault1">* User has defaulted</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
             </td>
          </tr>
       </tbody>
    </table>
    <br>
+
+<!-- DD option selection pages -->
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
-            <th id="enterPage">Enter Certificate number pages</th>
+            <th id="didPage">Direct Debit options</th>
             <th>Page Title</th>
             <th>URL</th>
             <th class="right" style="padding-right:0px;">JIRA ticket number</th>
@@ -113,17 +251,213 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="breakdown/enterCert/cert-number-hc3">Enter HC3 number</a>
+               <a href="/payments/dd_v2/paymentOptions">Payment options</a>
             </td>
-            <td>What is your exemption certificate number</td>
-            <td>/exemption-certificate-number-hc3</td>
+            <td>How would you like to pay your Penalty Charge?</td>
+            <td></td>
             <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="/payments/dd_v2/options36">Direct Debit duration options<br>(3 and 6 months)</a>
+            </td>
+            <td>How many months would you like to pay over?</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="/payments/dd_v2/options">Direct Debit duration options<br>(3, 6 and 12 months)</a>
+            </td>
+            <td>How many months would you like to pay over?</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="/payments/dd_v2/options">Direct Debit date</a>
+            </td>
+            <td>Which date would you like payments to be taken each month?</td>
+            <td></td>
+            <td class="right">
             </td>
          </tr>
       </tbody>
    </table>
    <br>
+
+<!-- DD Guidance pages -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="didPage">Direct Debit guidance pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="/payments/dd_v2/plan-info">Direct Debit rules and confirmation</a>
+            </td>
+            <td>Paying by Direct Debit</td>
+            <td>/paying-by-direct-debit</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+<!-- Kickout pages -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="enterPage">Kickout pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/confirmKickout">User hasn't confirmed DD rules (v.1 content)</a>
+            </td>
+            <td>You will need to call us</td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/optionsKickout">User hasn't confirmed DD rules (v.2 content)</a>
+            </td>
+            <td>You cannot complete your Direct Debit application online</td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+<!-- Address pages -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="enterPage">Address pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/queryAddress">Confirm we hold the correct address</a>
+            </td>
+            <td>Is this your address?</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/manualAddress">Enter address manually</a>
+            </td>
+            <td>What is your address?</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+<!-- Bank Details page -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="enterPage">Bank details page</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/bankDetails">Enter bank details</a>
+            </td>
+            <td>Enter bank details</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+
+      </tbody>
+   </table>
+   <br>
+
+<!-- Confirm page -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="enterPage">Confirm page</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/end">Confirm and submit</a>
+            </td>
+            <td>Confirm and submit</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+
+      </tbody>
+   </table>
+   <br>
+
+<!-- End page -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="enterPage">End page</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/end">Direct Debit has been set up</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+
+      </tbody>
+   </table>
+   <br>
+
+   <!--
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
@@ -144,47 +478,7 @@ Pay or challenge a Penalty Charge Notice
                <a href=""></a>
             </td>
          </tr>
-         <tr>
-            <td>
-               <a href="hc3/noPayment/result">Recalculation - Exemption not originally found, HC3 found by challenge</a>
-            </td>
-            <td></td>
-            <td></td>
-            <td class="right">
-               <a href=""></a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="hc3/lower2/result">Recalculation - HC3 with lower cont.</a>
-            </td>
-            <td></td>
-            <td></td>
-            <td class="right">
-               <a href=""></a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="hc3/higher/result">Still owe original pcn - HC3 with higher cont.</a>
-            </td>
-            <td></td>
-            <td></td>
-            <td class="right">
-               <a href=""></a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="hc3/same/result">Still owe original pcn - Same HC3</a>
-            </td>
-            <td></td>
-            <td></td>
-            <td class="right">
-               <a href=""></a>
-            </td>
-         </tr>
       </tbody>
-   </table>
+   </table> -->
 </main>
 {% endblock %}

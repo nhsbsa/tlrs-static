@@ -42,6 +42,17 @@ $(document).ready(function() {
 		}
 	}
 
+	if 
+	   (document.location.href.includes("/payments/dd_decs/summary", true)) {
+		var ddSpan = $(".capturedDd");
+
+		$(".review-row div p")[4].innerHTML = sessionStorage.getItem("dd")
+
+		for (a = 0; a <= ddSpan.length; a++) {
+		    ddSpan[a].innerHTML = sessionStorage.getItem("dd");
+		}
+	}
+
 	// if (document.location.href.includes("/payments/dd_v2/pcnPage", true)) {
 	// 	sessionStorage.clear();
 	// }

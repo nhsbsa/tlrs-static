@@ -35,9 +35,7 @@ Pay or challenge a Penalty Charge Notice
    <div class="panel panel-border-narrow">
       <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
    </div>
-
-   <p style="color: #005EB8; font-weight: 700;">Pages marked with (*) have not been signed off</p>
-
+   
 <!-- Start and verification pages -->
    <table class="check-table" id="review-table-one">
       <thead>
@@ -89,71 +87,6 @@ Pay or challenge a Penalty Charge Notice
    </table>
    <br>
 
-<!-- Secure PCN verification -->
-   <table class="check-table" id="review-table-one">
-      <thead>
-         <tr>
-            <th id="viewPages">Secure PCN verification work</th>
-            <th>Page Title</th>
-            <th>URL</th>
-            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/checkYourAnswersPcn">* Check your answers</a>
-            </td>
-            <td>Check your answers</td>
-            <td>/check-your-answers</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/checkYourAnswersPcnUnverified">* Check your answers (unverified)</a>
-            </td>
-            <td>Check your answers</td>
-            <td>/check-your-answers</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/pcnPagePaid">* v.1 - Input PCN ref. twice on the same screen</a>
-            </td>
-            <td>What is your Penalty Charge Notice reference number?</td>
-            <td>/enter-pcn-number</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/pcnPagePartialPaid">* v.2 - Re-enter PCN ref. on next screen</a>
-            </td>
-            <td>What is your Penalty Charge Notice reference number?</td>
-            <td>/enter-pcn-number</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/pcnPagePartialPaid">* v.3 - Re-enter PCN ref. at end of verification process (4 screens)</a>
-            </td>
-            <td>What is your Penalty Charge Notice reference number?</td>
-            <td>/enter-pcn-number</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
-            </td>
-         </tr>
-      </tbody>
-   </table>
-   <br>
-
 <!-- PCN view pages -->
    <table class="check-table" id="review-table-one">
       <thead>
@@ -177,57 +110,6 @@ Pay or challenge a Penalty Charge Notice
          <tr>
             <td>
                <a href="payments/dd_decs/pcnPage">Penalty view (DECS - Band 3)</a>
-            </td>
-            <td>Penalty Charge Notice details</td>
-            <td>/view-your-pcn</td>
-            <td class="right">
-            </td>
-         </tr>
-      </tbody>
-   </table>
-   <br>
-
-<!-- PCN return journey pages -->
-   <table class="check-table" id="review-table-one">
-      <thead>
-         <tr>
-            <th id="viewPages">Penalty view return journey pages</th>
-            <th>Page Title</th>
-            <th>URL</th>
-            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/pcnPagePaid">* Penalty Charge paid in full</a>
-            </td>
-            <td>Penalty Charge Notice details</td>
-            <td>/view-your-pcn</td>
-            <td class="right">
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/pcnPagePartialPaid">* Penalty Charge partially paid (one-off payment received)</a>
-            </td>
-            <td>Penalty Charge Notice details</td>
-            <td>/view-your-pcn</td>
-            <td class="right">
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/pcnPageDD">* Direct Debit successfully set up</a>
-            </td>
-            <td>Penalty Charge Notice details</td>
-            <td>/view-your-pcn</td>
-            <td class="right">
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="payments/dd_v2/pcnPageDefault1">* User has defaulted</a>
             </td>
             <td>Penalty Charge Notice details</td>
             <td>/view-your-pcn</td>
@@ -453,6 +335,127 @@ Pay or challenge a Penalty Charge Notice
             </td>
          </tr>
 
+      </tbody>
+   </table> 
+   <br>
+
+<!-- Experimental pages -->
+<br>
+<h1 class="heading-large">Experimental pages</h1>
+   <p style="color: red; font-weight: 700;">These pages have not been signed off</p>
+
+<!-- Secure PCN verification -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">Secure PCN verification</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/checkYourAnswersPcn">Check your answers</a>
+            </td>
+            <td>Check your answers</td>
+            <td>/check-your-answers</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/checkYourAnswersPcnUnverified">Check your answers (unverified)</a>
+            </td>
+            <td>Check your answers</td>
+            <td>/check-your-answers</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePaid">v.1 - Input PCN ref. twice on the same screen</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePartialPaid">v.2 - Re-enter PCN ref. on next screen</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePartialPaid">v.3 - Re-enter PCN ref. at end of verification process (4 screens)</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+<!-- PCN return journey pages -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">Penalty view return journey pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePaid">Penalty Charge paid in full</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPagePartialPaid">Penalty Charge partially paid (one-off payment received)</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPageDD">Direct Debit successfully set up</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnPageDefault1">User has defaulted</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+            </td>
+         </tr>
       </tbody>
    </table>
    <br>

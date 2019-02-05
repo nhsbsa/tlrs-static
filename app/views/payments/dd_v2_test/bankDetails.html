@@ -26,8 +26,8 @@ Pay a Penalty Charge Notice
             <h3>Last payment</h3>
             <p class="payment-info"><span class="name">XX</span> June 2019</p>
          </div>
-      </div> -->
-
+      </div>
+   -->
       <div class="column-two-thirds left-floater">
          <div id="back">
             <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
@@ -35,21 +35,12 @@ Pay a Penalty Charge Notice
                document.getElementById('back-button');
             </script>
          </div>
-
-         <div class="error-summary" role="alert" aria-labelledby="error-summary-heading" tabindex="-1">
-            <h2 class="heading-medium error-summary-heading" id="error-summary-heading">
-               There is an error
-            </h2>
-            <ul class="error-summary-list">
-               <li><a href="#error-message">We were unable to verify your bank details. Please check your details and try again.</a></li>
-            </ul>
-         </div>
          <h1 class="heading-large">Enter bank details</h1>
 
-         <form class="form" method="get" action="confirm">
+         <form class="form" method="get" action="bankDetailsError">
             <div class="form-group">
                <label class="form-label-bold" style ="padding: 10px 0;" for="cardnumber">Account number</label>
-               <input class="form-control medium-width" id="cardnumber" name="cardnumber" type="number" value="08579837">
+               <input class="form-control medium-width" id="cardnumber" name="cardnumber" type="number">
             </div>
             <div class="form-group">
                <legend>
@@ -57,13 +48,13 @@ Pay a Penalty Charge Notice
                </legend>
                <div class="form-date">
                   <div class="form-group form-group-day">
-                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="01">
+                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
                   </div>
                   <div class="form-group form-group-day">
-                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="20">
+                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
                   </div>
                   <div class="form-group form-group-day">
-                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="54">
+                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="">
                   </div>
                </div>
             </div>
@@ -71,7 +62,7 @@ Pay a Penalty Charge Notice
                <label class="form-label-bold" for="holdername">
                Account holder's name
                </label>
-               <input class="form-control max-width" id="holdername" name="holdername" type="text" value="Mr John Marshall">
+               <input class="form-control max-width" id="holdername" name="holdername" type="text">
             </div>
             
             <details>

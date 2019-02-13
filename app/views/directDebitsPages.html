@@ -27,7 +27,7 @@ Pay or challenge a Penalty Charge Notice
       <a href="index"> Back to all prototypes</a>
    </p>
    <div class="heading-group">
-      <p>Direct Debit Prototype</p>
+      <p>Pay by Direct Debit Prototype</p>
       <h1 class="heading-xlarge">
          Page by page breakdown
       </h1>
@@ -69,9 +69,10 @@ Pay or challenge a Penalty Charge Notice
             <td>
                <a href="payments/dd_v2/pcnVerifV2_2">Re-enter PCN number</a>
             </td>
-            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>Re-enter your Penalty Charge Notice reference number</td>
             <td>/re-enter-pcn-number</td>
             <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
             </td>
          </tr>
          <tr>
@@ -151,6 +152,15 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
+               <a href="/payments/dd_v2_test/options3">Direct Debit duration options<br>(3 months)</a>
+            </td>
+            <td>How many months would you like to pay over?</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
                <a href="/payments/dd_v2/options36">Direct Debit duration options<br>(3 and 6 months)</a>
             </td>
             <td>How many months would you like to pay over?</td>
@@ -191,7 +201,6 @@ Pay or challenge a Penalty Charge Notice
          </tr>
       </thead>
       <tbody>
-         
          <tr>
             <td>
                <a href="/payments/dd_v2/plan-info">Direct Debit rules and confirmation</a>
@@ -204,7 +213,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2/planInfoError">Direct Debit rules - no selection error</a>
+               <a href="/payments/dd_v2/planInfoError">Direct Debit rules<br>(error example - all)</a>
             </td>
             <td>Paying by Direct Debit</td>
             <td>/paying-by-direct-debit</td>
@@ -214,7 +223,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2/planInfoErrorCheck3">Direct Debit rules - payment failure checkbox error</a>
+               <a href="/payments/dd_v2/planInfoErrorCheck3">Direct Debit rules <br>(error example - one)</a>
             </td>
             <td>Paying by Direct Debit</td>
             <td>/paying-by-direct-debit</td>
@@ -226,7 +235,7 @@ Pay or challenge a Penalty Charge Notice
    </table>
    <br>
 
-<!-- Kickout pages -->
+<!-- Kickout pages
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
@@ -259,6 +268,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
       </tbody>
    </table>
+    -->
    <br>
 
 <!-- Address pages -->
@@ -294,11 +304,53 @@ Pay or challenge a Penalty Charge Notice
    </table>
    <br>
 
+<!-- Summary / Check your answers -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="enterPage">Summary / Check your answers</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2_test/summary3">Check your answers<br>(3 months)</a>
+            </td>
+            <td>Check your answers</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2_test/summary6">Check your answers<br>(6 months)</a>
+            </td>
+            <td>Check your answers</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2_test/summary12">Check your answers<br>(12 months)</a>
+            </td>
+            <td>Check your answers</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>  
+
 <!-- Bank Details  -->
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
-            <th id="enterPage">Bank details</th>
+            <th id="enterPage">Bank details and KYC</th>
             <th>Page Title</th>
             <th>URL</th>
             <th class="right" style="padding-right:0px;">JIRA ticket number</th>
@@ -316,9 +368,18 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/failedKyc">Failed KYC check</a>
+               <a href="payments/dd_v2_test/failedKycPecs">Failed KYC check (PECS)</a>
             </td>
+            <td>You will need to call us</td>
             <td></td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2_test/failedKycDecs">Failed KYC check (DECS)</a>
+            </td>
+            <td>You will need to call us</td>
             <td></td>
             <td class="right">
             </td>
@@ -371,7 +432,6 @@ Pay or challenge a Penalty Charge Notice
             <td class="right">
             </td>
          </tr>
-
       </tbody>
    </table> 
    <br>
@@ -414,7 +474,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2/pcnVerifV1">v.1 - Input PCN ref. twice on the same screen</a>
+               <a href="payments/dd_v2/pcnVerifV1">Input PCN ref. twice on the same screen</a>
             </td>
             <td>What is your Penalty Charge Notice reference number?</td>
             <td>/enter-pcn-number</td>
@@ -424,7 +484,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2//pcnVerifV2_1">v.2 - Re-enter PCN ref. on next screen</a>
+               <a href="payments/dd_v2//pcnVerifV2_1">Re-enter PCN ref. on next screen</a>
             </td>
             <td>What is your Penalty Charge Notice reference number?</td>
             <td>/enter-pcn-number</td>
@@ -434,7 +494,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2/pcnVerifV3_1">v.3 - Re-enter PCN ref. at end of verification process (4 screens)</a>
+               <a href="payments/dd_v2/pcnVerifV3_1">Re-enter PCN ref. at end of verification process (4 screens)</a>
             </td>
             <td>What is your Penalty Charge Notice reference number?</td>
             <td>/enter-pcn-number</td>
@@ -446,7 +506,7 @@ Pay or challenge a Penalty Charge Notice
    </table>
    <br>
 
-<!-- PCN return journey pages -->
+<!-- PCN return journey pages
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
@@ -494,31 +554,10 @@ Pay or challenge a Penalty Charge Notice
             </td>
          </tr>
       </tbody>
+
    </table>
+    -->
    <br>
 
-   <!--
-   <table class="check-table" id="review-table-one">
-      <thead>
-         <tr>
-            <th id="endPages">HC3 end pages</th>
-            <th>Page Title</th>
-            <th>URL</th>
-            <th class="right">JIRA ticket number</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>
-               <a href="breakdown/endPages/end-pages-updated/found/found">Exemption found and enough paid or don't have to pay</a>
-            </td>
-            <td></td>
-            <td></td>
-            <td class="right">
-               <a href=""></a>
-            </td>
-         </tr>
-      </tbody>
-   </table> -->
 </main>
 {% endblock %}

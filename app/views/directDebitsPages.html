@@ -77,6 +77,15 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
+               <a href="payments/dd_v2_test/failedPcnMatch">Failed PCN number verification</a>
+            </td>
+            <td>The Penalty Charge reference numbers you entered did not match</td>
+            <td>/re-enter-pcn-number</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
                <a href="payments/dd_v2/validate-dob">Verify date of birth</a>
             </td>
             <td>What is your date of birth?</td>
@@ -90,6 +99,15 @@ Pay or challenge a Penalty Charge Notice
             </td>
             <td>Enter the total amount on your Penalty Charge Notice</td>
             <td>/pcn-total-amount</td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="challenge/verify/nextGo">Unable to confirm identity</a>
+            </td>
+            <td></td>
+            <td></td>
             <td class="right">
             </td>
          </tr>
@@ -110,7 +128,7 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2/pcnPage">Penalty view (3 prescription items)</a>
+               <a href="payments/dd_v2/pcnPage">Penalty view (PECS 3 items)</a>
             </td>
             <td>Penalty Charge Notice details</td>
             <td>/view-your-pcn</td>
@@ -119,7 +137,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_decs/pcnPage">Penalty view (DECS - Band 3)</a>
+               <a href="payments/dd_decs/pcnPage">Penalty view (DECS Band 3)</a>
             </td>
             <td>Penalty Charge Notice details</td>
             <td>/view-your-pcn</td>
@@ -130,11 +148,11 @@ Pay or challenge a Penalty Charge Notice
    </table>
    <br>
 
-<!-- DD option selection pages -->
+<!-- DD pages -->
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
-            <th id="didPage">Direct Debit options</th>
+            <th id="didPage">Direct Debit pages</th>
             <th>Page Title</th>
             <th>URL</th>
             <th class="right" style="padding-right:0px;">JIRA ticket number</th>
@@ -148,6 +166,36 @@ Pay or challenge a Penalty Charge Notice
             <td>How would you like to pay your Penalty Charge?</td>
             <td></td>
             <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="/payments/dd_v2/plan-info">Direct Debit rules</a>
+            </td>
+            <td>Paying by Direct Debit</td>
+            <td>/paying-by-direct-debit</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="/payments/dd_v2/planInfoError">Direct Debit rules<br>(error - all)</a>
+            </td>
+            <td>Paying by Direct Debit</td>
+            <td>/paying-by-direct-debit</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="/payments/dd_v2/planInfoErrorCheck3">Direct Debit rules <br>(error - one)</a>
+            </td>
+            <td>Paying by Direct Debit</td>
+            <td>/paying-by-direct-debit</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
             </td>
          </tr>
          <tr>
@@ -184,51 +232,6 @@ Pay or challenge a Penalty Charge Notice
             <td>Which date would you like payments to be taken each month?</td>
             <td></td>
             <td class="right">
-            </td>
-         </tr>
-      </tbody>
-   </table>
-   <br>
-
-<!-- DD Guidance pages -->
-   <table class="check-table" id="review-table-one">
-      <thead>
-         <tr>
-            <th id="didPage">Direct Debit guidance pages</th>
-            <th>Page Title</th>
-            <th>URL</th>
-            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>
-               <a href="/payments/dd_v2/plan-info">Direct Debit rules and confirmation</a>
-            </td>
-            <td>Paying by Direct Debit</td>
-            <td>/paying-by-direct-debit</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="/payments/dd_v2/planInfoError">Direct Debit rules<br>(error example - all)</a>
-            </td>
-            <td>Paying by Direct Debit</td>
-            <td>/paying-by-direct-debit</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <a href="/payments/dd_v2/planInfoErrorCheck3">Direct Debit rules <br>(error example - one)</a>
-            </td>
-            <td>Paying by Direct Debit</td>
-            <td>/paying-by-direct-debit</td>
-            <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
             </td>
          </tr>
       </tbody>
@@ -346,11 +349,11 @@ Pay or challenge a Penalty Charge Notice
    </table>
    <br>  
 
-<!-- Bank Details  -->
+<!-- Payment / Bank Details  -->
    <table class="check-table" id="review-table-one">
       <thead>
          <tr>
-            <th id="enterPage">Bank details and KYC</th>
+            <th id="enterPage">Payment and KYC</th>
             <th>Page Title</th>
             <th>URL</th>
             <th class="right" style="padding-right:0px;">JIRA ticket number</th>
@@ -359,7 +362,16 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2/bankDetails">Enter bank details</a>
+               <a href="payments/dd_v2_test/bankDetails">Enter bank details</a>
+            </td>
+            <td>Enter bank details</td>
+            <td></td>
+            <td class="right">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2_test/bankDetailsError">Enter bank details <br>(validation error)</a>
             </td>
             <td>Enter bank details</td>
             <td></td>
@@ -439,7 +451,7 @@ Pay or challenge a Penalty Charge Notice
 <!-- Experimental pages -->
 <br>
 <h1 class="heading-large">Experimental pages</h1>
-   <p style="color: red; font-weight: 700;">These pages have not been signed off</p>
+   <p style="color: red;">There is ongoing discussion regarding these pages. They have not been signed off.</p>
 
 <!-- Secure PCN verification -->
    <table class="check-table" id="review-table-one">

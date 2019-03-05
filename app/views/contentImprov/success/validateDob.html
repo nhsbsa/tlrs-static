@@ -3,6 +3,119 @@
 Challenge a Penalty Charge Notice
 {% endblock %}
 {% block content %}
+<style>
+   {
+   box-sizing: border-box;
+   }
+   .main-navigation {
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+   }
+   #user-satisfaction-survey .survey-wrapper,.govuk-emergency-banner div,#wrapper {
+   max-width:960px;
+   margin:0 15px
+   }
+   @media (min-width: 641px) {
+   #user-satisfaction-survey .survey-wrapper,.govuk-emergency-banner div,#wrapper {
+   margin:0 30px
+   }
+   }
+   @media (min-width: 1020px) {
+   #user-satisfaction-survey .survey-wrapper,.govuk-emergency-banner div,#wrapper {
+   margin:0 auto
+   }
+   }
+   #user-satisfaction-survey {
+   display:none;
+   background-color:#005EB8;
+   margin-bottom:1px;
+   color:#fff;
+   font-weight:400;
+   text-transform:none;
+   font-size:14px;
+   line-height:1.1428571429;
+   }
+   @media (min-width: 641px) {
+   #user-satisfaction-survey {
+   font-size:16px;
+   line-height:1.25
+   }
+   }
+   #user-satisfaction-survey.visible {
+   display:block
+   }
+   @media (max-width: 640px) {
+   #user-satisfaction-survey.visible .survey-close-button {
+   font-size:20px
+   }
+   #user-satisfaction-survey.visible .survey-title {
+   font-size:18px;
+   margin-top:2em
+   }
+   #user-satisfaction-survey.visible .survey-primary-link,#user-satisfaction-survey.visible .postscript-cta {
+   font-size:18px
+   }
+   }
+   #user-satisfaction-survey [tabindex="-1"]:focus {
+   outline:none
+   }
+   #user-satisfaction-survey a:link,#user-satisfaction-survey a:active,#user-satisfaction-survey a:hover,#user-satisfaction-survey a:visited {
+   color:inherit
+   }
+   #user-satisfaction-survey a:focus {
+   color:#0b0c0c
+   }
+   #user-satisfaction-survey .survey-wrapper {
+   padding-top:15px;
+   padding-bottom:20px;
+   clear:both
+   }
+   #user-satisfaction-survey .survey-inner-wrapper {
+   max-width:30em
+   }
+   #user-satisfaction-survey .survey-title {
+   font-weight:700;
+   text-transform:none;
+   font-size:16px;
+   line-height:1.25;
+   margin-bottom:.5em
+   }
+   @media (min-width: 641px) {
+   #user-satisfaction-survey .survey-title {
+   font-size:19px;
+   line-height:1.3157894737
+   }
+   }
+   #user-satisfaction-survey .survey-close-button {
+   float:right;
+   font-weight:400;
+   text-transform:none;
+   font-size:12px;
+   line-height:1.25
+   }
+   @media (min-width: 641px) {
+   #user-satisfaction-survey .survey-close-button {
+   font-size:14px;
+   line-height:1.4285714286
+   }
+   }
+</style>
+<div class="main-navigation">
+   <nav>
+      <div id="user-satisfaction-survey-container">
+         <section aria-hidden="false" class="visible" id="user-satisfaction-survey">
+            <div class="survey-wrapper">
+               <a aria-labelledby="survey-title user-survey-cancel" class="survey-close-button" href="#user-survey-cancel" id="user-survey-cancel" role="button">Close</a>
+               <h2 class="survey-title" id="survey-title">Find out <a href="https://www.nhsbsa.nhs.uk/help-nhs-prescription-costs/prescription-prepayment-certificates/prescription-prepayment" target="_blank">how we use your personal information</a>.</h2>
+               <!--         <div id="email-survey-pre">
+                  <a aria-expanded="false" class="survey-primary-link" href="https://www.nhsbsa.nhs.uk/our-policies/privacy" role="button">Read our privacy policy</a>
+                  </div> -->
+            </div>
+         </section>
+      </div>
+   </nav>
+</div>
 <main id="content" role="main">
    <div class="grid-row">
       <div class="column-full">

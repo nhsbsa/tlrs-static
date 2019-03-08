@@ -1,0 +1,155 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+NHS Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+         <div class="heading-group">
+            <p>Challenge a Penalty Charge Notice</p>
+            <h1 class="heading-large">
+               We found an HC3 certificate and have recalculated your penalty charge 
+            </h1>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-half">
+         <p>You now owe a different amount.</p>
+         <h2 class="heading-medium">What to do next</h2>
+         <p>Choose one of the following</p>
+         <ul class="list list-bullet">
+            <li>
+               Pay the outstanding amount of £75.
+               <br>
+               <div class="form-group" style="margin-top:0.5em">
+                  <input class="button" type="submit" value="Pay now">
+               </div>
+            </li>
+            <li>
+               <form action="dwp-exemptionsdecs" method="get" class="form">
+                  If you were pregnant or getting benefits at the time you claimed, you can continue your challenge. You may have been entitled to free dental treatment.
+                  <br>
+                  <div class="form-group" style="margin-top:0.5em">
+                     <input class="button" type="submit" value="Continue your challenge">
+                  </div>
+               </form>
+            </li>
+         </ul>
+         <p>If you were not entitled to free dental treatment but have an exceptional reason why you made the claim, you can ask us to review your Penalty Charge Notice. <a href="">Find out if you can ask for a review.</a>
+         </p>
+         <h3 class="heading-medium">
+            How to avoid a future Penalty Charge Notice
+         </h3>
+         <p>We match exemptions automatically using a combination of your:</p>
+         <ul class="list list-bullet">
+            <li>
+               name
+            </li>
+            <li>
+               address
+            </li>
+            <li>
+               date of birth
+            </li>
+            <li>
+               NHS number
+            </li>
+         </ul>
+         <p>Make sure these are correct at your GP surgery, dental practice, and any benefits organisations.</p>
+         <div class="panel2">
+            <div class="callout callout--subtle" >
+               <!-- <h3 class="heading-small">Universal Credits- important information</h3> -->
+               <details>
+                  <summary><span class="summary">Contact us to check the details are correct on your NHS exemption</span></summary>
+                  <div class="panel panel-border-narrow">
+                     <h3 class="heading-small">For medical and maternity exemption certificates, and prescription prepayment certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1341</li>
+                     </ul>
+                     <h3 class="heading-small">For NHS tax credit exemption certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1347</li>
+                     </ul>
+                     <h3 class="heading-small">For HC2 and HC3 certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1343</li>
+                     </ul>
+                     <p>Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm (Your call will be charged at a local rate).</p>
+                  </div>
+               </details>
+            </div>
+         </div>
+         <p>If any of your details are not up to date, you may receive another Penalty Charge Notice in the future.</p>
+         <ul class="list options-list">
+            <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+         </ul>
+      </div>
+      <div class="column-half">
+         <div class="info-panel highlight ">
+            <h2 class="heading-large">Recalculated Penalty Charge Notice amount</h2>
+            <table class="chargesTable">
+               <tr>
+                  <td>Dental treatment charges</td>
+                  <td></td>
+                  <td>£59.10</td>
+               </tr>
+               <tr>
+                  <th>HC3 contribution</th>
+                  <th></th>
+                  <th>£30</th>
+               </tr>
+               <tr>
+                  <td>Amount you should’ve paid</td>
+                  <td></td>
+                  <td>£30</td>
+               </tr>
+               <tr>
+                  <th>Amount you’ve already paid</th>
+                  <th></th>
+                  <th>£5</th>
+               </tr>
+               <tr>
+                  <td>Outstanding treatment charge</td>
+                  <td></td>
+                  <td>£25</td>
+               </tr>
+               <tr>
+                  <th>Penalty charge</th>
+                  <th></th>
+                  <th>£100</th>
+               </tr>
+               <tr>
+                  <td><span class="strong">Total amount</span></td>
+                  <td></td>
+                  <td><span class="strong">£125</span></td>
+               </tr>
+               <tr>
+                 <th style="padding-bottom: 0;"></th>
+                 <th style="padding-bottom: 0;"></th>
+                 <th style="padding-bottom: 0;"></th>
+               </tr>
+               <tr>
+                  <th style="border: none; padding-bottom: 0;">Amount you’ve paid since</th>
+                  <th style="border: none; padding-bottom: 0;"></th>
+                  <th style="border: none; padding-bottom: 0;">£50</th>
+               </tr>
+               <tr>
+                  <td><span class="strong">Outstanding balance to pay</span></td>
+                  <td></td>
+                  <td><span class="strong">£75</span></td>
+               </tr>
+            </table>
+            <br>
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

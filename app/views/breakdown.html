@@ -1,2392 +1,2409 @@
 {% extends "layout_bsa.html" %}
-
 {% block page_title %}
-  Pay or challenge a Penalty Charge Notice
+Pay or challenge a Penalty Charge Notice
 {% endblock %}
-
 {% block content %}
-
 <!-- bsa table style overrides -->
 <style>
-table tr td {
-    border: none;
-    display: table-cell;
-    vertical-align: text-top;
-    padding: 2rem 3rem 0 0;
-  }
-  table tr td:nth-child(1) {
-    width: 30%;
-}
-  table tr td:nth-child(2) {
-     padding-right: 3rem;
-     width: 30%; 
-}
-table tr td:nth-child(3) {
-     padding-right: 3rem;
-}
+   table tr td {
+   border: none;
+   display: table-cell;
+   vertical-align: text-top;
+   padding: 2rem 3rem 0 0;
+   }
+   table tr td:nth-child(1) {
+   width: 30%;
+   }
+   table tr td:nth-child(2) {
+   padding-right: 3rem;
+   width: 30%; 
+   }
+   table tr td:nth-child(3) {
+   padding-right: 3rem;
+   }
 </style>
-
 <main id="content" role="main">
-  
-  <p>
-    <a href="index"> Back to all prototypes</a>
-  </p>
-  
-<div class="heading-group">
-     <p>Challenge Prototype</p>
-     <h1 class="heading-xlarge">
-      Page by page breakdown
-     </h1>
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Challenge Prototype</p>
+      <h1 class="heading-xlarge">
+         Page by page breakdown
+      </h1>
    </div>
-    
-    <div class="panel panel-border-narrow">
-    <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
-    </div>
-
-    <table class="check-table" id="review-table-one">
+   <div class="panel panel-border-narrow">
+      <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
+   </div>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Start of service pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>Start of service pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right">JIRA ticket number</th>
+         </tr>
       </thead>
-
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/start/start">Start</a>
-          </td>
-          <td>Pay or Challenge a Penalty Charge Notice</td>
-          <td>/start</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-729">PA233-729</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/start/startHc3">(New) Start kickout info updated</a>
-          </td>
-          <td>Pay or Challenge a Penalty Charge Notice</td>
-          <td>/start</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-729">PA233-729</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/start/start">Start</a>
+            </td>
+            <td>Pay or Challenge a Penalty Charge Notice</td>
+            <td>/start</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729">PA233-729</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/start/startHc3">(New) Start kickout info updated</a>
+            </td>
+            <td>Pay or Challenge a Penalty Charge Notice</td>
+            <td>/start</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729">PA233-729</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-
-    <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Verification pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>Verification pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/start/enter-pcn-number">Enter PCN number</a>
-          </td>
-          <td>What is your Penalty Charge Notice reference number</td>
-          <td>/enter-pcn-number</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/start/validate-dob">Verify date of birth</a>
-          </td>
-          <td>What is your date of birth</td>
-          <td>/date-of-birth</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/start/validate-charge">Verify PCN total amount</a>
-          </td>
-          <td>Enter the total amount on your Penalty Charge Notice</td>
-          <td>/pcn-total-amount</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="challenge/verify/nextGo">Check your answers</a>
-          </td>
-          <td>Check answers- unable to confirm identity</td>
-          <td>/unable-to-confirm-identity</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-865">PA233-865</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="challenge/verify/fail">Failed to verify</a>
-          </td>
-          <td>Further identity verification required</td>
-          <td>/more-infomation-needed</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-866">PA233-866</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/start/enter-pcn-number">Enter PCN number</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/start/validate-dob">Verify date of birth</a>
+            </td>
+            <td>What is your date of birth</td>
+            <td>/date-of-birth</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/start/validate-charge">Verify PCN total amount</a>
+            </td>
+            <td>Enter the total amount on your Penalty Charge Notice</td>
+            <td>/pcn-total-amount</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="challenge/verify/nextGo">Check your answers</a>
+            </td>
+            <td>Check answers- unable to confirm identity</td>
+            <td>/unable-to-confirm-identity</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-865">PA233-865</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="challenge/verify/fail">Failed to verify</a>
+            </td>
+            <td>Further identity verification required</td>
+            <td>/more-infomation-needed</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-866">PA233-866</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-    
-        <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Latency</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>Latency</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/latency">Latency mesage</a>
-          </td>
-          <td>We are processing your details</td>
-          <td> </td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1260">PA233-1260</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/latency">Latency mesage</a>
+            </td>
+            <td>We are processing your details</td>
+            <td> </td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1260">PA233-1260</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Return journey pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>Return journey pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/already-closed">Case already closed</a>
-          </td>
-          <td>Penalty Charge Notice already closed</td>
-          <td>/pcn-closed</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-864">PA233-864</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/already-closedDecs">Case already closed DECS</a>
-          </td>
-          <td>Penalty Charge Notice already closed</td>
-          <td>/pcn-closed</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-864">PA233-864</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/closedDca">Case already closed debt collection</a>
-          </td>
-          <td>Penalty Charge Notice already closed</td>
-          <td>/pcn-closed</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-864">PA233-864</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/already-held">Penalty view, already locked</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/already-closed">Case already closed</a>
+            </td>
+            <td>Penalty Charge Notice already closed</td>
+            <td>/pcn-closed</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-864">PA233-864</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/already-closedDecs">Case already closed DECS</a>
+            </td>
+            <td>Penalty Charge Notice already closed</td>
+            <td>/pcn-closed</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-864">PA233-864</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/closedDca">Case already closed debt collection</a>
+            </td>
+            <td>Penalty Charge Notice already closed</td>
+            <td>/pcn-closed</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-864">PA233-864</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/already-held">Penalty view, already locked</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-
-    <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th id="viewPages">Penalty view pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th id="viewPages">Penalty view pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/uc/uc-kickout2">Penalty view DECS and UC</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-decshc2">Penalty view DECS and HC2</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/penaltyView/pen-view-hc3-notFound">Penalty view DECS and HC3 (haven't found)</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-hc3">Penalty view DECS and HC3 (already found, haven't paid correct amount)</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-decsinc">Penalty view DECS and Income Support</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-decsesa">Penalty view DECS and income-related Employment and Support Allowance</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-decscred">Penalty view DECS and tax credits</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-decsjsa">Penalty view DECS and Income-based JSA</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-decspcgc">Penalty view DECS and PCGC</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-decsur">Penalty view DECS and surcharge</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-sur">Penalty view with surcharge applied</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1572">PA233-1572</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-medic">Penalty view MEDEX</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-matern">Penalty view MATEX</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-ppc">Penalty view PPC</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-creds">Penalty view tax credit</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-hc2">Penalty view HC2</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-jsa">Penalty view JSA</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-esa">Penalty view ESA</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-pcgc">Penalty view PCGC</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-pcgc">Penalty view (user has started paying)</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
-          </td>
-        </tr>
-                            <tr>
-          <td>
-            <a href="breakdown/penaltyView/penalty-view-uc">Penalty view (UC how to challenge info)</a>
-          </td>
-          <td>Penalty Charge Notice details</td>
-          <td>/view-your-pcn</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1740">PA233-1740</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/uc/uc-kickout2">Penalty view DECS and UC</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-decshc2">Penalty view DECS and HC2</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/pen-view-hc3-notFound">Penalty view DECS and HC3 (haven't found)</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-hc3">Penalty view DECS and HC3 (already found, haven't paid correct amount)</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-decsinc">Penalty view DECS and Income Support</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-decsesa">Penalty view DECS and income-related Employment and Support Allowance</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-decscred">Penalty view DECS and tax credits</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-decsjsa">Penalty view DECS and Income-based JSA</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-decspcgc">Penalty view DECS and PCGC</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-decsur">Penalty view DECS and surcharge</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-sur">Penalty view with surcharge applied</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1572">PA233-1572</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-medic">Penalty view MEDEX</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-matern">Penalty view MATEX</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-ppc">Penalty view PPC</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-creds">Penalty view tax credit</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-hc2">Penalty view HC2</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-jsa">Penalty view JSA</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-esa">Penalty view ESA</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-pcgc">Penalty view PCGC</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-pcgc">Penalty view (user has started paying)</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-733">PA233-733</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/penaltyView/penalty-view-uc">Penalty view (UC how to challenge info)</a>
+            </td>
+            <td>Penalty Charge Notice details</td>
+            <td>/view-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1740">PA233-1740</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Info page</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>Info page</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/info-page">Info page</a>
-          </td>
-          <td>What happens next?</td>
-          <td>/what-happens-next</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-734">PA233-734</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/info-page">Info page</a>
+            </td>
+            <td>What happens next?</td>
+            <td>/what-happens-next</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-734">PA233-734</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-    <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>'Did you have' pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>'Did you have' pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-medical">Did You have Medical Exemption?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-mat">Did You have Maternity Exemption?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-ppc">Did You have PPC?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-creds">Did You have tax credits?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-hc2">Did You have HC2?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-hc3">Did You have HC3?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-jsa">Did You have JSA?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-esa">Did You have IS/ESA?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
-          </td>
-        </tr>
-                            <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-is">Did You have Income Support?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-esa-decs">Did You have ESA?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-pcgc">Were you included in a PCGC?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-pcgcdecs">Were you claiming a PCGC?</a>
-          </td>
-          <td>Confirm your exemption or benefit</td>
-          <td>/did-you-have</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-bsa">Did You have any of these BSA exemptions?</a>
-          </td>
-          <td>Did you have any NHS exemptions?</td>
-          <td>/any-exemptions</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-962">PA233-962</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/didYou/did-you-bsadecs">Did You have any of these BSA exemptions (DECS)?</a>
-          </td>
-          <td>Did you have any NHS exemptions?</td>
-          <td>/any-exemptions</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-962">PA233-962</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/didYou/dwp-exemptions">Did You have any of these DWP benefits?</a>
-          </td>
-          <td>Were you claiming any benefits?</td>
-          <td>/any-benefits</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1006">PA233-1006</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/didYou/dwp-exemptionsdecs">Did You have any of these DWP benefits (DECS)?</a>
-          </td>
-          <td>Were you claiming any benefits?</td>
-          <td>/any-benefits</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1006">PA233-1006</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-medical">Did You have Medical Exemption?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-mat">Did You have Maternity Exemption?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-ppc">Did You have PPC?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-creds">Did You have tax credits?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-hc2">Did You have HC2?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-hc3">Did You have HC3?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-873">PA233-873</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-jsa">Did You have JSA?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-esa">Did You have IS/ESA?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-is">Did You have Income Support?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-esa-decs">Did You have ESA?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-pcgc">Were you included in a PCGC?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-pcgcdecs">Were you claiming a PCGC?</a>
+            </td>
+            <td>Confirm your exemption or benefit</td>
+            <td>/did-you-have</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1005">PA233-1005</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-bsa">Did You have any of these BSA exemptions?</a>
+            </td>
+            <td>Did you have any NHS exemptions?</td>
+            <td>/any-exemptions</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-962">PA233-962</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/did-you-bsadecs">Did You have any of these BSA exemptions (DECS)?</a>
+            </td>
+            <td>Did you have any NHS exemptions?</td>
+            <td>/any-exemptions</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-962">PA233-962</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/dwp-exemptions">Did You have any of these DWP benefits?</a>
+            </td>
+            <td>Were you claiming any benefits?</td>
+            <td>/any-benefits</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1006">PA233-1006</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/didYou/dwp-exemptionsdecs">Did You have any of these DWP benefits (DECS)?</a>
+            </td>
+            <td>Were you claiming any benefits?</td>
+            <td>/any-benefits</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1006">PA233-1006</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Kickout pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>Kickout pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-                  <tr>
-          <td>
-            <a href="breakdown/uc/uchc3-kickout">(old) Universal Credit or HC3 kickout page</a>
-          </td>
-          <td>Call us about your universal credit or HC3</td>
-          <td>/uc-hc3-kickout</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-                            <tr>
-          <td>
-            <a href="breakdown/uc/uc-kickout">(new) Universal Credit kickout page</a>
-          </td>
-          <td>Call us about your universal credit or HC3</td>
-          <td>/uc-hc3-kickout</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-
-<!--
-                            <tr>
-          <td>
+         <tr>
+            <td>
+               <a href="breakdown/uc/uchc3-kickout">(old) Universal Credit or HC3 kickout page</a>
+            </td>
+            <td>Call us about your universal credit or HC3</td>
+            <td>/uc-hc3-kickout</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/uc/uc-kickout">(new) Universal Credit kickout page</a>
+            </td>
+            <td>Call us about your universal credit or HC3</td>
+            <td>/uc-hc3-kickout</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <!--
+            <tr>
+            <td>
             <a href="breakdown/uc/uchc3-kickout2">New UC and HC3 kick out page (ii)</a>
-          </td>
-          <td>Call us about your universal credit or HC3</td>
-          <td>/uc-hc3-kickout</td>
-          <td class="right">
+            </td>
+            <td>Call us about your universal credit or HC3</td>
+            <td>/uc-hc3-kickout</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-        <tr>
-          <td>
-            <a href="breakdown/uc/uc-includes">Did your Universal Credit include a payment</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/uc/uc-take-home435">Was your take-home pay £435 or less</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/uc/uc-take-home">Was your take-home pay £935 or less</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-      </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
-      <thead>
-        <tr>
-          <th>Enter Certificate number pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/enterCert/cert-number-med">Enter MEDEX number</a>
-          </td>
-          <td>What is your exemption certificate number</td>
-          <td>/exemption-certificate-number</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/enterCert/cert-number-mat">Enter MATEX number</a>
-          </td>
-          <td>What is your exemption certificate number</td>
-          <td>/exemption-certificate-number</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/enterCert/cert-number-ppc">Enter PPC number</a>
-          </td>
-          <td>What is your exemption certificate number</td>
-          <td>/exemption-certificate-number</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/enterCert/cert-number-hc2">Enter HC2 number</a>
-          </td>
-          <td>What is your exemption certificate number</td>
-          <td>/exemption-certificate-number</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/enterCert/cert-number-hc3">Enter HC3 number</a>
-          </td>
-          <td>What is your exemption certificate number</td>
-          <td>/exemption-certificate-number-hc3</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/enterCert/cert-number-creds">Enter Tax credit number</a>
-          </td>
-          <td>What is your exemption certificate number</td>
-          <td>/exemption-certificate-number</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
-          </td>
-        </tr>
-      </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
-      <thead>
-        <tr>
-          <th>I do not have a certificate number journey</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/check-name">Check name</a>
-          </td>
-          <td>Is this your name?</td>
-          <td>/check-name</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-516">PA233-516</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/update-name">Update name</a>
-          </td>
-          <td>What is your name?</td>
-          <td>/update-name</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-724">PA233-724</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/check-dob">Check dob</a>
-          </td>
-          <td>Is this your date of birth?</td>
-          <td>/check-dob</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-725">PA233-725</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/update-dob">Update dob</a>
-          </td>
-          <td>What is your date of birth?</td>
-          <td>/update-dob</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-726">PA233-726</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/check-address">Check address</a>
-          </td>
-          <td>Is this your address?</td>
-          <td>/check-address</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-727">PA233-727</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/update-address">Update address</a>
-          </td>
-          <td>What is your address?</td>
-          <td>/update-address</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-728">PA233-728</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/check-your-answers">Check answers</a>
-          </td>
-          <td>Check your personal details are correct</td>
-          <td>/check-personal-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-870">PA233-870</a>
-          </td>
-        </tr>
-      </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
-      <thead>
-        <tr>
-          <th>'How should we contact you?' pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/contact/contact">How should we contact you?</a>
-          </td>
-          <td>How should we contact you about your case?</td>
-          <td>/contact-choices</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-926">PA233-926</a>
-              <br>
-              <a href="https://bsa2468.atlassian.net/browse/PA233-945">PA233-945</a>
-              
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/contact/update-email">What is your email address?</a>
-          </td>
-          <td>What is your email address?</td>
-          <td>/update-email</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-927">PA233-927</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/contact/update-telephone">What is your phone number?</a>
-          </td>
-          <td>What is your phone number?</td>
-          <td>/update-phone</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-928">PA233-928</a>
-          </td>
-        </tr>
-      </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
-      <thead>
-        <tr>
-          <th>'Check your answers' pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkPost">Check your answers post</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkEmail">Check your answers email</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkText">Check your answers phone call</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkBoth">Check your answers both</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/checkAns/checkNoExemp">Check your answers no exemption input</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkMed">Check your answers MEDEX</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkMat">Check your answers MATEX</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkPPC">Check your answers PPC</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkHc2">Check your answers HC2</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/checkAns/checkHc3">Check your answers HC3</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/checkAns/checkCreds">Check your answers Tax credit</a>
-          </td>
-          <td>Check your contact details are correct</td>
-          <td>/check-contact-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/check-your-answers-pcn">Check your answers - PCN verification</a>
-          </td>
-          <td>Check your answers</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/check-your-answers-pcn-unverified">Check your answers - PCN verification (unverified)</a>
-          </td>
-          <td>Check your answers</td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
-      <thead>
-        <tr>
-          <th>Disability, long term illness and pregnancy pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/ill/medical">Do you have a long-term medical condition or physical disability?</a>
-          </td>
-          <td>Do you have a medical condition or physical disability?</td>
-          <td>/medical-conditions</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1007">PA233-1007</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/ill/illnesses">Do you have any of these long-term medical conditions or disabilities?</a>
-          </td>
-          <td>Do you have any of these conditions or disabilities?</td>
-          <td>/check-medical-conditions</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1009">PA233-1009</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/pregnant">Were you pregnant?</a>
-          </td>
-          <td>Were you pregnant, or had you given birth in the previous 12 months</td>
-          <td>/were-you-pregnant</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1008">PA233-1008</a>
-          </td>
-        </tr>
-      </tbody>
-    </table><br>
-    
-            <table class="check-table" id="review-table-one">
-      <thead>
-        <tr>
-          <th>HC3 end pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right">JIRA ticket number</th>
-        </tr>
-      </thead>
-
-      <tbody>
-          
-                  <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/found/found">Exemption found and enough paid or don't have to pay</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href=""></a>
-          </td>
-        </tr>
-          
-                            <tr>
-          <td>
-            <a href="hc3/noPayment/result">Recalculation - Exemption not originally found, HC3 found by challenge</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href=""></a>
-          </td>
-        </tr>
-          
-                                      <tr>
-          <td>
-            <a href="hc3/lower2/result">Recalculation - HC3 with lower cont.</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href=""></a>
-          </td>
-        </tr>
-          
-                                      <tr>
-          <td>
-            <a href="hc3/higher/result">Still owe original pcn - HC3 with higher cont.</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href=""></a>
-          </td>
-        </tr>
-          
-                                                <tr>
-          <td>
-            <a href="hc3/same/result">Still owe original pcn - Same HC3</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href=""></a>
-          </td>
-        </tr>
-          
-<!--
-                            <tr>
-          <td>
-            <a href="breakdown/hc3/tooMuch">We found an HC3 for you but you have paid too much money</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/hc3/tooLittle">We found an HC3 for you but you have paid too little money</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/hc3/newHc3">We didn't find your exemption but you said you have an HC3. We found your HC3 you must pay the HC3 amount</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
-          </td>
-        </tr>
--->
-          
-      </tbody>
-    </table>
-    <br>
-
-
-    <table class="check-table" id="review-table-one">
-      <thead>
-        <tr>
-          <th>End pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
-      </thead>
-      <tbody>
-<!--
-        <tr>
-          <td> 
-            <a href="breakdown/endPages/end-pages-updated/found/found">We found your exemption</a>
-          </td>
-          <td>No charges to pay- matched details</td>
-          <td>/found-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
-          </td>
-        </tr>
--->
-                  <tr>
-          <td> 
-            <a href="breakdown/endPages/end-pages-updated/found/foundv2">We found your exemption (updated content)</a>
-          </td>
-          <td>No charges to pay- matched details</td>
-          <td>/found-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
-          </td>
-        </tr>
-<!--
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/found/med-updated">We found MEDEX</a>
-          </td>
-          <td>No charges to pay- matched details</td>
-          <td>/found-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/found/mat-updated">We found MATEX</a>
-          </td>
-          <td>No charges to pay- matched details</td>
-          <td>/found-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/found/ppc-updated">We found PPC</a>
-          </td>
-          <td>No charges to pay- matched details</td>
-          <td>/found-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-             <a href="breakdown/endPages/end-pages-updated/found/hc2-updated">We found HC2</a>
-          </td>
-          <td>No charges to pay- matched details</td>
-          <td>/found-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/found/taxcredit-updated">We found Tax Credit</a>
-          </td>
-          <td>No charges to pay- matched details</td>
-          <td>/found-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-med">MEDEX not found</a>
-          </td>
-          <td>We cannot find your medical exemption certificate</td>
-          <td>/cannot-find-medical-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-mat">MATEX not found</a>
-          </td>
-          <td>We cannot find your maternity exemption certificate</td>
-          <td>/cannot-find-maternity-exemption</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
-          </td>
-        </tr>        
--->
-              
-              <!--
-                                  <tr>
-         <td><a href="breakdown/endPages/no-ppc">PPC not found</a></td>
-           <td></td>
-         <td class="right"><a href="#">JIRA</a></td>
-       </tr>
-                                  <tr>
-         <td><a href="breakdown/endPages/no-hc2">HC2 not found</a></td>
-           <td></td>
-         <td class="right"><a href="#">JIRA</a></td>
-       </tr>
-                                  <tr>
-         <td><a href="breakdown/endPages/no-cred">Tax credit not found</a></td>
-           <td></td>
-         <td class="right"><a href="#">JIRA</a></td>
-       </tr>
--->
-        <tr>
-          <td>
-            <!-- <a href="breakdown/endPages/out-of-date-med">MEDEX has expired</a> -->
-            <a href="breakdown/endPages/end-pages-updated/expired/expired">Exemption certificate has expired</a>
-          </td>
-          <td>Exemption certificate expired</td>
-          <td>/exemption-expired</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
-          </td>
-        </tr>
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+              <td>
+                <a href="breakdown/uc/uc-includes">Did your Universal Credit include a payment</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td class="right">
+                <a href="#">JIRA</a>
+              </td>
+            </tr>
                       <tr>
-          <td>
-            <!-- <a href="breakdown/endPages/out-of-date-med">MEDEX has expired</a> -->
-            <a href="breakdown/endPages/end-pages-updated/expired/expiredDecs">Exemption certificate has expired DECS</a>
-          </td>
-          <td>Exemption certificate expired</td>
-          <td>/exemption-expired</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
-          </td>
-        </tr>
-<!--
+              <td>
+                <a href="breakdown/uc/uc-take-home435">Was your take-home pay £435 or less</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td class="right">
+                <a href="#">JIRA</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="breakdown/uc/uc-take-home">Was your take-home pay £935 or less</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td class="right">
+                <a href="#">JIRA</a>
+              </td>
+            </tr>
+            -->
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>Enter Certificate number pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/enterCert/cert-number-med">Enter MEDEX number</a>
+            </td>
+            <td>What is your exemption certificate number</td>
+            <td>/exemption-certificate-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/enterCert/cert-number-mat">Enter MATEX number</a>
+            </td>
+            <td>What is your exemption certificate number</td>
+            <td>/exemption-certificate-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/enterCert/cert-number-ppc">Enter PPC number</a>
+            </td>
+            <td>What is your exemption certificate number</td>
+            <td>/exemption-certificate-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/enterCert/cert-number-hc2">Enter HC2 number</a>
+            </td>
+            <td>What is your exemption certificate number</td>
+            <td>/exemption-certificate-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/enterCert/cert-number-hc3">Enter HC3 number</a>
+            </td>
+            <td>What is your exemption certificate number</td>
+            <td>/exemption-certificate-number-hc3</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/enterCert/cert-number-creds">Enter Tax credit number</a>
+            </td>
+            <td>What is your exemption certificate number</td>
+            <td>/exemption-certificate-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-874">PA233-874</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>I do not have a certificate number journey</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/check-name">Check name</a>
+            </td>
+            <td>Is this your name?</td>
+            <td>/check-name</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-516">PA233-516</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/update-name">Update name</a>
+            </td>
+            <td>What is your name?</td>
+            <td>/update-name</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-724">PA233-724</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/check-dob">Check dob</a>
+            </td>
+            <td>Is this your date of birth?</td>
+            <td>/check-dob</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-725">PA233-725</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/update-dob">Update dob</a>
+            </td>
+            <td>What is your date of birth?</td>
+            <td>/update-dob</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-726">PA233-726</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/check-address">Check address</a>
+            </td>
+            <td>Is this your address?</td>
+            <td>/check-address</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-727">PA233-727</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/update-address">Update address</a>
+            </td>
+            <td>What is your address?</td>
+            <td>/update-address</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-728">PA233-728</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/check-your-answers">Check answers</a>
+            </td>
+            <td>Check your personal details are correct</td>
+            <td>/check-personal-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-870">PA233-870</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>'How should we contact you?' pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/contact/contact">How should we contact you?</a>
+            </td>
+            <td>How should we contact you about your case?</td>
+            <td>/contact-choices</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-926">PA233-926</a>
+               <br>
+               <a href="https://bsa2468.atlassian.net/browse/PA233-945">PA233-945</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/contact/update-email">What is your email address?</a>
+            </td>
+            <td>What is your email address?</td>
+            <td>/update-email</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-927">PA233-927</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/contact/update-telephone">What is your phone number?</a>
+            </td>
+            <td>What is your phone number?</td>
+            <td>/update-phone</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-928">PA233-928</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>'Check your answers' pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkPost">Check your answers post</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkEmail">Check your answers email</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkText">Check your answers phone call</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkBoth">Check your answers both</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkNoExemp">Check your answers no exemption input</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkMed">Check your answers MEDEX</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkMat">Check your answers MATEX</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkPPC">Check your answers PPC</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkHc2">Check your answers HC2</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkHc3">Check your answers HC3</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/checkAns/checkCreds">Check your answers Tax credit</a>
+            </td>
+            <td>Check your contact details are correct</td>
+            <td>/check-contact-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-929">PA233-929</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/check-your-answers-pcn">Check your answers - PCN verification</a>
+            </td>
+            <td>Check your answers</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/check-your-answers-pcn-unverified">Check your answers - PCN verification (unverified)</a>
+            </td>
+            <td>Check your answers</td>
+            <td></td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>Disability, long term illness and pregnancy pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/ill/medical">Do you have a long-term medical condition or physical disability?</a>
+            </td>
+            <td>Do you have a medical condition or physical disability?</td>
+            <td>/medical-conditions</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1007">PA233-1007</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/ill/illnesses">Do you have any of these long-term medical conditions or disabilities?</a>
+            </td>
+            <td>Do you have any of these conditions or disabilities?</td>
+            <td>/check-medical-conditions</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1009">PA233-1009</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/pregnant">Were you pregnant?</a>
+            </td>
+            <td>Were you pregnant, or had you given birth in the previous 12 months</td>
+            <td>/were-you-pregnant</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1008">PA233-1008</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>HC3 end pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <td>
-           <a href="breakdown/endPages/out-of-date-mat">MATEX has expired</a> 
-          <a href="breakdown/endPages/end-pages-updated/expired/mat-expired">MATEX has expired</a>
-          </td>
-          <td>Exemption certificate expired</td>
-          <td>/exemption-expired</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
-          </td>
+          <td><span class="bold">User has not started paying</span></td>
         </tr>
-        <tr>
-          <td>
-             <a href="breakdown/endPages/out-of-date-ppc">PPC has expired</a> 
-            <a href="breakdown/endPages/end-pages-updated/expired/ppc-expired">PPC has expired</a>
-          </td>
-          <td>Exemption certificate expired</td>
-          <td>/exemption-expired</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
-          </td>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/found/found">Exemption found and enough paid or don't have to pay</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="hc3/noPayment/result">Recalculation - Exemption not originally found, HC3 found by challenge</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="hc3/lower2/result">Recalculation - HC3 with lower cont.</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="hc3/higher/result">Still owe original pcn - HC3 with higher cont.</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="hc3/same/result">Still owe original pcn - Same HC3</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+
+         <tr>
+          <td><span class="bold">User has started paying</span></td>
         </tr>
-        <tr>
-          <td>
-             <a href="breakdown/endPages/out-of-date-hc2">HC2 has expired</a> 
-            <a href="breakdown/endPages/end-pages-updated/expired/hc2-expired">HC2 has expired</a>
-          </td>
-          <td>Exemption certificate expired</td>
-          <td>/exemption-expired</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-           <a href="breakdown/endPages/out-of-date-cred">Tax Credit has expired</a> 
-          <a href="breakdown/endPages/end-pages-updated/expired/taxcredit-expired">Tax Credit has expired</a>
-          </td>
-          <td>Exemption certificate expired</td>
-          <td>/exemption-expired</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
-          </td>
-        </tr>
--->
-        <tr>
-          <td>
-<!--      <a href="breakdown/hold/contact">PCN is on hold for 2 days</a> -->
-          <a href="breakdown/endPages/end-pages-updated/on-hold/contact">PCN is on hold for 2 days</a>
-          </td>
-          <td>Reviewing your case</td>
-          <td>/we-will-contact-you</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-876">PA233-876</a>
-          </td>
-        </tr>
-                            <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/matex-decs">PCN is on hold for 60 days Matex (DECS)</a>
-          </td>
-          <td>If you were pregnant at the time or had given birth in the previous 12 months you were entitled to free dental treatment. </td>
-          <td>/were-pregnant</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <!-- <a href="breakdown/hold/medex">PCN is on hold for 60 days, apply for Medex</a> -->
-            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-med">PCN is on hold for 60 days, apply for Medex</a>
-          </td>
-          <td>Cannot find medical exemption certificate but you can still apply</td>
-          <td>/on-hold-medical-exemption-apply</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>  
+
         <tr>
             <td>
-            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-mat">PCN is on hold for 60 days, apply for Matex</a>
-          </td>
+               <a href="hc3/partialPayment/noPaymentResult">Recalculation - Exemption not originally found, HC3 found by challenge</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="hc3/partialPayment/lower2Result">Recalculation - HC3 with lower cont.</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="hc3/partialPayment/equalResult">Recalculation based on found HC3 with lower cont. - paid amount equal to recalc. amount</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="hc3/partialPayment/higherResult">Still owe original pcn - HC3 with higher cont.</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="hc3/partialPayment/sameResult">Still owe original pcn - Same HC3</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href=""></a>
+            </td>
+         </tr>
+
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/hc3/tooMuch">We found an HC3 for you but you have paid too much money</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <a href="breakdown/hc3/tooLittle">We found an HC3 for you but you have paid too little money</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <a href="breakdown/hc3/newHc3">We didn't find your exemption but you said you have an HC3. We found your HC3 you must pay the HC3 amount</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1263">PA233-1263</a>
+            </td>
+            </tr>
+            -->
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>End pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <!--
+            <tr>
+              <td> 
+                <a href="breakdown/endPages/end-pages-updated/found/found">We found your exemption</a>
+              </td>
+              <td>No charges to pay- matched details</td>
+              <td>/found-exemption</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+              </td>
+            </tr>
+            -->
+         <tr>
+            <td> 
+               <a href="breakdown/endPages/end-pages-updated/found/foundv2">We found your exemption (updated content)</a>
+            </td>
+            <td>No charges to pay- matched details</td>
+            <td>/found-exemption</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+            </td>
+         </tr>
+         <!--
+            <tr>
+              <td>
+                <a href="breakdown/endPages/end-pages-updated/found/med-updated">We found MEDEX</a>
+              </td>
+              <td>No charges to pay- matched details</td>
+              <td>/found-exemption</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="breakdown/endPages/end-pages-updated/found/mat-updated">We found MATEX</a>
+              </td>
+              <td>No charges to pay- matched details</td>
+              <td>/found-exemption</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="breakdown/endPages/end-pages-updated/found/ppc-updated">We found PPC</a>
+              </td>
+              <td>No charges to pay- matched details</td>
+              <td>/found-exemption</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                 <a href="breakdown/endPages/end-pages-updated/found/hc2-updated">We found HC2</a>
+              </td>
+              <td>No charges to pay- matched details</td>
+              <td>/found-exemption</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="breakdown/endPages/end-pages-updated/found/taxcredit-updated">We found Tax Credit</a>
+              </td>
+              <td>No charges to pay- matched details</td>
+              <td>/found-exemption</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+              </td>
+            </tr>
             
-          <td>Cannot find maternity exemption certificate but you can still apply</td>
-          <td>/on-hold-maternity-exemption-apply</td>
-          <td class="right">
+            <tr>
+              <td>
+                <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-med">MEDEX not found</a>
+              </td>
+              <td>We cannot find your medical exemption certificate</td>
+              <td>/cannot-find-medical-exemption</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-mat">MATEX not found</a>
+              </td>
+              <td>We cannot find your maternity exemption certificate</td>
+              <td>/cannot-find-maternity-exemption</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
+              </td>
+            </tr>        
+            -->
+         <!--
+            <tr>
+            <td><a href="breakdown/endPages/no-ppc">PPC not found</a></td>
+            <td></td>
+            <td class="right"><a href="#">JIRA</a></td>
+            </tr>
+            <tr>
+            <td><a href="breakdown/endPages/no-hc2">HC2 not found</a></td>
+            <td></td>
+            <td class="right"><a href="#">JIRA</a></td>
+            </tr>
+            <tr>
+            <td><a href="breakdown/endPages/no-cred">Tax credit not found</a></td>
+            <td></td>
+            <td class="right"><a href="#">JIRA</a></td>
+            </tr>
+            -->
+         <tr>
+            <td>
+               <!-- <a href="breakdown/endPages/out-of-date-med">MEDEX has expired</a> -->
+               <a href="breakdown/endPages/end-pages-updated/expired/expired">Exemption certificate has expired</a>
+            </td>
+            <td>Exemption certificate expired</td>
+            <td>/exemption-expired</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <!-- <a href="breakdown/endPages/out-of-date-med">MEDEX has expired</a> -->
+               <a href="breakdown/endPages/end-pages-updated/expired/expiredDecs">Exemption certificate has expired DECS</a>
+            </td>
+            <td>Exemption certificate expired</td>
+            <td>/exemption-expired</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
+            </td>
+         </tr>
+         <!--
+            <tr>
+              <td>
+               <a href="breakdown/endPages/out-of-date-mat">MATEX has expired</a> 
+              <a href="breakdown/endPages/end-pages-updated/expired/mat-expired">MATEX has expired</a>
+              </td>
+              <td>Exemption certificate expired</td>
+              <td>/exemption-expired</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                 <a href="breakdown/endPages/out-of-date-ppc">PPC has expired</a> 
+                <a href="breakdown/endPages/end-pages-updated/expired/ppc-expired">PPC has expired</a>
+              </td>
+              <td>Exemption certificate expired</td>
+              <td>/exemption-expired</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                 <a href="breakdown/endPages/out-of-date-hc2">HC2 has expired</a> 
+                <a href="breakdown/endPages/end-pages-updated/expired/hc2-expired">HC2 has expired</a>
+              </td>
+              <td>Exemption certificate expired</td>
+              <td>/exemption-expired</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+               <a href="breakdown/endPages/out-of-date-cred">Tax Credit has expired</a> 
+              <a href="breakdown/endPages/end-pages-updated/expired/taxcredit-expired">Tax Credit has expired</a>
+              </td>
+              <td>Exemption certificate expired</td>
+              <td>/exemption-expired</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-877">PA233-877</a>
+              </td>
+            </tr>
+            -->
+         <tr>
+            <td>
+               <!--      <a href="breakdown/hold/contact">PCN is on hold for 2 days</a> -->
+               <a href="breakdown/endPages/end-pages-updated/on-hold/contact">PCN is on hold for 2 days</a>
+            </td>
+            <td>Reviewing your case</td>
+            <td>/we-will-contact-you</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-876">PA233-876</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/matex-decs">PCN is on hold for 60 days Matex (DECS)</a>
+            </td>
+            <td>If you were pregnant at the time or had given birth in the previous 12 months you were entitled to free dental treatment. </td>
+            <td>/were-pregnant</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-875">PA233-875</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <!-- <a href="breakdown/hold/medex">PCN is on hold for 60 days, apply for Medex</a> -->
+               <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-med">PCN is on hold for 60 days, apply for Medex</a>
+            </td>
+            <td>Cannot find medical exemption certificate but you can still apply</td>
+            <td>/on-hold-medical-exemption-apply</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <tr>
+            <td>  
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-mat">PCN is on hold for 60 days, apply for Matex</a>
+            </td>
+            <td>Cannot find maternity exemption certificate but you can still apply</td>
+            <td>/on-hold-maternity-exemption-apply</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med">DWP ben and PCN is on hold for 60 days for Medex</a>
+            </td>
+            <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-med</td>
+            <td class="right">
+            <a href="https://bsa2468.atlassian.net/browse/PA233-1025">PA233-1025</a>
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med-scen1">DWP ben and PCN is on hold for 60 days for Medex scenario 1</a>
+            </td>
+            <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-med</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
-<!--
-              <tr>
-        <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med">DWP ben and PCN is on hold for 60 days for Medex</a>
-           </td>
-          <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-med</td>
-          <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-1025">PA233-1025</a>
-          </td>
-        </tr>
--->
-<!--
-                            <tr>
-        <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med-scen1">DWP ben and PCN is on hold for 60 days for Medex scenario 1</a>
-           </td>
-          <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-med</td>
-          <td class="right">
-              <a href="#">JIRA</a>
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med-scen1-2">DWP ben and PCN is on hold for 60 days for Medex scenario 1</a>
+            </td>
+            <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-med</td>
+            <td class="right">
+            <a href="#">JIRA</a>
             <a href="https://bsa2468.atlassian.net/browse/PA233-1025">PA233-1025</a>
-          </td>
-        </tr>
--->
-<!--
-                                         <tr>
-        <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med-scen1-2">DWP ben and PCN is on hold for 60 days for Medex scenario 1</a>
-           </td>
-          <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-med</td>
-          <td class="right">
-              <a href="#">JIRA</a>
+            </td>
+            </tr> 
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med-scen2">DWP ben and PCN is on hold for 60 days for Medex scenario 2</a>
+            </td>
+            <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-med</td>
+            <td class="right">
+            <a href="#">JIRA</a>
             <a href="https://bsa2468.atlassian.net/browse/PA233-1025">PA233-1025</a>
-          </td>
-        </tr> 
--->
-<!--
-                                          <tr>
-        <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med-scen2">DWP ben and PCN is on hold for 60 days for Medex scenario 2</a>
-           </td>
-          <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-med</td>
-          <td class="right">
-              <a href="#">JIRA</a>
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med-scen2-2">DWP ben and PCN is on hold for 60 days for Medex scenario 2</a>
+            </td>
+            <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-med</td>
+            <td class="right">
+            <a href="#">JIRA</a>
             <a href="https://bsa2468.atlassian.net/browse/PA233-1025">PA233-1025</a>
-          </td>
-        </tr>
--->
-              
-<!--
-                                                        <tr>
-        <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-med-scen2-2">DWP ben and PCN is on hold for 60 days for Medex scenario 2</a>
-           </td>
-          <td>Cannot find medical exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-med</td>
-          <td class="right">
-              <a href="#">JIRA</a>
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1025">PA233-1025</a>
-          </td>
-        </tr>
--->
-              
-<!--
-        <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat">DWP ben and PCN is on hold for 60 days for Matex</a>
-          </td>
-          <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-mat</td>
-          <td class="right">
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+              <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat">DWP ben and PCN is on hold for 60 days for Matex</a>
+              </td>
+              <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
+              <td>/on-hold-dwp-mat</td>
+              <td class="right">
+                <a href="https://bsa2468.atlassian.net/browse/PA233-1024">PA233-1024</a>
+              </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-scen1">DWP ben and PCN is on hold for 60 days for Matex scenario 1</a>
+            </td>
+            <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-mat</td>
+            <td class="right">
+            <a href="#">JIRA</a>
             <a href="https://bsa2468.atlassian.net/browse/PA233-1024">PA233-1024</a>
-          </td>
-        </tr>
--->
-              
-<!--
-                      <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-scen1">DWP ben and PCN is on hold for 60 days for Matex scenario 1</a>
-          </td>
-          <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-mat</td>
-          <td class="right">
-              <a href="#">JIRA</a>
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-scen1-2">DWP ben and PCN is on hold for 60 days for Matex scenario 1</a>
+            </td>
+            <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-mat</td>
+            <td class="right">
+            <a href="#">JIRA</a>
             <a href="https://bsa2468.atlassian.net/browse/PA233-1024">PA233-1024</a>
-          </td>
-        </tr>
--->
-<!--
-                                    <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-scen1-2">DWP ben and PCN is on hold for 60 days for Matex scenario 1</a>
-          </td>
-          <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-mat</td>
-          <td class="right">
-              <a href="#">JIRA</a>
+            </td>
+            </tr>
+            
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-scen2">DWP ben and PCN is on hold for 60 days for Matex scenario 2</a>
+            </td>
+            <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-mat</td>
+            <td class="right">
+            <a href="#">JIRA</a>
             <a href="https://bsa2468.atlassian.net/browse/PA233-1024">PA233-1024</a>
-          </td>
-        </tr>
-              
--->
-<!--
-                                    <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-scen2">DWP ben and PCN is on hold for 60 days for Matex scenario 2</a>
-          </td>
-          <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-mat</td>
-          <td class="right">
-              <a href="#">JIRA</a>
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-scen2-2">DWP ben and PCN is on hold for 60 days for Matex scenario 2</a>
+            </td>
+            <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-mat</td>
+            <td class="right">
+            <a href="#">JIRA</a>
             <a href="https://bsa2468.atlassian.net/browse/PA233-1024">PA233-1024</a>
-          </td>
-        </tr>
--->
-<!--
-                                                  <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-scen2-2">DWP ben and PCN is on hold for 60 days for Matex scenario 2</a>
-          </td>
-          <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-mat</td>
-          <td class="right">
-              <a href="#">JIRA</a>
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-decs">DWP ben and PCN is on hold for 60 days for Matex (DECS)</a>
+            </td>
+            <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
+            <td>/on-hold-dwp-mat</td>
+            <td class="right">
             <a href="https://bsa2468.atlassian.net/browse/PA233-1024">PA233-1024</a>
-          </td>
-        </tr>
--->
-              
-<!--
-                <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/on-hold-dwp-mat-decs">DWP ben and PCN is on hold for 60 days for Matex (DECS)</a>
-          </td>
-          <td>Cannot find maternity exemption certificate but you can still apply or prove your benefit</td>
-          <td>/on-hold-dwp-mat</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1024">PA233-1024</a>
-          </td>
-        </tr>
--->
-<!--
-              <tr>
-          <td>
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
             <a href="breakdown/endPages/end-pages-updated/on-hold/over-uc">You were not entitled to UC</a>
-          </td>
-          <td>Not entitled under Universal Credit</td>
-          <td>/not-entitled-under-uc</td>
-          <td class="right">
+            </td>
+            <td>Not entitled under Universal Credit</td>
+            <td>/not-entitled-under-uc</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-        <tr>
-          <td>
-            <!-- <a href="breakdown/endPages/cant-find">We can't find your details</a> -->
-            <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-cert"> We can't find your details</a>
-          </td>
-          <td>We cannot find your details</td>
-          <td>/cannot-find-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
-          </td>
-        </tr>
-                      <tr>
-          <td>
-            <!-- <a href="breakdown/endPages/cant-find">We can't find your details</a> -->
-            <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-cert-decs"> We can't find your details (DECS)</a>
-          </td>
-          <td>We cannot find your details</td>
-          <td>/cannot-find-details</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
-          </td>
-        </tr>
-                                                            <tr>
-          <td>
-            <a href="breakdown/proof-mat">We need proof you were pregnant</a>
-          </td>
-          <td>We need proof you were pregnant</td>
-          <td>/pregnancy-proof</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-<!--
-                  <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
+            </td>
+            </tr>
+            -->
+         <tr>
+            <td>
+               <!-- <a href="breakdown/endPages/cant-find">We can't find your details</a> -->
+               <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-cert"> We can't find your details</a>
+            </td>
+            <td>We cannot find your details</td>
+            <td>/cannot-find-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <!-- <a href="breakdown/endPages/cant-find">We can't find your details</a> -->
+               <a href="breakdown/endPages/end-pages-updated/cannot-find/cant-find-cert-decs"> We can't find your details (DECS)</a>
+            </td>
+            <td>We cannot find your details</td>
+            <td>/cannot-find-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-878">PA233-878</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/proof-mat">We need proof you were pregnant</a>
+            </td>
+            <td>We need proof you were pregnant</td>
+            <td>/pregnancy-proof</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/jsa-proof-scen0">We need proof of JSA</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-        <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
-            <a href="breakdown/endPages/end-pages-updated/proof/jsa-proof">We need proof of JSA scenario 1</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                  <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+              <td>
+                 <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
+                <a href="breakdown/endPages/end-pages-updated/proof/jsa-proof">We need proof of JSA scenario 1</a>
+              </td>
+              <td>We need proof of your benefit</td>
+              <td>/we-need-proof</td>
+              <td class="right">
+                <a href="#">JIRA</a>
+              </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/jsa-proof-scen2">We need proof of JSA scenario 2</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                                              <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/isesa-proof-scen0">We need proof of IS or ESA</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                                    <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/isesa-proof">We need proof of IS or ESA scenario 1</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                                              <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/isesa-proofScen2">We need proof of IS or ESA scenario 2</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                                <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/pcgc-proof-scen0">We need proof of PCGC</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                      <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/pcgc-proof">We need proof of PCGC scenario 1</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                                <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/pcgc-proofScen2">We need proof of PCGC scenario 2</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                            <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/jsa-proofDecs-scen0">We need proof of JSA (DECS)</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                  <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/jsa-proofDecs">We need proof of JSA (DECS) scenario 1</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                            <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-benefit">We need proof of JSA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/jsa-proofDecs-scen2">We need proof of JSA (DECS) scenario 2</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-
-<!--
-                                    <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/is-proof">We need proof of IS</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                                                            <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/is-proofDecs-scen0">We need proof of IS (DECS)</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                                                  <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/is-proofDecs">We need proof of IS (DECS) scenario 1</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-          
-<!--
-                                                            <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/is-proofDecs-scen2">We need proof of IS (DECS) scenario 2</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-        <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
-            <a href="breakdown/endPages/end-pages-updated/proof/esa-proof">We need proof of ESA</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                            <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+              <td>
+                 <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+                <a href="breakdown/endPages/end-pages-updated/proof/esa-proof">We need proof of ESA</a>
+              </td>
+              <td>We need proof of your benefit</td>
+              <td>/we-need-proof</td>
+              <td class="right">
+                <a href="#">JIRA</a>
+              </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/esa-proofDecs-scen0">We need proof of ESA (DECS)</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                  <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/esa-proofDecs">We need proof of ESA (DECS) scenario 1</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-          
-<!--
-                            <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-esa">We need proof of ESA</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/esa-proofDecs-scen2">We need proof of ESA (DECS) scenario 2</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                  <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/pcgc-proofDecs-scen0">We need proof of PCGC (DECS)</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                  <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/pcgc-proofDecs">We need proof of PCGC (DECS) scenario 1</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-<!--
-                            <tr>
-          <td>
-             <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
+            </td>
+            </tr>
+            -->
+         <!--
+            <tr>
+            <td>
+            <a href="breakdown/endPages/proof-of-pcgc">We need proof of PCGC</a> 
             <a href="breakdown/endPages/end-pages-updated/proof/pcgc-proofDecs-scen2">We need proof of PCGC (DECS) scenario 2</a>
-          </td>
-          <td>We need proof of your benefit</td>
-          <td>/we-need-proof</td>
-          <td class="right">
+            </td>
+            <td>We need proof of your benefit</td>
+            <td>/we-need-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-                                              <tr>
-          <td>
-            <a href="breakdown/examples">Examples of all proof</a>
-          </td>
-          <td>Examples of proof and how to send it</td>
-          <td>/examples-of-all-proof</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-                                                            <tr>
-          <td>
-            <a href="breakdown/examplesDecs">Examples of all proof DECS</a>
-          </td>
-          <td>Examples of proof and how to send it</td>
-          <td>/examples-of-all-proof</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-<!--
-                                <tr>
-          <td>
+            </td>
+            </tr>
+            -->
+         <tr>
+            <td>
+               <a href="breakdown/examples">Examples of all proof</a>
+            </td>
+            <td>Examples of proof and how to send it</td>
+            <td>/examples-of-all-proof</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/examplesDecs">Examples of all proof DECS</a>
+            </td>
+            <td>Examples of proof and how to send it</td>
+            <td>/examples-of-all-proof</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <!--
+            <tr>
+            <td>
             <a href="breakdown/proof-med">Examples of Medex proof</a>
-          </td>
-          <td>Examples of proof and how to send it</td>
-          <td>/examples-of-proof</td>
-          <td class="right">
+            </td>
+            <td>Examples of proof and how to send it</td>
+            <td>/examples-of-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
-
-                                              <tr>
-          <td>
+            </td>
+            </tr>
+            
+                          <tr>
+            <td>
             <a href="breakdown/proof-ppc">Examples of PPC proof</a>
-          </td>
-          <td>Examples of proof and how to send it</td>
-          <td>/examples-of-proof</td>
-          <td class="right">
+            </td>
+            <td>Examples of proof and how to send it</td>
+            <td>/examples-of-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
-                                              <tr>
-          <td>
+            </td>
+            </tr>
+                          <tr>
+            <td>
             <a href="breakdown/proof-hc2">Examples of HC2 proof</a>
-          </td>
-          <td>Examples of proof and how to send it</td>
-          <td>/examples-of-proof</td>
-          <td class="right">
+            </td>
+            <td>Examples of proof and how to send it</td>
+            <td>/examples-of-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
-                                              <tr>
-          <td>
+            </td>
+            </tr>
+                          <tr>
+            <td>
             <a href="breakdown/proof-taxCred">Examples of Tax Credit proof</a>
-          </td>
-          <td>Examples of proof and how to send it</td>
-          <td>/examples-of-proof</td>
-          <td class="right">
+            </td>
+            <td>Examples of proof and how to send it</td>
+            <td>/examples-of-proof</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/exep-circs/exep-circs">Exceptional circumstances </a>
-          </td>
-          <td>Who can ask for a Penalty Charge Notice review</td>
-          <td>/exceptional-circumstances</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/exep-circs/exep-circsdecs">Exceptional circumstances DECS</a>
-          </td>
-          <td>Who can ask for a Penalty Charge Notice review</td>
-          <td>/exceptional-circumstances</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/exep-circs/how-review2">Penalty Charge Notice review</a>
-          </td>
-          <td>Asking for a Penalty Charge Notice review</td>
-          <td>/pcn-review</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/exep-circs/how-review2decs">Penalty Charge Notice review DECS</a>
-          </td>
-          <td>Asking for a Penalty Charge Notice review</td>
-          <td>/pcn-review</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-<!--
-                            <tr>
-          <td>
+            </td>
+            </tr>
+            -->
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/exep-circs/exep-circs">Exceptional circumstances </a>
+            </td>
+            <td>Who can ask for a Penalty Charge Notice review</td>
+            <td>/exceptional-circumstances</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/exep-circs/exep-circsdecs">Exceptional circumstances DECS</a>
+            </td>
+            <td>Who can ask for a Penalty Charge Notice review</td>
+            <td>/exceptional-circumstances</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/exep-circs/how-review2">Penalty Charge Notice review</a>
+            </td>
+            <td>Asking for a Penalty Charge Notice review</td>
+            <td>/pcn-review</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/exep-circs/how-review2decs">Penalty Charge Notice review DECS</a>
+            </td>
+            <td>Asking for a Penalty Charge Notice review</td>
+            <td>/pcn-review</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <!--
+            <tr>
+            <td>
             <a href="breakdown/endPages/end-pages-updated/exep-circs/how-review2becs">Penalty Charge Notice review BECS/DR</a>
-          </td>
-          <td>Asking for a Penalty Charge Notice review BECS/DR</td>
-          <td>/pcn-review</td>
-          <td class="right">
+            </td>
+            <td>Asking for a Penalty Charge Notice review BECS/DR</td>
+            <td>/pcn-review</td>
+            <td class="right">
             <a href="#">JIRA</a>
-          </td>
-        </tr>
--->
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/on-hold/mat-apply">How to pay and apply for matex</a>
-          </td>
-          <td>How to pay and apply - maternity exemption</td>
-          <td>/maternity-exemption-pay-apply</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/end-pages-updated/on-hold/med-apply">How to pay and apply for medex</a>
-          </td>
-          <td>How to pay and apply - medical exemption</td>
-          <td>/medical-exemption-pay-apply</td>
-          <td class="right">
-            <a href="#">JIRA</a>
-          </td>
-        </tr>
+            </td>
+            </tr>
+            -->
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/mat-apply">How to pay and apply for matex</a>
+            </td>
+            <td>How to pay and apply - maternity exemption</td>
+            <td>/maternity-exemption-pay-apply</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/med-apply">How to pay and apply for medex</a>
+            </td>
+            <td>How to pay and apply - medical exemption</td>
+            <td>/medical-exemption-pay-apply</td>
+            <td class="right">
+               <a href="#">JIRA</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-    
-        <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>End pages with API check result</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>End pages with API check result</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-                <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-med">New: API check on hold MED (PECS) – AFTER API CHECK (Not Found)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1069">PA233-1069</a>
-          </td>
-        </tr>
-                          <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-mat">New: API check on hold MAT (PECS) – AFTER API CHECK (Not Found)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1071">PA233-1071</a>
-          </td>
-        </tr>
-                                    <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-decs">New: API check on hold MAT (DECS) – AFTER API CHECK (Not Found)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1071">PA233-1071</a>
-          </td>
-        </tr>
-                          <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-dwpmed">New: API check on hold DWP and MED (PECS) – AFTER API CHECK (Not Found)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1070">PA233-1070</a>
-          </td>
-        </tr>
-                                    <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-dwpmat">New: API check on hold DWP and MAT (PECS) – AFTER API CHECK (Not Found)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1072">PA233-1072</a>
-          </td>
-        </tr>
-                                              <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-dwpdecs">New: API check on hold DWP and MAT (DECS) – AFTER API CHECK (Not Found)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="">JIRA</a>
-          </td>
-        </tr>
-                                    <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-med">New: API check on hold MED (PECS) – AFTER API CHECK (Expired)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1069">PA233-1069</a>
-          </td>
-        </tr>
-                                              <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-mat">New: API check on hold MAT (PECS) – AFTER API CHECK (Expired)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1071">PA233-1071</a>
-          </td>
-        </tr>
-                                                        <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-decs">New: API check on hold MAT (DECS) – AFTER API CHECK (Expired)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1071">PA233-1071</a>
-          </td>
-        </tr>
-                                              <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-dwpmed">New: API check on hold DWP and MED (PECS) – AFTER API CHECK (Expired)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1070">PA233-1070</a>
-          </td>
-        </tr>
-                                                        <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-dwpmat">New: API check on hold DWP and MAT (PECS) – AFTER API CHECK (Expired)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1072">PA233-1072</a>
-          </td>
-        </tr>
-                                                                  <tr>
-          <td>
-           <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-dwpdecs">New: API check on hold DWP and MAT (DECS) – AFTER API CHECK (Expired)</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="">JIRA</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-med">New: API check on hold MED (PECS) – AFTER API CHECK (Not Found)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1069">PA233-1069</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-mat">New: API check on hold MAT (PECS) – AFTER API CHECK (Not Found)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1071">PA233-1071</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-decs">New: API check on hold MAT (DECS) – AFTER API CHECK (Not Found)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1071">PA233-1071</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-dwpmed">New: API check on hold DWP and MED (PECS) – AFTER API CHECK (Not Found)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1070">PA233-1070</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-dwpmat">New: API check on hold DWP and MAT (PECS) – AFTER API CHECK (Not Found)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1072">PA233-1072</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-not-found-dwpdecs">New: API check on hold DWP and MAT (DECS) – AFTER API CHECK (Not Found)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="">JIRA</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-med">New: API check on hold MED (PECS) – AFTER API CHECK (Expired)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1069">PA233-1069</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-mat">New: API check on hold MAT (PECS) – AFTER API CHECK (Expired)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1071">PA233-1071</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-decs">New: API check on hold MAT (DECS) – AFTER API CHECK (Expired)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1071">PA233-1071</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-dwpmed">New: API check on hold DWP and MED (PECS) – AFTER API CHECK (Expired)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1070">PA233-1070</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-dwpmat">New: API check on hold DWP and MAT (PECS) – AFTER API CHECK (Expired)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1072">PA233-1072</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/end-pages-updated/on-hold/api-expired-dwpdecs">New: API check on hold DWP and MAT (DECS) – AFTER API CHECK (Expired)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="">JIRA</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-    
-            <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Considering Pay option on the "We need proof of DWP Benefit" end page (pecs)</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;"><a href="https://bsa2468.atlassian.net/browse/PA233-1260">PA233-1513</a></th>
-        </tr>
+         <tr>
+            <th>Considering Pay option on the "We need proof of DWP Benefit" end page (pecs)</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;"><a href="https://bsa2468.atlassian.net/browse/PA233-1260">PA233-1513</a></th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/dwpDecision">How to send proof of your benefit or pay (PECS)</a>
-          </td>
-          <td>How to send proof of your benefit or pay</td>
-          <td> </td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1260">PA233-1513</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/endPages/dwpDecisions">How to send proof of your benefit or pay (DECS)</a>
-          </td>
-          <td>How to send proof of your benefit or pay</td>
-          <td> </td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-1260">PA233-1513</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/dwpDecision">How to send proof of your benefit or pay (PECS)</a>
+            </td>
+            <td>How to send proof of your benefit or pay</td>
+            <td> </td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1260">PA233-1513</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/endPages/dwpDecisions">How to send proof of your benefit or pay (DECS)</a>
+            </td>
+            <td>How to send proof of your benefit or pay</td>
+            <td> </td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1260">PA233-1513</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Error pages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>Error pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/error/unav">Service unavailable (original version)</a>
-          </td>
-          <td>Service is unavailable</td>
-          <td>/error/service-unavailable</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
-          </td>
-        </tr>
-                  <tr>
-          <td>
-            <a href="breakdown/error/unavV1">We are currently performing essential maintenance to improve this service (Type 1)</a>
-          </td>
-          <td>Service is unavailable </td>
-          <td>/error/service-unavailable</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
-          </td>
-        </tr>
-                            <tr>
-          <td>
-            <a href="breakdown/error/unavV2">We are performing essential maintenance on this service between 00:00 and 06:00 (Type 2)</a>
-          </td>
-          <td>Service is unavailable </td>
-          <td>/error/service-unavailable</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
-          </td>
-        </tr>
-                                      <tr>
-          <td>
-            <a href="breakdown/error/unavV3">This service will be available again at 06:00 (Type 3)</a>
-          </td>
-          <td>Service is unavailable </td>
-          <td>/error/service-unavailable</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/error/wrong">Something's gone wrong</a>
-          </td>
-          <td>Something's gone wrong</td>
-          <td>/error/something-is-wrong</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
-          </td>
-        </tr>
-          <tr>
-          <td>
-            <a href="breakdown/error/wrong-start">Something's gone wrong, go to start page</a>
-          </td>
-          <td>Something's gone wrong, go to start page</td>
-          <td>/404</td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
-          </td>
-        </tr>
-
+         <tr>
+            <td>
+               <a href="breakdown/error/unav">Service unavailable (original version)</a>
+            </td>
+            <td>Service is unavailable</td>
+            <td>/error/service-unavailable</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error/unavV1">We are currently performing essential maintenance to improve this service (Type 1)</a>
+            </td>
+            <td>Service is unavailable </td>
+            <td>/error/service-unavailable</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error/unavV2">We are performing essential maintenance on this service between 00:00 and 06:00 (Type 2)</a>
+            </td>
+            <td>Service is unavailable </td>
+            <td>/error/service-unavailable</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error/unavV3">This service will be available again at 06:00 (Type 3)</a>
+            </td>
+            <td>Service is unavailable </td>
+            <td>/error/service-unavailable</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error/wrong">Something's gone wrong</a>
+            </td>
+            <td>Something's gone wrong</td>
+            <td>/error/something-is-wrong</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error/wrong-start">Something's gone wrong, go to start page</a>
+            </td>
+            <td>Something's gone wrong, go to start page</td>
+            <td>/404</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-948">PA233-948</a>
+            </td>
+         </tr>
       </tbody>
-    </table><br>
-
-
-    <table class="check-table" id="review-table-one">
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
       <thead>
-        <tr>
-          <th>Validation error messages</th>
-          <th>Page Title</th>
-          <th>URL</th>
-          <th class="right" style="padding-right:0px;">JIRA ticket number</th>
-        </tr>
+         <tr>
+            <th>Validation error messages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="breakdown/validation/blankError">Blank PCN number error</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730 (covered in Acceptance Criteria)</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/validation/blankDOB">Blank date of birth</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731 (covered in Acceptance Criteria)</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/validation/blankAmount">Blank total amount</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732 (covered in Acceptance Criteria)</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/validation/invalidError">Invalid PCN number error</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730 (covered in Acceptance Criteria)</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/validation/invalidDOB">Invalid date of birth</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731 (covered in Acceptance Criteria)</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="breakdown/validation/invalidAmount">Invalid total amount</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td class="right">
-            <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732 (covered in Acceptance Criteria)</a>
-          </td>
-        </tr>
+         <tr>
+            <td>
+               <a href="breakdown/validation/blankError">Blank PCN number error</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730 (covered in Acceptance Criteria)</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/validation/blankDOB">Blank date of birth</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731 (covered in Acceptance Criteria)</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/validation/blankAmount">Blank total amount</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732 (covered in Acceptance Criteria)</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/validation/invalidError">Invalid PCN number error</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-730">PA233-730 (covered in Acceptance Criteria)</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/validation/invalidDOB">Invalid date of birth</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-731">PA233-731 (covered in Acceptance Criteria)</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/validation/invalidAmount">Invalid total amount</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-732">PA233-732 (covered in Acceptance Criteria)</a>
+            </td>
+         </tr>
       </tbody>
-    </table>
-  
+   </table>
 </main>
-
 {% endblock %}

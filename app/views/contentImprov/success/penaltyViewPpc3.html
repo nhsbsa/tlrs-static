@@ -1,0 +1,151 @@
+E{% extends "layout_bsa.html" %}
+{% block page_title %}
+NHS Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+         <div class="heading-group">
+            <p>Pay or Challenge a Penalty Charge Notice</p>
+            <h1 class="heading-xlarge">Penalty Charge Notice 02895593233</h1>
+         </div>
+         <div class="panel panel-border-wide">
+            <h3 class="heading-medium">You must pay or challenge by 7 March 2019</h3>
+            <p>
+               You may have to pay a surcharge of up to £50 if you do not respond by this date.
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-half">
+         <div class="info-panel highlight" style="background: #005EB8; border-color: #005EB8;">
+            <h2 class="heading-large" style="color: #fff;">Penalty Charge Notice amount</h2>
+            <table class="chargesTable">
+               <tr>
+                  {% if (ticked == 'K') %}
+                  <td>Dental treatment charges</td>
+                  {% else %}
+                  <td style="padding-bottom: 10px; color: #fff;">Prescription charges</td>
+                  {% endif %}
+                  <!--<td></td> -->
+                  <td style="text-align: right; color: #fff;">£26.40</td>
+               </tr>
+               <tr style="border-top: 1px solid #bfc1c3;">
+                  <td style="width: 65%; padding-bottom: 10px; color: #fff;">Penalty charge</td>
+                  <!--<td></td> -->
+                  <td style="width: 35%; text-align: right; color: #fff;">£100.00</td>
+               </tr>
+               <tr style="border-top: 1px solid #bfc1c3;">
+                  <td style="width: 65%; color: #fff;"><span class="strong">Total amount</span></td>
+                  <!--<td></td> -->
+                  <td style="width: 35%; text-align: right; color: #fff;"><span class="strong">£126.40</span></td>
+               </tr>
+            </table>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <br>
+         </div>
+      </div>
+      <div class="column-half">
+         <div class="info-panel">
+            <!--
+            <h2 class="heading-medium">
+               Date prescription was claimed
+            </h2>
+            <p>Between 1 December and 31 December 2018</p>
+            -->
+            <h2 class="heading-medium" style="margin-top: 1.25em">
+               Details taken from your prescription
+            </h2>
+            <table>
+               <tr>
+                  <td><span class="strong">Name</span></td>
+                  <td style="padding-bottom: 20px;">John Marshall</td>
+               </tr>
+               <tr style="border-top: 1px solid #bfc1c3; ">
+                  <td><span class="strong">Address</span></td>
+                  <td style="padding-bottom: 20px;">12 Old Oak Road, Throckley, Newcastle upon Tyne, NE15 9AD</td>
+               </tr>
+               <tr style="border-top: 1px solid #bfc1c3;">
+                  <td><span class="strong">Date claimed</span></td>
+                  <td style="padding-bottom: 20px;">Between 1 December and 31 December 2018</td>
+               </tr>
+               <tr style="border-top: 1px solid #bfc1c3;">
+                  <td><span class="strong">Exemption reason submitted</span></td>
+                  <td>Has a valid prescription prepayment certificate (Box 'F')</td>
+               </tr>
+            </table>
+            <br>
+         </div>
+      </div>
+   </div>
+
+   <div class="grid-row">
+    
+      <div class="column-full">
+
+         <div class="info-panel highlight" style="overflow:auto; background-color: #fff;">
+
+            <div class="panel-left" style="width: 46%; float: left; padding-right: 20px">
+
+               <h2 class="heading-large">Pay</h2>
+               <p>You can pay by debit or credit card, or Direct Debit.</p>
+               <br>
+               <br>
+               <form class="form" action="paymentOptions">
+                  <div class="form-group">
+                     <input class="button" type="submit" value="Pay">
+                  </div>
+               </form>
+               <br><br>
+
+            </div>
+
+            <div class="panel-right" style="width: 47%; float: left; border-left: 1px solid #bfc1c3; padding-left: 30px">
+
+               <h2 class="heading-large head-2">Challenge</h2>
+               <p>You can challenge if you were entitled to free prescriptions, or had a valid prescription prepayment certificate.</p>
+               <form class="form" action="infoPage">
+               <br>
+                  <div class="form-group">
+                     <input class="button" type="submit" value="Challenge">
+                  </div>
+               <br>
+               <br>
+               </form>
+
+            </div>
+
+
+         </div>
+      </div>
+ 
+<!-- 
+      <div class="column-half">
+         <div class="info-panel highlight">
+            <h2 class="heading-large head-2">Challenge</h2>
+            <p>You can challenge if you were entitled to free prescriptions, or had a valid prescription prepayment certificate.</p>
+            <form class="form" action="infoPage">
+               <br>
+               <div class="form-group">
+                  <input class="button" type="submit" value="Challenge">
+               </div>
+               <br>
+               <br>
+            </form>
+         </div> -->
+      </div>
+   </div>
+</main>
+{% endblock %}

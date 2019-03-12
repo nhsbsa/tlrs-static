@@ -1,0 +1,158 @@
+﻿{% extends "layout_bsa.html" %}
+{% block page_title %}
+Challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<style>
+   .example-icon-list p {
+   display: inline-block;
+   font-size: 16px;
+   padding-left: 1em;
+   vertical-align: middle;
+   margin-bottom: 0;
+   }
+   .list--check, {
+   list-style: none;
+   padding-left: 32px;
+   }
+   .list--check li::before {
+   background-image:
+   }
+   .standard {
+   vertical-align: middle;
+   padding: 0;
+   counter-reset: standard-counter;
+   }
+   .standard>li::before {
+   width: 10%;
+   }
+   .standard>li {
+   list-style: none;
+   display: block;
+   border-top: 1px solid #bfc1c3;
+   padding: 1em 0 0.5em 0;
+   margin: 0;
+   page-break-inside: avoid;
+   }
+   .updated-standard li .point {
+   width: 67%;
+   }
+   .standard>li .point {
+   padding-left: 3em
+   }
+   .standard>li .point {
+   font-size: 18px;
+   line-height: 1.2;
+   }
+   .circle-step {
+   min-width: 36px;
+   min-height: 38px;
+   line-height: 36px;
+   }
+   .circle {
+   display: inline-block;
+   border-radius: 50%;
+   background: #0b0c0c;
+   color: #fff;
+   font-size: 16px;
+   font-family: Arial, sans-serif;
+   font-weight: bold;
+   text-align: center;
+   position: absolute;
+   margin: 0em;
+   }
+   .panel_side {
+   display: block;
+   padding-top: 15px;
+   background-color: #DEE0E2;
+   }
+   .panel_side_inner {
+   width: auto;
+   margin-left: 15px;
+   margin-right: 15px;
+   padding-bottom: 5px;
+   }
+   .display_field {
+   margin-bottom: 20px;
+   display: block;
+   }
+   .display_field_value h3 {
+   font-family: "nta", Arial, sans-serif;
+   font-size: 19px;
+   line-height: 1.31579;
+   text-transform: none;
+   font-weight: 700;
+   margin-bottom: 5px;
+   }
+   .income-img {
+   width: 283px;
+   }
+   @media(max-width:640px) {
+   .income-img {
+   width: 100%
+   }
+   }
+</style>
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+         <a class="link-back" href="penalty-view">Back</a>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div class="heading-group">
+            <p>Challenge a Penalty Charge Notice</p>
+            <h1 class="heading-large">What happens next</h1>
+         </div>
+         <p>We’ll ask you a few simple questions. Have your exemption certificate or benefits information ready.</p>
+         <p>We’ll:</p>
+      </div>
+      <div class="column-two-thirds">
+         <ol class="standard">
+            <li style="border-top: none;">
+               <span class="circle circle-step">1</span>
+               <div class="point">
+                  <p>ask for some details about your exemption or benefit – this will help us do a more detailed check</p>
+               </div>
+            </li>
+            <li>
+               <span class="circle circle-step" style="margin-top:0.8em">2</span>
+               <div class="point">
+                  <p>ask about other exemptions you may have had, as this may be quicker for us to check</p>
+               </div>
+            </li>
+            <li>
+               <span class="circle circle-step" style="margin-top:0.8em">3</span>
+               <div class="point">
+                  <p>tell you how to send us proof if we cannot confirm your exemption straight away.</p>
+               </div>
+            </li>
+            <li>
+               <span class="circle circle-step">4</span>
+               <div class="point">
+                  <p>tell you the next steps<br></p>
+               </div>
+            </li>
+         </ol>
+         <br>
+      </div>
+      <form action="didYouPpc" method="get" class="form">
+         <div class="form-item-wrapper">
+            <div class="form-group">
+               <input class="button" type="submit" value="Next">
+               <br>
+               <br>
+               <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+            </div>
+         </div>
+      </form>
+   </div>
+</main>
+{% endblock %}

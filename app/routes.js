@@ -96,6 +96,34 @@ router.get('/payments/dd/contact-handler/', function (req, res) {
 });
 
 
+router.get('/contentImprov/challengeOptions/contact-handler/', function (req, res) {
+  hasText = false;
+  hasEmail = false;
+  hasLetter = false;
+  if (req.query.text == 'true') {
+    hasText = true;
+  }
+  if (req.query.email == 'true') {
+    hasEmail = true;
+  }
+  if (req.query.letter == 'true') {
+    hasLetter = true;
+  }
+  if (hasText) {
+    res.redirect('infoPage');
+  } else if (hasEmail) {
+     res.redirect('infoPage');
+  } else if (hasLetter) {
+     res.redirect('infoPageChallenge');
+  } else {
+    hasText = false;
+    hasEmail = false;
+    hasLetter = false;
+    res.redirect('infoPageChallenge');
+  }
+});
+
+
 // ADDRESS HANDLER FOR DIRECT DEBITS //////////////////////////////////////////////////////////////
 
 router.get('/payments/dd_v2/update-address-handler/', function (req, res) {

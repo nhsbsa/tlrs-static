@@ -1,0 +1,175 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<style>
+   .textarea {
+   width: 75%;
+   min-height: 200px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   font-weight: 400;
+   text-transform: none;
+   font-size: 16px;
+   line-height: 1.25;
+   padding: 5px 4px 4px;
+   border: 2px solid #0b0c0c;
+   margin-top: 10px;
+   }
+</style>
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Challenge a Penalty Charge Notice</p>
+            <h1 class="heading-large">Tell us about your prescription</h1>
+         </div>
+         <form action="contact" method="get" class="form">
+            <!-- <form action="#" method="get" class="form">
+               <div class="form-group">
+                 <p>Can you provide more detail? Do not include personal or financial information, like your National Insurance number or credit card details.</p>
+                  <input class="form-control" style="width: 75%; min-height: 200px;" id="ref" name="ref" type="text">
+                  <br>
+               </div> -->
+            <!-- <label class="govuk-label" for="more-detail">
+               Can you provide more detail?
+               </label>
+               <span id="more-detail-hint" class="govuk-hint">
+               Do not include personal or financial information, like your National Insurance number or credit card details.
+               </span> 
+               <p>When did you claim your prescription?</p> -->
+            <div class="form-group">
+               <fieldset>
+                  <legend>
+                     <span class="heading-medium">
+                     What date did you claim your prescription?
+                     </span>
+                     <!-- <p>What date did you claim your prescription?</p> -->
+                     <span class="form-hint" style="margin-top: 10px;">For example, 15 01 2019</span>
+                  </legend>
+                  <div class="form-date">
+                     <div class="form-group form-group-day">
+                        <label class="form-label" for="dob-day">Day</label>
+                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                     </div>
+                     <div class="form-group form-group-month">
+                        <label class="form-label" for="dob-month">Month</label>
+                        <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                     </div>
+                     <div class="form-group form-group-year">
+                        <label class="form-label" for="dob-year">Year</label>
+                        <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                     </div>
+                  </div>
+               </fieldset>
+            </div>
+            <div class="form-group">
+               <fieldset>
+                  <legend>
+                     <br>
+                     <span class="heading-medium">
+                     What payment method did you use?
+                     </span> 
+                     <!-- <span class="form-hint">For example, 31 03 1980</span> -->
+                  </legend>
+                  <!-- <p>What payment method did you use?</p> -->
+                  <!--  <div class="form-date">
+                     <div class="form-group form-group-day">
+                        <label class="form-label" for="dob-day">Day</label>
+                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                     </div>
+                     <div class="form-group form-group-month">
+                        <label class="form-label" for="dob-month">Month</label>
+                        <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                     </div>
+                     <div class="form-group form-group-year">
+                        <label class="form-label" for="dob-year">Year</label>
+                        <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                     </div>
+                     </div> -->
+                  <div class="form-group">
+                     <div class="form-item-wrapper">
+                        <div class="multiple-choice single-line">
+                           <input type="radio" id="2" value="2" name="plan">
+                           <label class="form-control-radio minor-checkbox" for="2">
+                           Debit or credit card
+                           </label>
+                        </div>
+                        <div class="multiple-choice single-line" data-target="cash">
+                           <input type="radio" id="3" value="3" name="plan">
+                           <label class="form-control-radio minor-checkbox" for="3">
+                           Cash
+                           </label>
+                        </div>
+                        <div class="multiple-choice single-line" data-target="other">
+                           <input type="radio" id="4" value="4" name="plan">
+                           <label class="form-control-radio minor-checkbox" for="4">
+                           Other
+                           </label>
+                        </div>
+                        <div class="panel panel-border-narrow js-hidden" id="other">
+                           <p>Please specify a payment method</p>
+                           <div class="form-item-wrapper">
+                              <div class="form-group">
+                                 <!-- <label class="form-label" for="dob-day">Day</label> -->
+                                 <input class="form-control" id="email" name="email" type="text">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+            </div>
+
+
+            <span class="heading-medium">
+               Submit evidence of your payment
+            </span> 
+            <p>You can attach a photo of a receipt or bank statement. Remember to blank out your account number and sort code if attaching a bank statement.</p>
+            <div class="form-group">
+              <label class="form-label" for="file-upload-1">
+                Upload a file
+              </label>
+              <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span class="heading-medium">
+               Can you provide more details?
+            </span> 
+            <!-- <p>Can you provide more details?</p> -->
+            <textarea class="textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            <br>
+            <br>
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Next">
+               </div>
+            </div>
+            <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+         </form>
+      </div>
+   </div>
+</main>
+{% endblock %}

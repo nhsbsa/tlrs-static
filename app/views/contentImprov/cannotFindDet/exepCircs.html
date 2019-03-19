@@ -1,0 +1,67 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+         <a class="link-back" href="penalty-view">Back</a>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div class="heading-group">
+            <p>Challenge a Penalty Charge Notice</p>
+            <h1 class="heading-large">Who can ask for a Penalty Charge Notice review?</h1>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div class="text">
+            <p>
+               We understand that you may have made an honest mistake and didn’t mean to do anything wrong.
+            </p>
+            <p>If you have an exceptional reason why you claimed a free prescription you weren't entitled to, you can ask for a review.</p>
+            <h2 class="heading-medium">Reasons we won’t usually accept</h2>
+            <p>
+               We won't usually review your Penalty Charge Notice if:
+            </p>
+            <ul class="list list-bullet">
+               <li>your exemption certificate had expired</li>
+               <li>you feel that you were misadvised by your GP or by pharmacy staff</li>
+               <li>you thought that your benefit entitled you to claim</li>
+               <li>you thought your prescription prepayment certificate would automatically renew</li>
+            </ul>
+            <h3 class="heading-medium">What to do next </h3>
+            <p>If you have an exceptional reason why you made the claim at the time, you can contact us to review your Penalty Charge Notice.</p>
+
+            <form action="../cannotFind/howReview" method="get" class="form">
+               <div class="form-item-wrapper">
+                  <div class="form-group" style="margin-top:0.5em">
+                     <input class="button" type="submit" value="Contact us">
+                  </div>
+               </div>
+            </form>
+
+            <h3 class="heading-medium">If you’re not entitled to a review </h3>
+            <p>You must pay the total amount of your Penalty Charge Notice.</p>
+            <p>
+               <a href="#">Pay now</a>
+            </p>
+
+            <!--
+            <div class="form-group" style="margin-top:0.5em">
+               <input class="button" type="submit" value="Pay now">
+            </div>
+         -->
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

@@ -1,0 +1,72 @@
+﻿{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHS Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+    <div class="grid-row">
+      <div class="column-full">
+        <div class="phase-banner">
+            <p>
+              <strong class="phase-tag">BETA</strong>
+              <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+          </div>
+          <a class="link-back" href="">Back</a>
+      </div>
+    </div>
+    
+    <div class="grid-row">
+      
+      <div class="column-two-thirds">
+    
+        <div class="heading-group">
+          <p>Challenge a Penalty Charge Notice</p>
+          <h1 class="heading-large">
+              Did you have a valid prescription prepayment certificate (PPC) between 1 December and 31 December 2018?
+          </h1>
+        </div>
+      
+      <form action="didYouBsa" method="get" class="form">
+
+          <div class="form-group">
+
+            <fieldset class="inline">
+              <legend class="visually-hidden">
+              </legend>
+
+              <div class="multiple-choice">
+                <input id="yes" type="radio" name="exemption" value="yes" >
+                <label for="yes">Yes</label>
+              </div>
+
+              <div class="multiple-choice">
+                <input id="no" type="radio" name="exemption" value="no" checked="checked">
+                <label for="no">No</label>
+              </div>
+
+          </fieldset>  
+
+          </div>
+
+          <div class="form-group">
+            <input class="button" type="submit"  value="Next">
+          </div>
+
+          <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+
+        </form>      
+        
+    </div>
+      
+  </div>
+  
+
+          
+</main>
+
+{% endblock %}

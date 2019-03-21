@@ -20,14 +20,14 @@ NHS Penalty Charge Notice
          <div class="heading-group">
             <p>Challenge a Penalty Charge Notice</p>
             <h1 class="heading-large">
-               Did you have one of these NHS exemptions between 1 December and 30 December 2018?
+               Did you pay?
             </h1>
          </div>
-         <p>We’re asking this as it might be quicker for us to check an NHS exemption.</p>
-         <form action="dwpExemptions" method="get" class="form">
+         <!-- <p>We’re asking this as it might be quicker for us to check an NHS exemption.</p> -->
+         <form action="infoPageChallenge2" method="get" class="form">
             <div class="form-group">
                <div class="form-item-wrapper">
-                  <div class="multiple-choice single-line">
+                  <!-- <div class="multiple-choice single-line">
                      <input type="radio" id="med" value="med" name="bsa">
                      <label class="form-control-radio minor-checkbox" for="med">
                      medical exemption certificate
@@ -56,6 +56,19 @@ NHS Penalty Charge Notice
                      <label class="form-control-radio minor-checkbox" for="tc">
                      NHS Tax Credit Exemption Certificate 
                      </label>
+                  </div> -->
+                  
+                  <div class="multiple-choice single-line">
+                     <input type="radio" id="paid" value="paid" name="bsa" checked="checked">
+                     <label class="form-control-radio minor-checkbox" for="paid">
+                     I paid for my prescription at the pharmacy
+                     </label>
+                  </div>
+                  <div class="multiple-choice single-line">
+                     <input type="radio" id="age" value="age" name="bsa">
+                     <label class="form-control-radio minor-checkbox" for="age">
+                     I am under 16 or over 60
+                     </label>
                   </div>
                   <div class="form-group or-block">
                      <p>or</p>
@@ -66,18 +79,6 @@ NHS Penalty Charge Notice
                      <span class="">no,</span> none of these
                      </label>
                   </div>
-                  <!-- <div class="multiple-choice single-line">
-                     <input type="radio" id="paid" value="paid" name="bsa" checked="checked">
-                     <label class="form-control-radio minor-checkbox" for="paid">
-                     I paid for my prescription at the pharmacy
-                     </label>
-                  </div>
-                  <div class="multiple-choice single-line">
-                     <input type="radio" id="age" value="age" name="bsa">
-                     <label class="form-control-radio minor-checkbox" for="age">
-                     I am aged under 16 or aged 60 or over
-                     </label>
-                  </div> -->
                </div>
             </div>
             <div class="form-item-wrapper">

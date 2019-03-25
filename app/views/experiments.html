@@ -1,0 +1,367 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay or challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<style>
+   table tr td {
+   border: none;
+   display: table-cell;
+   vertical-align: text-top;
+   padding: 2rem 3rem 0 0;
+   }
+   table tr td:nth-child(1) {
+   width: 30%;
+   }
+   table tr td:nth-child(2) {
+   padding-right: 3rem;
+   width: 30%; 
+   }
+   table tr td:nth-child(3) {
+   padding-right: 3rem;
+   }
+</style>
+<main id="content" role="main">
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Pay or Challenge Prototype</p>
+      <h1 class="heading-xlarge">
+         Experimental pages
+      </h1>
+   </div>
+   <div class="panel panel-border-narrow">
+      <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly. There is ongoing discussion regarding these pages. They have not been signed off.</p>
+   </div>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>Verification pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="contentImprov/success/start">Start (reduced text)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+         <tr>
+            <td>
+               <a href="contentImprov/success/enterPcnNumber">Enter PCN number (content update w/link)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+         <tr>
+            <td><a href="contentImprov/success/validateDob">Validate DOB (GDPR banner)</a></td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/checkYourAnswersPcn">Check your answers</a>
+            </td>
+            <td>Check your answers</td>
+            <td>/check-your-answers</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/checkYourAnswersPcnUnverified">Check your answers (unverified)</a>
+            </td>
+            <td>Check your answers</td>
+            <td>/check-your-answers</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnVerifV1">Input PCN ref. twice on the same screen</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2//pcnVerifV2_1">Re-enter PCN ref. on next screen</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/pcnVerifV3_1">Re-enter PCN ref. at end of verification process (4 screens)</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>Penalty Charge view</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="contentImprov/success/penaltyViewPpc">PCN (updated content and prescription details layout)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+       </tbody>
+     </table>
+     <br>
+     <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>Enter cert. number</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="contentImprov/success/certNumberPpc">Enter [exemption certificate] number (clearer info text and link)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+       </tbody>
+     </table>
+     <br>
+
+
+   <h1 class="heading-large">Challenge journey pages</h1>
+
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>'Disruption' page</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="contentImprov/success/infoPage2">What happens next? (after user selects Challenge)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>End pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="contentImprov/success/exemFoundv2">Exemption found (clearer content)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+         <tr>
+            <td>
+               <a href="contentImprov/cannotFind/expired5">Exemption expired (2-column layout)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>   
+         </tr>
+         <tr>
+            <td>
+               <a href="contentImprov/cannotFindDet/expired5">Can't find details (2-column layout)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>   
+         </tr>
+         <tr>
+            <td>
+               <a href="contentImprov/cannotFind/expired4">Can't find exemption (3-column layout)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>Sending proof / Exceptional circumstances</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="contentImprov/cannotFindDet/examples">How to send proof (w/'if you have paid' content)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+         <tr>
+            <td>
+               <a href="contentImprov/cannotFindDet/exepCircs">Ask for a review (w/'if you have paid' content)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>   
+         </tr>
+        
+      </tbody>
+   </table>
+   <br>
+
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>'I paid' mini journey</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="contentImprov/challengeOptions/didYouPay">Select Challenge reason (if user has no BSA exem or DWP ben)</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+         <tr>
+            <td>
+               <a href="contentImprov/challengeOptions/infoPageChallenge2">'If you have paid...' info page</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+         <tr>
+            <td>
+               <a href="contentImprov/challengeOptions/caseInvestigate">Tell us about your prescription - contact form</a>
+            </td>
+            <td></td>
+            <td class="right"><a href=""></a></td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+   <h1 class="heading-large">Direct Debits journey pages</h1>
+
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">Direct Debits</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/planInfoV3">Direct Debit rules (one checkbox)</a>
+            </td>
+            <td>Paying by Direct Debit</td>
+            <td>/paying-by-direct-debit</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1986">PA233-1986</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+<!-- Summary / Check your answers -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">Summary</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2_test/summary6V2">Check your answers v. 3 (altered content)</a>
+            </td>
+            <td>Check your answers</td>
+            <td>/check-direct-debit-details</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1997">PA233-1997</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+<!--- End page -->
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">End pages</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="payments/dd_v2/endV2">DD successfully set up (with numbered points)</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-1999">PA233-1999</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+   
+</main>
+{% endblock %}

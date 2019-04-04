@@ -1,0 +1,92 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Pay an NHS Penalty Charge Notice</p>
+            <h1 class="heading-large">Which date would you like payments to be taken each month?</h1>
+         </div>
+        <p>All payments will be taken on, or just after, your chosen date.</p>
+<!--          <p>Your payments will be taken on, or just after, your chosen date.</p>
+ -->         <!--<p> We’ll only take one payment in a calendar month. </p> -->
+         <p>Enter a payment date between 1 and 28.</p>
+         <div class="form-group">
+            <fieldset>
+               <legend>
+                  <!-- <span class="form-label-bold">Enter the date you want the payments to come out</span> 
+                  <span class="form-hint">For example, 15 1 2019</span> -->
+               </legend>
+               <div class="form-date">
+                  <div class="form-group form-group-day">
+                     <label class="form-label" for="dob-day">Date</label>
+                     <input class="form-control" id="dob-day" name="dobDay" type="number" pattern="[0-9]*" min="1" max="31" maxlength="2">
+                     <!--<select class="form-control" id="dob-month" name="dob-month" style="width: auto; margin-top: 10px">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                     </select> -->
+                  </div>
+               </div>
+            </fieldset>
+         </div>
+         <form action="queryAddress">
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Next">
+               </div>
+            </div>
+            <div class="form-group">
+               <p class="navigation"><a class="cancel" href="pcnPage">Cancel</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
+</main>
+{% endblock %}

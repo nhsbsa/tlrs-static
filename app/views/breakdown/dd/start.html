@@ -1,0 +1,94 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div class="heading-group">
+            <h1 class="heading-xlarge">Pay or Challenge a Penalty Charge Notice</h1>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div class="text">
+            <p>
+               Use this service to:
+            </p>
+            <ul class="list list-bullet">
+               <li>pay your Penalty Charge Notice</li>
+               <li>make a challenge</li>
+            </ul>
+         </div>
+         <p>
+            This should take less than 5 minutes.
+         </p>
+         <div class="panel2">
+            <div class="callout callout--subtle" style="padding:0px 16px 16px 16px;">
+               <!-- <h3 class="heading-small">Universal Credits- important information</h3> -->
+               <details>
+                  <summary><span class="summary"> Are you on Universal Credit or HC3 (limited help with health costs)? Important information</span></summary>
+                  <div class="panel panel-border-narrow">
+                     <h3 class="heading-medium">How to pay</h3>
+                     <p>To pay your Penalty Charge Notice click the green ‘Start’ button on this page.</p>
+                     <h3 class="heading-medium">How to challenge</h3>
+                     <p>To challenge your Penalty Charge Notice you will need to phone or email us.</p>
+                     <p>You need to include your reference number. This is in the top left-hand corner of your Penalty Charge Notice letter:</p>
+                     <h3 class="heading-small">For prescriptions</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 9291 (this call will be charged at a local rate)</li>
+                        <li>Email us at <a href="mailto:nhsbsa.pecs@nhsbsa.nhs.uk">nhsbsa.pecs@nhsbsa.nhs.uk</a></li>
+                     </ul>
+                     <h3 class="heading-small">For dental treatment</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1293 (this call will be charged at a local rate)</li>
+                        <li>Email us at <a href="mailto:nhsbsa.decs@nhsbsa.nhs.uk">nhsbsa.decs@nhsbsa.nhs.uk</a></li>
+                     </ul>
+                  </div>
+               </details>
+            </div>
+         </div>
+         <br>
+         <form action="enter-pcn-number" method="get" class="form">
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button button-get-started" type="submit" value="Start">
+               </div>
+            </div>
+         </form>
+         <div>
+            <h2 class="heading-medium">Before you start</h2>
+            <p>
+               You will need your reference number. This can be found in the top left-hand corner of your Penalty Charge Notice letter.
+            </p>
+            <p>To confirm your identity we will ask for your date of birth and the total amount on your Penalty Charge Notice.</p>
+            <details>
+               <summary><span class="summary">Have you lost your Penalty Charge Notice?</span></summary>
+               <div class="panel panel-border-narrow">
+                  <p>
+                     If you have lost your Penalty Charge Notice or don’t know your reference number, call us on 0300 330 9291
+                  </p>
+               </div>
+            </details>
+            <!--  <div class="panel2">
+               <div class="callout callout--attention"> -->
+            <h2 class="heading-small">How we use your information</h2>
+            <p>We use the information you provide to help us match your details. You can find out more about <a href="https://www.nhsbsa.nhs.uk/nhs-prescription-services-privacy-notice" target="_blank">how we use your information</a>. <span class="font-xsmall">(Opens in a new window)</span></p>
+            <!--        
+               </div>
+               </div> -->
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

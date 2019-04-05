@@ -49,7 +49,7 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2/start">Start</a>
+               <a href="breakdown/dd/start">Start</a>
             </td>
             <td>Pay or Challenge a Penalty Charge Notice</td>
             <td>/start</td>
@@ -58,7 +58,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2/enter-pcn-number">Enter PCN number</a>
+               <a href="breakdown/dd/enterPcnNumber">Enter PCN number</a>
             </td>
             <td>What is your Penalty Charge Notice reference number?</td>
             <td>/enter-pcn-number</td>
@@ -67,27 +67,37 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/pcnVerifV2_2">Re-enter PCN number</a>
+               <a href="breakdown/dd/pcnVerif">Re-enter PCN number</a>
             </td>
             <td>Enter your Penalty Charge Notice reference number again</td>
             <td>/re-enter-pcn-number</td>
             <td class="right">
-               <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
+               <a href="https://bsa2468.atlassian.net/browse/PA233-2058">PA233-2058</a>
             </td>
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/failedPcnMatch">Failed PCN number verification</a>
+               <a href="breakdown/dd/pcnVerifError">Re-enter PCN number (validation error)</a>
+            </td>
+            <td>Enter your Penalty Charge Notice reference number again</td>
+            <td>/re-enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-2058">PA233-2058</a>
+            </td>
+         </tr>
+         <!-- <tr>
+            <td>
+               <a href="breakdown/dd/failedPcnMatch">Failed PCN number verification</a>
             </td>
             <td>The Penalty Charge reference numbers you entered did not match</td>
             <td></td>
             <td class="right">
                <a href="https://bsa2468.atlassian.net/browse/PA233-1965">PA233-1965</a>
             </td>
-         </tr>
+         </tr> -->
          <tr>
             <td>
-               <a href="payments/dd_v2/validate-dob">Verify date of birth</a>
+               <a href="breakdown/dd/validateDob">Verify date of birth</a>
             </td>
             <td>What is your date of birth?</td>
             <td>/date-of-birth</td>
@@ -96,7 +106,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2/validate-charge">Verify PCN total amount</a>
+               <a href="breakdown/dd/validateCharge">Verify PCN total amount</a>
             </td>
             <td>Enter the total amount on your Penalty Charge Notice</td>
             <td>/pcn-total-amount</td>
@@ -105,9 +115,9 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="challenge/verify/nextGo">Check your answers</a>
+               <a href="breakdown/dd/nextGo">Check your answers</a>
             </td>    
-            <td>Check answers- unable to confirm identity</td>
+            <td>Check answers - unable to confirm identity</td>
             <td>/unable-to-confirm-identity</td>
             <td class="right">
             </td>
@@ -129,7 +139,7 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2/pcnPage">Penalty view (PECS 3 items)</a>
+               <a href="breakdown/dd/pcnPage">Penalty view (PECS 3 items)</a>
             </td>
             <td>Penalty Charge Notice details</td>
             <td>/view-your-pcn</td>
@@ -139,7 +149,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_decs/pcnPage">Penalty view (DECS Band 3)</a>
+               <a href="breakdown/dd/pcnPageDecs">Penalty view (DECS Band 3)</a>
             </td>
             <td>Penalty Charge Notice details</td>
             <td>/view-your-pcn</td>
@@ -164,7 +174,7 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="/payments/dd_v2/paymentOptions">Payment options</a>
+               <a href="breakdown/dd/paymentOptions">Payment options</a>
             </td>
             <td>How would you like to pay your Penalty Charge?</td>
             <td>/payment-options</td>
@@ -174,7 +184,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2/plan-info">Direct Debit rules</a>
+               <a href="breakdown/dd/planInfo">Direct Debit rules</a>
             </td>
             <td>Paying by Direct Debit</td>
             <td>/paying-by-direct-debit</td>
@@ -184,7 +194,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2/planInfoError">Direct Debit rules<br>(error - all)</a>
+               <a href="breakdown/dd/planInfoError">Direct Debit rules<br>(error - all)</a>
             </td>
             <td>Paying by Direct Debit</td>
             <td>/paying-by-direct-debit</td>
@@ -194,7 +204,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2/planInfoErrorCheck3">Direct Debit rules <br>(error - one)</a>
+               <a href="breakdown/dd/planInfoErrorCheck">Direct Debit rules <br>(error - one)</a>
             </td>
             <td>Paying by Direct Debit</td>
             <td>/paying-by-direct-debit</td>
@@ -204,7 +214,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2_test/options3">Direct Debit duration options<br>(3 months)</a>
+               <a href="breakdown/dd/options1">Direct Debit duration options<br>(3 months)</a>
             </td>
             <td>Select how many months you want to pay over</td>
             <td>/direct-debit-duration</td>
@@ -214,7 +224,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2/options36">Direct Debit duration options<br>(3 and 6 months)</a>
+               <a href="breakdown/dd/options2">Direct Debit duration options<br>(3 and 6 months)</a>
             </td>
             <td>Select how many months you want to pay over</td>
             <td>/direct-debit-duration</td>
@@ -224,7 +234,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2/options">Direct Debit duration options<br>(3, 6 and 12 months)</a>
+               <a href="breakdown/dd/options3">Direct Debit duration options<br>(3, 6 and 12 months)</a>
             </td>
             <td>Select how many months you want to pay over</td>
             <td>/direct-debit-duration</td>
@@ -234,7 +244,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="/payments/dd_v2/dates">Direct Debit date</a>
+               <a href="breakdown/dd/dates">Direct Debit date</a>
             </td>
             <td>Which date would you like payments to be taken each month?</td>
             <td>/payment-date</td>
@@ -295,7 +305,7 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2/queryAddress">Confirm we hold the correct address</a>
+               <a href="breakdown/dd/queryAddress">Confirm we hold the correct address</a>
             </td>
             <td>Is this your address?</td>
             <td>/check-address</td>
@@ -305,7 +315,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/manualAddress">Enter address manually</a>
+               <a href="breakdown/dd/manualAddress">Enter address manually</a>
             </td>
             <td>What is your address?</td>
             <td>/update-address</td>
@@ -330,7 +340,7 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/summary3">Check your answers<br>(3 months)</a>
+               <a href="breakdown/dd/summary3mth">Check your answers<br>(3 months)</a>
             </td>
             <td>Check your answers</td>
             <td>/check-direct-debit-details</td>
@@ -340,7 +350,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/summary6">Check your answers<br>(6 months)</a>
+               <a href="breakdown/dd/summary6mth">Check your answers<br>(6 months)</a>
             </td>
             <td>Check your answers</td>
             <td>/check-direct-debit-details</td>
@@ -350,7 +360,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/summary12">Check your answers<br>(12 months)</a>
+               <a href="breakdown/dd/summary12mth">Check your answers<br>(12 months)</a>
             </td>
             <td>Check your answers</td>
             <td>/check-direct-debit-details</td>
@@ -376,7 +386,7 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/bankDetails">Enter bank details</a>
+               <a href="breakdown/dd/bankDetails">Enter bank details</a>
             </td>
             <td>Enter bank details</td>
             <td>/enter-bank-details</td>
@@ -386,7 +396,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/bankDetailsError">Enter bank details <br>(validation error)</a>
+               <a href="breakdown/dd/bankDetailsError">Enter bank details <br>(validation error)</a>
             </td>
             <td>Enter bank details</td>
             <td>/enter-bank-details</td>
@@ -396,7 +406,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/failedKycPecs">Failed KYC check (PECS)</a>
+               <a href="breakdown/dd/failedKycPecs">Failed KYC check (PECS)</a>
             </td>
             <td>You will need to call us</td>
             <td></td>
@@ -406,7 +416,7 @@ Pay or challenge a Penalty Charge Notice
          </tr>
          <tr>
             <td>
-               <a href="payments/dd_v2_test/failedKycDecs">Failed KYC check (DECS)</a>
+               <a href="breakdown/dd/failedKycDecs">Failed KYC check (DECS)</a>
             </td>
             <td>You will need to call us</td>
             <td></td>
@@ -431,11 +441,12 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2/confirm">Confirm and submit</a>
+               <a href="breakdown/dd/confirm">Confirm and submit</a>
             </td>
             <td>Confirm and submit</td>
             <td>/confirm-submit</td>
             <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-2071">PA233-2071</a>
             </td>
          </tr>
       </tbody>
@@ -455,7 +466,7 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td>
-               <a href="payments/dd_v2/end">Direct Debit has been set up</a>
+               <a href="breakdown/dd/end">Direct Debit has been set up</a>
             </td>
             <td>You have set up a Direct Debit to pay your penalty charge</td>
             <td></td>

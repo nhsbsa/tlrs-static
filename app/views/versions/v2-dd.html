@@ -1,0 +1,36 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay or challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+
+   <p>
+      <a href="/tlrs">< Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+    <p>Pay by Direct Debit</p>
+   <h3 class="heading-large">Version 2 - January 2019</h2>
+ </div>
+   <br>
+
+   <p style="font-weight: bold;">User Journeys to test</p>
+   <ul class="list list-bullet">
+      
+      <li><a href="/public/images/prototypes/dd/dd_journey_screens_v2.pdf">Pay by Direct Debit - v.2 (PDF)</a></li>
+      <!-- <li><a href="payments/dd_v2_test/plan-info3">DD Guidance - User checks one 'account' box</a></li>
+      <li><a href="payments/dd_v2_test/bankDetails2">Bank details and KYC failure</a></li> -->
+   </ul>
+   <hr>
+   <p style="font-weight: bold;">What we tested</p>
+   <ul class="list list-bullet">
+      <li>DECS case with PCN total of £356.50. Testing to see if increased cost affects Direct Debit choices.</li>
+      <li>Direct Debit guidance error validation if user does not check all 3 boxes</li>
+   </ul>
+<!--    <hr>
+   <p style="font-weight: bold;">Proposed changes</p>
+   <ul class="list list-bullet">
+      <li><a href="#">Version 4 - January 2018</a></li>
+   </ul> -->
+</main>
+{% endblock %}

@@ -38,7 +38,7 @@ Pay a Penalty Charge Notice
                There is an error
             </h2>
             <ul class="error-summary-list">
-               <li><a href="#error-message">We were unable to verify your bank details. Please check your details and try again.</a></li>
+               <li><a href="#error-message">Check the account holder's name. This does not match the name we hold for you.</a></li>
             </ul>
          </div>
          <div class="text">
@@ -51,14 +51,38 @@ Pay a Penalty Charge Notice
          </div>
          <p>Equifax will perform a check to verify the bank account details you give us. A record of this will be left on your credit record but will not affect your credit rating</p>
          <form class="form" method="get" action="confirm">
-            <!-- <div class="form-group">
+
+
+
+
+            <div class="form-group">
                <label class="form-label-bold" style ="padding: 10px 0;" for="cardnumber">Account number</label>
                <input class="form-control medium-width" id="cardnumber" name="cardnumber" type="number" value="08579837">
-               </div> -->
+            </div>
+
+
+
+            
+            <div class="form-group">
+               <legend>
+                  <span class="form-label-bold">Sort code</span>
+               </legend>
+               <div class="form-date">
+                  <div class="form-group form-group-day">
+                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="01">
+                  </div>
+                  <div class="form-group form-group-day">
+                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="20">
+                  </div>
+                  <div class="form-group form-group-day">
+                     <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="54">
+                  </div>
+               </div>
+            </div>
             <div class="form-group">
                <div class="form-group-error">
                   <span class="error-message">
-                  Enter your account number
+                  Enter the account holder's name
                   </span>
                   <!-- <input class="form-control max-width" id="holdername" name="holdername" type="text" value="Mr John Marshall"> -->
                   <input type="text" class="form-control form-control-error" style="    width: 340px;" id="name" name="name" value="">
@@ -69,63 +93,6 @@ Pay a Penalty Charge Notice
                   Account holder's name
                   </label>
                   <input class="form-control max-width" id="holdername" name="holdername" type="text" value="Mr John Marshall"> -->
-            </div>
-            <!-- 
-               <div class="form-group">
-               
-                  <div class="form-group-error">
-                     <span class="error-message">
-                     Enter the sort code
-                     </span> -->
-            <!--  <legend>
-               <span class="form-label-bold">Sort code</span>
-               </legend> -->
-            <!--                <div class="form-date">
-               <div class="form-group form-group-day">
-                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="01">
-               </div>
-               <div class="form-group form-group-day">
-                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="20">
-               </div>
-               <div class="form-group form-group-day">
-                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" value="54">
-               </div>
-               </div>
-               </div>
-               </div> -->
-            <div class="form-group form-group-error">
-               <fieldset>
-                  <!-- <legend>
-                     <span class="heading-medium">
-                     What is your date of birth?
-                     </span>
-                     <span class="form-hint">For example, 31 07 1961</span>
-                     </legend> -->
-                  <!-- <br> -->
-                  <span class="error-message">
-                  Enter your sort code
-                  </span>
-                  <div class="form-date">
-                     <div class="form-group form-group-day">
-                        <!-- <label class="form-label" for="dob-day">Day</label> -->
-                        <input class="form-control-error" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
-                     </div>
-                     <div class="form-group form-group-day">
-                        <!-- <label class="form-label" for="dob-month">Month</label> -->
-                        <input class="form-control-error" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
-                     </div>
-                     <div class="form-group form-group-day">
-                        <!-- <label class="form-label" for="dob-year">Year</label> -->
-                        <input class="form-control-error" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
-                     </div>
-                  </div>
-               </fieldset>
-            </div>
-            <div class="form-group">
-               <label class="form-label-bold" for="holdername">
-               Account holder's name
-               </label>
-               <input class="form-control max-width" id="holdername" name="holdername" type="text" value="Mr John Marshall">
             </div>
             <details>
                <summary>

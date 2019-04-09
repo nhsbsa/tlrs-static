@@ -1,0 +1,95 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Pay an NHS Penalty Charge Notice</p>
+            <h1 class="heading-large">Select how many months you want to pay over</h1>
+         </div>
+         <p>Your total amount to pay is <span class="strong">£44.00</span>. You will not be charged interest on this amount.</p>
+
+         <h3 class="heading-medium">3 months</h3>
+   
+         <p> 1 payment of <span class="strong">£14.68</span>
+         followed by 2 payments of<span class="strong"> £14.66</span></p>
+         <br>
+
+         <!-- <form action="#" method="get" class="form">
+            <div class="form-group">
+               <div class="form-item-wrapper">
+                  <div class="form-group form-break">
+                     <h3 class="heading-medium">3 months</h3>
+                  </div>
+                  <div class="multiple-choice single-line" data-target="3mth">
+                     <input type="radio" id="2" value="3" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="2">
+                     1 payment of <span class="strong">£14.68</span>
+                     followed by 2 payments of
+                     <span class="strong">£14.66</span>
+                     </label>
+                  </div>
+                  
+                  <div class="form-group form-break">
+                     <h3 class="heading-medium">6 months</h3>
+                  </div>
+                  <div class="multiple-choice single-line" data-target="3mth">
+                     <input type="radio" id="3" value="6" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="3">
+                     1 payment of <span class="strong">£8.80</span>
+                     followed by 5 payments of
+                     <span class="strong">£8.80</span>
+                     </label>
+                  </div>
+                  <div class="form-group form-break">
+                     <h3 class="heading-medium">12 months</h3>
+                  </div>
+                  <div class="multiple-choice single-line" data-target="3mth">
+                     <input type="radio" id="4" value="12" name="plan">
+                     <label class="form-control-radio minor-checkbox" for="4">
+                     1 payment of <span class="strong">£10.57</span>
+                     followed by 11 payments of
+                     <span class="strong">£10.53</span>
+                     </label>
+                  </div>
+                  
+               </div>
+            </div> -->
+
+            <h3 class="heading-small">If you cannot afford this monthly plan</h3>
+            <ul class="list list-bullet">
+               <li>Call us on 0300 330 1293 (this call will be charged at a local rate)<br>Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm.</li>
+               <li>Email us at <a href="mailto:nhsbsa.decs@nhsbsa.nhs.uk">nhsbsa.decs@nhsbsa.nhs.uk</a></li>
+               <li>Remeber to include your Penalty Charge Notice reference number </a></li>
+            </ul>
+            <br>
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Next">
+               </div>
+            </div>
+            <div class="form-group">
+               <p class="navigation"><a class="cancel" href="pcnPage">Cancel</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
+</main>
+{% endblock %}

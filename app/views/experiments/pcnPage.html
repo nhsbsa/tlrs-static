@@ -13,11 +13,11 @@ NHS Penalty Charge Notice
             </p>
          </div>
          <div class="heading-group">
-            <!-- <p>Pay or Challenge a Penalty Charge Notice</p> -->
+            <p>Pay or Challenge a Penalty Charge Notice</p>
             <h1 class="heading-xlarge">Your details don't match our records</h1>
          </div>
          <div class="panel panel-border-wide">
-            <h3 class="heading-medium">Don’t delay</h3>
+            <h3 class="heading-medium">Action required</h3>
             <p>
                You now have 28 days to let us know if you were entitled to claim free prescriptions (by 7 March 2019). If you don't respond you will be issued with a Penalty Charge Notice.
             </p>
@@ -27,9 +27,50 @@ NHS Penalty Charge Notice
    <div class="grid-row">
       <div class="column-half">
          <div class="info-panel highlight ">
-            <h2 class="heading-medium">We have not been able to match your prescription details to our records</h2>
+
+            <h2 class="heading-medium">You might have received this warning because:</h2>
+            <!-- <p>If we cannot match these details or confirm your eligibility for free prescriptions you may have to pay the charges outlined below.</p> -->
+            <ul class="list list-bullet">
+               <li>your exemption certificate or prepayment certificate had expired</li>
+               <br>
+               <li>we were unable to confirm what type of benefits you received</li>
+               <br>
+               <li>you had a medical condition, you were pregnant or had given birth in the previous 12 months but did not have an exemption certificate</li>
+               <br>
+               <li>the details on your prescription did not match our records</li>
+            </ul>
+
+            <p>If we cannot match your details or confirm your eligibility for free prescriptions you may have to pay the charges outlined below.</p>
+
+            <table class="chargesTable">
+               <tr>
+                  {% if (ticked == 'K') %}
+                  <td>Dental treatment charges</td>
+                  {% else %}
+                  <td>Prescription charges</td>
+                  {% endif %}
+                  <td></td>
+                  <td>£26.40</td>
+               </tr>
+               <tr>
+                  <td>Penalty charge</td>
+                  <td></td>
+                  <td>£100.00</td>
+               </tr>
+               <tr>
+                  <td><span class="strong">Total amount</span></td>
+                  <td></td>
+                  <td><span class="strong">£126.40</span></td>
+               </tr>
+            </table>
+
+            <br>
+
+
+
+
+            <!-- <h2 class="heading-medium">We have not been able to match your prescription details to our records</h2>
             <p>If we cannot match these details or confirm your eligibility for free prescriptions you may have to pay the charges outlined below.</p>
-            <!-- <h2 class="heading-large">Penalty Charge Notice amount</h2> -->
             <table class="chargesTable">
                <tr>
                   {% if (ticked == 'K') %}
@@ -54,7 +95,7 @@ NHS Penalty Charge Notice
             <br>
             <br>
             <br>
-           <br>
+           <br> -->
       <!--       <br>
             <br>
             <br>    -->
@@ -92,18 +133,10 @@ NHS Penalty Charge Notice
       <div class="column-half">
          <div class="info-panel highlight">
             <h2 class="heading-large">Pay</h2>
-            <!--<p>
-               You will need a debit or credit card.
-            </p>
-            <p>If you need help to pay you can set up a <a href="plan-info">Direct Debit</a> to spread the cost</p>-->
+
             <p>You can pay by debit or credit card, or Direct Debit.</p> 
             <br>
-            <!--<form class="form" action="#">
-               <div class="form-group">
-                 <input class="button" type="submit" value="Pay in full">
-               </div>
-                 <a href="plan-info">Pay by Direct Debit</a>
-               </form> -->
+
             <br>
             <form class="form" action="paymentOptions">
                <div class="form-group">

@@ -17,7 +17,7 @@ NHS Penalty Charge Notice
             <h1 class="heading-xlarge">Your details don't match our records</h1>
          </div>
          <div class="panel panel-border-wide">
-            <h3 class="heading-medium">Action required</h3>
+            <h3 class="heading-medium">Don't delay</h3>
             <p>
                You now have 28 days to let us know if you were entitled to claim free prescriptions (by 7 March 2019). If you don't respond you will be issued with a Penalty Charge Notice.
             </p>
@@ -26,10 +26,8 @@ NHS Penalty Charge Notice
    </div>
    <div class="grid-row">
       <div class="column-half">
-         <div class="info-panel highlight ">
-
-            <h2 class="heading-medium">You might have received this warning because:</h2>
-            <!-- <p>If we cannot match these details or confirm your eligibility for free prescriptions you may have to pay the charges outlined below.</p> -->
+         <div class="info-panel highlight" style="color: #fff; border: none; background-color: #005EB8;">
+            <h2 class="heading-medium">You might have received a letter because:</h2>
             <ul class="list list-bullet">
                <li>your exemption certificate or prepayment certificate had expired</li>
                <br>
@@ -37,37 +35,31 @@ NHS Penalty Charge Notice
                <br>
                <li>you had a medical condition, you were pregnant or had given birth in the previous 12 months but did not have an exemption certificate</li>
                <br>
-               <li>the details on your prescription did not match our records</li>
+               <li>your name, address, date of birth or NHS number on your prescription did not match our records</li>
             </ul>
-
             <p>If we cannot match your details or confirm your eligibility for free prescriptions you may have to pay the charges outlined below.</p>
-
             <table class="chargesTable">
                <tr>
                   {% if (ticked == 'K') %}
                   <td>Dental treatment charges</td>
                   {% else %}
-                  <td>Prescription charges</td>
+                  <td style="color: #fff; width: 45%;">Prescription charges</td>
                   {% endif %}
                   <td></td>
-                  <td>£26.40</td>
+                  <td style="color: #fff;">£26.40</td>
                </tr>
                <tr>
-                  <td>Penalty charge</td>
+                  <td style="color: #fff;">Penalty charge</td>
                   <td></td>
-                  <td>£100.00</td>
+                  <td style="color: #fff;">£100.00</td>
                </tr>
                <tr>
-                  <td><span class="strong">Total amount</span></td>
+                  <td><span class="strong" style="color: #fff;">Total amount</span></td>
                   <td></td>
-                  <td><span class="strong">£126.40</span></td>
+                  <td><span class="strong" style="color: #fff;">£126.40</span></td>
                </tr>
             </table>
-
             <br>
-
-
-
 
             <!-- <h2 class="heading-medium">We have not been able to match your prescription details to our records</h2>
             <p>If we cannot match these details or confirm your eligibility for free prescriptions you may have to pay the charges outlined below.</p>
@@ -96,9 +88,6 @@ NHS Penalty Charge Notice
             <br>
             <br>
            <br> -->
-      <!--       <br>
-            <br>
-            <br>    -->
          </div>
       </div>
       <div class="column-half">
@@ -126,6 +115,10 @@ NHS Penalty Charge Notice
                   <td>Has a valid medical exemption certificate (Box 'E')</td>
                </tr>
             </table>
+            <br>
+            <br>
+            <p>The above details from your prescription are checked automatically against details held for your exemption.</p>
+            <p>Make sure that your GP surgery, dental practice, and any benefits organisations have your correct name and address.</p>
          </div>
       </div>
    </div>
@@ -133,10 +126,8 @@ NHS Penalty Charge Notice
       <div class="column-half">
          <div class="info-panel highlight">
             <h2 class="heading-large">Pay</h2>
-
             <p>You can pay by debit or credit card, or Direct Debit.</p> 
             <br>
-
             <br>
             <form class="form" action="paymentOptions">
                <div class="form-group">

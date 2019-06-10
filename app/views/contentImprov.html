@@ -1,0 +1,83 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay or challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<!-- bsa table style overrides -->
+<style>
+   table tr td {
+   border: none;
+   display: table-cell;
+   vertical-align: text-top;
+   padding: 2rem 3rem 0 0;
+   }
+   table tr td:nth-child(1) {
+   width: 30%;
+   }
+   table tr td:nth-child(2) {
+   padding-right: 3rem;
+   width: 30%; 
+   }
+   table tr td:nth-child(3) {
+   padding-right: 3rem;
+   }
+</style>
+<main id="content" role="main">
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Challenge Prototype</p>
+      <h1 class="heading-xlarge">
+         Content improvements and Paid at Pharmacy
+      </h1>
+   </div>
+   <div class="panel panel-border-narrow">
+      <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
+   </div>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th id="Hc3Journeys">Content improvements</th>
+            <th></th>
+            <th class="right" style="padding-right:0px;"></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><a href="contentImprov/success/start">Challenge successful - PPC exemption</a></td>
+            <td></td>
+            <td class="right"><a href="#"></a></td>
+         </tr>
+         <tr>
+            <td><a href="contentImprov/cannotFind/start">Cannot find exemption - PPC expired</a></td>
+            <td></td>
+            <td class="right"><a href="#"></a></td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th id="Hc3Journeys">Paid at Pharmacy</th>
+            <th></th>
+            <th class="right" style="padding-right:0px;"></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><a href="contentImprov/cannotFindDet/start">Cannot find details - Paid for prescription (content updates only)</a></td>
+            <td></td>
+            <td class="right"><a href="#"></a></td>
+         </tr>
+         <tr>
+            <td><a href="contentImprov/challengeOptions/start">Cannot find details - Paid for prescription (with contact form)</a></td>
+            <td></td>
+            <td class="right"><a href="#"></a></td>
+         </tr>
+         
+      </tbody>
+   </table>
+</main>
+{% endblock %}

@@ -20,31 +20,39 @@ NHS Penalty Charge Notice
          <div class="heading-group">
             <p>Challenge a Penalty Charge Notice</p>
             <h1 class="heading-large">
-               Is there another reason why you feel you should not pay this Penalty Charge Notice?
+               Tell us more
             </h1>
          </div>
-         <form action="infoPageChallenge2" method="get" class="form">
+         <p>Select the most appropriate option</p>
+         <form action="caseInvestigate" method="get" class="form">
             <div class="form-group">
                <div class="form-item-wrapper">
-                  <div class="multiple-choice single-line">
-                     <input type="radio" id="paid" value="paid" name="bsa" checked="checked">
-                     <label class="form-control-radio minor-checkbox" for="paid">
-                     I paid for my prescription at the pharmacy
-                     </label>
-                  </div>
+                  
                   <div class="multiple-choice single-line">
                      <input type="radio" id="age" value="age" name="bsa">
                      <label class="form-control-radio minor-checkbox" for="age">
-                     I am under 16 or over 60
+                     I paid for my prescription because I no longer receive a DWP benefit
                      </label>
                   </div>
                   <div class="multiple-choice single-line">
                      <input type="radio" id="contraceptives" value="contraceptives" name="bsa">
                      <label class="form-control-radio minor-checkbox" for="contraceptives">
-                     My prescription was for free contraceptives
+                     I paid for my prescription because I no longer have an NHS exemption certificate
                      </label>
                   </div>
-                  <div class="form-group or-block">
+                  <div class="multiple-choice single-line">
+                     <input type="radio" id="ppc" value="contraceptives" name="bsa">
+                     <label class="form-control-radio minor-checkbox" for="ppc">
+                     I paid for my prescription because I no longer have a prescription prepayment certificate (PPC)
+                     </label>
+                  </div>
+                  <div class="multiple-choice single-line">
+                     <input type="radio" id="paid" value="paid" name="bsa" checked="checked">
+                     <label class="form-control-radio minor-checkbox" for="paid">
+                     I have always paid for my prescriptions
+                     </label>
+                  </div>
+                 <!--  <div class="form-group or-block">
                      <p>or</p>
                   </div>
                   <div class="multiple-choice single-line">
@@ -52,7 +60,7 @@ NHS Penalty Charge Notice
                      <label class="form-control-radio minor-checkbox" for="no">
                      <span class="">no,</span> none of these
                      </label>
-                  </div>
+                  </div> -->
                </div>
             </div>
             <div class="form-item-wrapper">

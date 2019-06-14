@@ -27,21 +27,24 @@ NHS Penalty Charge Notice
          <form action="caseInvestigate" method="get" class="form">
             <div class="form-group">
                <div class="form-item-wrapper">
-                  
                   <div class="multiple-choice single-line" data-target="1">
                      <input type="radio" id="age" value="age" name="bsa">
                      <label class="form-control-radio minor-checkbox" for="age">
                      I paid for my prescription because I no longer receive a DWP benefit
                      </label>
                   </div>
-                     <div class="panel panel-border-narrow js-hidden" id="1" style="margin-bottom:30px;">
-                        <p>Check that your GP and pharmacy have your correct details. They may still list you as receiving a DWP benefit.</p>
-
-                        <!-- <label class="form-label" for="age">NHS number</label>
+                  <div class="panel panel-border-narrow js-hidden" id="1" style="margin-bottom:30px;">
+                     <p>Check that your GP and pharmacy have your correct details. They may still list you as claiming (or being named on) one of the following DWP benefits:</p>
+                     <ul class="list list-bullet">
+                        <li>Income Support</li>
+                        <li>Income-related Employment Support Allowance</li>
+                        <li>Universal Credit</li>
+                        <li>Income-based Jobseeker's Allowance</li>
+                        <li>Your partner’s Pension Credit Guarantee Credit award</li>
+                     </ul>
+                     <!-- <label class="form-label" for="age">NHS number</label>
                         <input class="form-control" name="age" type="age" id="age"> -->
-                      </div>
-               
-
+                  </div>
                   <div class="multiple-choice single-line" data-target="2">
                      <input type="radio" id="contraceptives" value="contraceptives" name="bsa">
                      <label class="form-control-radio minor-checkbox" for="contraceptives">
@@ -58,38 +61,34 @@ NHS Penalty Charge Notice
                         <li>NHS Tax Credit Exemption Certificate</li>
                      </ul>
                      <!-- <label class="form-label" for="age">NHS number</label>
-                     <input class="form-control" name="age" type="age" id="age"> -->
-                   </div>
-
+                        <input class="form-control" name="age" type="age" id="age"> -->
+                  </div>
                   <div class="multiple-choice single-line" data-target="3">
                      <input type="radio" id="ppc" value="contraceptives" name="bsa">
                      <label class="form-control-radio minor-checkbox" for="ppc">
-                     I paid for my prescription because I no longer have a prescription prepayment certificate (PPC
+                     I paid for my prescription because I no longer have a prescription prepayment certificate (PPC)
                      </label>
                   </div>
-                     <div class="panel panel-border-narrow js-hidden" id="3" style="margin-bottom:30px;">
+                  <div class="panel panel-border-narrow js-hidden" id="3" style="margin-bottom:30px;">
                      <p>Check that your GP and pharmacy have your correct details. They may still list you as having a prescription prepayment certifcate.</p>
                      <!-- <label class="form-label" for="age">NHS number</label>
-                     <input class="form-control" name="age" type="age" id="age"> -->
-                   </div>
-
+                        <input class="form-control" name="age" type="age" id="age"> -->
+                  </div>
                   <div class="multiple-choice single-line">
                      <input type="radio" id="paid" value="paid" name="bsa">
                      <label class="form-control-radio minor-checkbox" for="paid">
                      I have always paid for my prescriptions
                      </label>
                   </div>
-
-                  
-                 <!--  <div class="form-group or-block">
+                  <!--  <div class="form-group or-block">
                      <p>or</p>
-                  </div>
-                  <div class="multiple-choice single-line">
+                     </div>
+                     <div class="multiple-choice single-line">
                      <input type="radio" id="no" value="no" name="bsa">
                      <label class="form-control-radio minor-checkbox" for="no">
                      <span class="">no,</span> none of these
                      </label>
-                  </div> -->
+                     </div> -->
                </div>
             </div>
             <div class="form-item-wrapper">

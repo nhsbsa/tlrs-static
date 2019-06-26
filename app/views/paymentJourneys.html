@@ -1,82 +1,74 @@
 {% extends "layout_bsa.html" %}
-
 {% block page_title %}
-  Pay or challenge a Penalty Charge Notice
+Pay or challenge a Penalty Charge Notice
 {% endblock %}
-
 {% block content %}
-
 <!-- bsa table style overrides -->
 <style>
-table tr td {
-    border: none;
-    display: table-cell;
-    vertical-align: text-top;
-    padding: 2rem 3rem 0 0;
-  }
-  table tr td:nth-child(1) {
-    width: 30%;
-}
-  table tr td:nth-child(2) {
-     padding-right: 3rem;
-     width: 30%; 
-}
-table tr td:nth-child(3) {
-     padding-right: 3rem;
-}
+   table tr td {
+   border: none;
+   display: table-cell;
+   vertical-align: text-top;
+   padding: 2rem 3rem 0 0;
+   }
+   table tr td:nth-child(1) {
+   width: 30%;
+   }
+   table tr td:nth-child(2) {
+   padding-right: 3rem;
+   width: 30%; 
+   }
+   table tr td:nth-child(3) {
+   padding-right: 3rem;
+   }
 </style>
-
 <main id="content" role="main">
-  
-  <p>
-    <a href="index"> Back to all prototypes</a>
-  </p>
-  
-<div class="heading-group">
-     <p>Payment Prototype</p>
-     <h1 class="heading-xlarge">
-      Gov Pay Journeys
-     </h1>
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Payment Prototype</p>
+      <h1 class="heading-xlarge">
+         Gov Pay Journeys
+      </h1>
    </div>
-        
-        <table id="review-table-one" class="check-table">
-                  <thead>
-        <tr>
-          <th>Scenario</th>
-          <th>Card number</th>
-          
-        </tr>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>Scenario</th>
+            <th>Card number</th>
+         </tr>
       </thead>
-
-     <tbody>
-       <tr>
-         <td><a href="payments/amount10">P0010 customer card error</a></td>
-           <td>4000000000000002</td>
-         
-       </tr>
-         
-         
-                <tr>
-         <td><a href="payments/amount20">P0020 Payment window timed out</a></td>
-           <td>4000056655665556</td>
-         
-       </tr>
-                                  <tr>
-         <td><a href="payments/amount30">P0030 User cancels payment</a></td>
-           <td>4000056655665556</td>
-         
-       </tr>
-         
-                         <tr>
-         <td><a href="payments/amount50.html">P0050 Gov pay card error</a></td>
-           <td>4000000000000119</td>
-         
-       </tr>
-
-     </tbody>
+      <tbody>
+         <tr>
+            <td><a href="payments/amount10">P0010 - Customer card error</a></td>
+            <td>4000000000000002</td>
+         </tr>
+         <tr>
+            <td><a href="payments/amount20">P0020 - Payment window timed out</a></td>
+            <td>4000056655665556</td>
+         </tr>
+         <tr>
+            <td><a href="payments/amount30">P0030 - User cancels payment</a></td>
+            <td>4000056655665556</td>
+         </tr>
+         <tr>
+            <td><a href="payments/amount50.html">P0050 - Gov Pay card error</a></td>
+            <td>4000000000000119</td>
+         </tr>
+         <tr>
+            <td><a href="payments/govSuccess.html">Gov Pay successful payment in full</a></td>
+            <td>5105105105105100</td>
+         </tr>
+         <tr>
+            <td><a href="payments/govPartial.html">Gov Pay successful partial payment</a></td>
+            <td>371449635398431</td>
+         </tr>
+         <tr>
+            <td><a href="payments/challengeDown.html">Service down after confirming Gov Pay</a></td>
+            <td>4000056655665556</td>
+         </tr>
+      </tbody>
    </table>
-
-  
 </main>
-
 {% endblock %}

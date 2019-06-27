@@ -1,0 +1,177 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay an NHS Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="text">
+            <div class="heading-group">
+               <p>Pay an NHS Penalty Charge Notice</p>
+               <h1 class="heading-large">
+                  Check your answers
+               </h1>
+            </div>
+            <ul class="list options-list">
+               <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+            </ul>
+            <!-- <h1 class="heading-medium">
+               Your Direct Debit
+               </h1> -->
+               <div>
+               <p>Your payment summary is based on the information you have given us.</p>
+            </div>
+            <br>
+            <p class="strong" style="padding:0px 0 20px 0; border-bottom: 1px solid #bfc1c3;">Your Direct Debit details</p>
+            <div class="review" style ="margin-top: 30px">
+               <div class="review-row">
+                  <div>
+                     <p>Number of payments</p>
+                  </div>
+                  <div>
+                     <p>6</p>
+                  </div>
+                  <div>
+                     <p><a href="#">Change</a></p>
+                  </div>
+               </div>
+             
+                <div class="review-row">
+                  <div>
+                     <!--   <p>Date payment will be taken each month</p> -->
+                     <p>Chosen payment date</p>
+                  </div>
+                  <div>
+                     <p>28</p>
+                  </div>
+                  <div>
+                     <p><a href="#">Change</a></p>
+                  </div>
+               </div>
+            </div>
+
+           <p>Your payments will be taken on, or just after, your chosen date each month until your penalty charge has been cleared.</p>
+
+            <!-- <h1 class="heading-medium">
+               Your payment schedule
+               </h1> -->
+            <br>
+            <p class="strong" style="padding:0px 0 20px 0; border-bottom: 1px solid #bfc1c3;">Your payment summary</p>
+
+            <!-- 6 months -->
+            <div class="review" style ="margin-top: 30px">
+               <div class="review-row">
+                  <div>
+                     <p>First payment</p>
+                  </div>
+                  <div>
+                     <p>£21.10</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>First payment taken on or just after</p>
+                  </div>
+                  <div>
+                     <p>26 February 2019</p>
+                  </div>
+               </div>
+               <div class="review-row">
+                  <div>
+                     <p>
+                        Following 5 payments
+                     </p>
+                  </div>
+                  <div>
+                     <p>£21.06</p>
+                  </div>
+               </div>
+               <!--
+               <div class="review-row">
+                  <div>
+                     <p>
+                        Last payment taken on or just after
+                     </p>
+                  </div>
+                  <div>
+                     <p>28 July 2019</p>
+                  </div>
+               </div>
+            -->
+               <div class="review-row">
+                  <div>
+                     <p>Total amount</p>
+                  </div>
+                  <div>
+                     <p style="font-weight:bold;">£126.40</p>
+                  </div>
+               </div>
+            </div>
+          
+            </div>
+            <div>
+               <p>You’re responsible for making sure that payments can be taken on these dates.</p>
+            </div>
+            <div class="review">
+               <p class="strong" style="padding:0px 0 20px 0; border-bottom: 1px solid #bfc1c3;">We will send confirmation of your Direct Debit to this address</p>
+               <div class="review-row">
+                  <div>
+                     <p>Address</p>
+                  </div>
+                  <div>
+                     <p>12 Old Oak Road<br>Throckley<br>Newcastle upon Tyne<br>NE15 9AD</p>
+                  </div>
+                  <div>
+                     <p><a href="./manualAddress">Change</a></p>
+                  </div>
+               </div>
+            </div>
+         
+            <ul class="list options-list">
+               <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+            </ul>
+            <p>
+               <a href="#" class="button">Next</a>
+            </p>
+
+            <p class="navigation"><a class="cancel" href="pcnPage">Cancel</a></p>
+         </div>
+      </div>
+   </div>
+</main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function() {
+      var payments = document.querySelector("#plan").innerHTML;
+
+      if (payments === "3") {
+         $("#3m").removeClass("visually-hidden");
+      }
+
+      if (payments === "6") {
+         $("#6m").removeClass("visually-hidden");
+      }
+
+      if (payments === "12") {
+         $("#12m").removeClass("visually-hidden");
+      }
+   }); 
+</script>
+{% endblock %}

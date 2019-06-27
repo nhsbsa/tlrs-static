@@ -1,0 +1,155 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+NHS Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+         <div class="heading-group">
+            <p>Pay or Challenge a Penalty Charge Notice</p>
+            <h1 class="heading-xlarge">Your details don't match our records</h1>
+         </div>
+         <div class="panel panel-border-wide">
+            <h3 class="heading-medium">Don't delay</h3>
+            <p>
+               You now have 28 days to let us know if you were entitled to claim free prescriptions (by 7 March 2019). If you don't respond you will be issued with a Penalty Charge Notice.
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-half">
+         <div class="info-panel highlight" style="color: #fff; border: none; background-color: #005EB8;">
+            <h2 class="heading-medium">You might have received a letter because:</h2>
+            <ul class="list list-bullet">
+               <li>your exemption certificate or prepayment certificate had expired</li>
+               <br>
+               <li>we were unable to confirm what type of benefits you received</li>
+               <br>
+               <li>you had a medical condition, you were pregnant or had given birth in the previous 12 months but did not have an exemption certificate</li>
+               <br>
+               <li>your name, address, date of birth or NHS number on your prescription did not match our records</li>
+            </ul>
+            <p>If we cannot match your details or confirm your eligibility for free prescriptions you may have to pay the charges outlined below.</p>
+            <table class="chargesTable">
+               <tr>
+                  {% if (ticked == 'K') %}
+                  <td>Dental treatment charges</td>
+                  {% else %}
+                  <td style="color: #fff; width: 45%;">Prescription charges</td>
+                  {% endif %}
+                  <td></td>
+                  <td style="color: #fff;">£26.40</td>
+               </tr>
+               <tr>
+                  <td style="color: #fff;">Penalty charge</td>
+                  <td></td>
+                  <td style="color: #fff;">£100.00</td>
+               </tr>
+               <tr>
+                  <td><span class="strong" style="color: #fff;">Total amount</span></td>
+                  <td></td>
+                  <td><span class="strong" style="color: #fff;">£126.40</span></td>
+               </tr>
+            </table>
+            <br>
+
+            <!-- <h2 class="heading-medium">We have not been able to match your prescription details to our records</h2>
+            <p>If we cannot match these details or confirm your eligibility for free prescriptions you may have to pay the charges outlined below.</p>
+            <table class="chargesTable">
+               <tr>
+                  {% if (ticked == 'K') %}
+                  <td>Dental treatment charges</td>
+                  {% else %}
+                  <td>Prescription charges</td>
+                  {% endif %}
+                  <td></td>
+                  <td>£26.40</td>
+               </tr>
+               <tr>
+                  <td>Penalty charge</td>
+                  <td></td>
+                  <td>£100.00</td>
+               </tr>
+               <tr>
+                  <td><span class="strong">Total amount</span></td>
+                  <td></td>
+                  <td><span class="strong">£126.40</span></td>
+               </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+           <br> -->
+         </div>
+      </div>
+      <div class="column-half">
+         <div class="info-panel">
+            <br>
+            <p>Reference number: 7489202837</p>
+            <h2 class="heading-medium">
+               Date prescription was claimed
+            </h2>
+            <p>Between 1 December and 31 December 2018</p>
+            <h2 class="heading-medium">
+               Details on the prescription
+            </h2>
+            <table>
+               <tr>
+                  <td><span class="strong">Name</span></td>
+                  <td>John Marshall</td>
+               </tr>
+               <tr>
+                  <td><span class="strong">Address</span></td>
+                  <td>12 Old Oak Road, Throckley, Newcastle upon Tyne, NE15 9AD</td>
+               </tr>
+               <tr>
+                  <td><span class="strong">Exemption reason ticked</span></td>
+                  <td>Has a valid medical exemption certificate (Box 'E')</td>
+               </tr>
+            </table>
+            <br>
+            <br>
+            <p>The above details from your prescription are checked automatically against details held for your exemption.</p>
+            <p>Make sure that your GP surgery, dental practice, and any benefits organisations have your correct name and address.</p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-half">
+         <div class="info-panel highlight">
+            <h2 class="heading-large">Pay</h2>
+            <p>You can pay by debit or credit card, or Direct Debit.</p> 
+            <br>
+            <br>
+            <form class="form" action="#">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Pay">
+               </div>
+            </form>
+            <br><br>
+         </div>
+      </div>
+      <div class="column-half">
+         <div class="info-panel highlight">
+            <h2 class="heading-large head-2">Challenge</h2>
+            <p>You can challenge if you were entitled to free prescriptions, or had a valid prescription prepayment certificate.</p>
+            <form class="form" action="#">
+               <br>
+               <div class="form-group">
+                  <input class="button" type="submit" value="Challenge">
+               </div>
+               <br> <br>
+            </form>
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

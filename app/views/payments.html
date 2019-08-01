@@ -141,8 +141,10 @@ Pay or challenge a Penalty Charge Notice
    <table id="review-table-one" class="check-table">
       <thead>
          <tr>
+         <tr>
             <th>End pages</th>
             <th></th>
+            <th>JIRA</th>
             <th class="right" style="padding-right:0px;"></th>
          </tr>
       </thead>
@@ -150,24 +152,52 @@ Pay or challenge a Penalty Charge Notice
          <tr>
             <td><a href="payments/endPages/paidFull">Success paid in full</a></td>
             <td></td>
-            <td class="right"><a href="payments/endPages/paidFull"></a></td>
+            <td>
+              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+            </td>
+            <td class="right"><a href="#"></a></td>
          </tr>
          <tr>
             <td><a href="payments/endPages/paidPartially">Success paid partially</a></td>
             <td></td>
+            <td>
+              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+            </td>
             <td class="right"><a href="#"></a></td>
          </tr>
          <tr>
-            <td><a href="payments/endPages/noDebited">No money has been taken (our fault)</a></td>
+            <td><a href="payments/endPages/noDebited">No money has been taken<br>(our fault - PECS)</a></td>
             <td></td>
+            <td>
+              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+            </td>
             <td class="right"><a href="#"></a></td>
          </tr>
          <tr>
-            <td><a href="payments/endPages/failedPayment">Payment method rejected (customer card at fault)</a></td>
+            <td><a href="payments/endPages/noDebitedDecs">No money has been taken<br>(our fault - DECS)</a></td>
             <td></td>
+            <td>
+              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+            </td>
             <td class="right"><a href="#"></a></td>
          </tr>
-      </tbody>
+         <tr>
+            <td><a href="payments/endPages/failedPayment">Payment method rejected<br>(customer card at fault - PECS)</a></td>
+            <td></td>
+            <td>
+              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+            </td>
+            <td class="right"><a href="#"></a></td>
+         </tr>
+          <tr>
+            <td><a href="payments/endPages/failedPaymentDecs">Payment method rejected<br>(customer card at fault - DECS)</a></td>
+            <td></td>
+            <td>
+              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+            </td>
+            <td class="right"><a href="#"></a></td>
+         </tr>
+
    </table>
 </main>
 {% endblock %}

@@ -126,6 +126,18 @@ router.get('/contentImprov/challengeOptions/contact-handler/', function (req, re
 
 // ADDRESS HANDLER FOR DIRECT DEBITS //////////////////////////////////////////////////////////////
 
+router.get('/breakdown/dd/update-address-handler/', function (req, res) {
+  if (req.query.exemption == 'yes') {
+    res.redirect('summary12mth');
+  }
+  else if (req.query.exemption == 'no') {
+    res.redirect('manualAddress');
+  }
+  else {
+    res.redirect('summary12mth');
+  }
+});
+
 router.get('/payments/dd_v2/update-address-handler/', function (req, res) {
   if (req.query.exemption == 'yes') {
     res.redirect('summary');

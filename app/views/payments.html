@@ -37,11 +37,11 @@ Pay or challenge a Penalty Charge Notice
             <td></td>
             <td class="right"><a href=""></a></td>
          </tr>
-        <!--  <tr>
+         <!--  <tr>
             <td><a href="payments/amount">Enter amount (user goes directly into pay e.g. from error page)</a></td>
             <td></td>
             <td class="right"><a href="#"></a></td>
-         </tr> -->
+            </tr> -->
       </tbody>
    </table>
    <br>
@@ -57,41 +57,41 @@ Pay or challenge a Penalty Charge Notice
       <tbody>
          <tr>
             <td><a href="payments/amount">Enter amount (updated content)</a></td>
-            <td></td>              
+            <td></td>
             <td>
-              <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a>
+               <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a>
             </td>
             <td class="right"></td>
          </tr>
          <tr>
             <td><a href="payments/error/amount1">Enter amount - error (amount too high)</a></td>
-            <td></td>              
+            <td></td>
             <td>
-              <a href="https://bsa2468.atlassian.net/browse/PA233-2861">PA233-2861</a>
+               <a href="https://bsa2468.atlassian.net/browse/PA233-2861">PA233-2861</a>
             </td>
             <td class="right"></td>
          </tr>
          <tr>
             <td><a href="payments/error/amount2">Enter amount - error (invalid format)</a></td>
-            <td></td>              
+            <td></td>
             <td>
-              <a href="https://bsa2468.atlassian.net/browse/PA233-2861">PA233-2861</a>
+               <a href="https://bsa2468.atlassian.net/browse/PA233-2861">PA233-2861</a>
             </td>
             <td class="right"></td>
          </tr>
          <tr>
             <td><a href="payments/error/amount3">Enter amount - error (blank form submitted)</a></td>
-            <td></td>              
+            <td></td>
             <td>
-              <a href="https://bsa2468.atlassian.net/browse/PA233-2861">PA233-2861</a>
+               <a href="https://bsa2468.atlassian.net/browse/PA233-2861">PA233-2861</a>
             </td>
             <td class="right"></td>
          </tr>
          <tr>
             <td><a href="payments/error/amount4">Enter amount - error (amount too low)</a></td>
-            <td></td>              
+            <td></td>
             <td>
-              <a href="https://bsa2468.atlassian.net/browse/PA233-2861">PA233-2861</a>
+               <a href="https://bsa2468.atlassian.net/browse/PA233-2861">PA233-2861</a>
             </td>
             <td class="right"></td>
          </tr>
@@ -142,7 +142,7 @@ Pay or challenge a Penalty Charge Notice
       <thead>
          <tr>
          <tr>
-            <th>End pages</th>
+            <th>Successful payments</th>
             <th></th>
             <th>JIRA</th>
             <th class="right" style="padding-right:0px;"></th>
@@ -150,26 +150,42 @@ Pay or challenge a Penalty Charge Notice
       </thead>
       <tbody>
          <tr>
-            <td><a href="payments/endPages/paidFull">Success paid in full</a></td>
+            <td><a href="payments/endPages/paidFull">Paid in full</a></td>
             <td></td>
             <td>
-              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
             </td>
             <td class="right"><a href="#"></a></td>
          </tr>
          <tr>
-            <td><a href="payments/endPages/paidPartially">Success paid partially</a></td>
+            <td><a href="payments/endPages/paidPartially">Paid partially</a></td>
             <td></td>
             <td>
-              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
             </td>
             <td class="right"><a href="#"></a></td>
          </tr>
+      </tbody>
+      </tr>
+      </thead>
+   </table>
+   <br>
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+         <tr>
+            <th>Failed payments</th>
+            <th></th>
+            <th>JIRA</th>
+            <th class="right" style="padding-right:0px;"></th>
+         </tr>
+      </thead>
+      <tbody>
          <tr>
             <td><a href="payments/endPages/noDebited">No money has been taken<br>(our fault - PECS)</a></td>
             <td></td>
             <td>
-              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
             </td>
             <td class="right"><a href="#"></a></td>
          </tr>
@@ -177,7 +193,7 @@ Pay or challenge a Penalty Charge Notice
             <td><a href="payments/endPages/noDebitedDecs">No money has been taken<br>(our fault - DECS)</a></td>
             <td></td>
             <td>
-              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
             </td>
             <td class="right"><a href="#"></a></td>
          </tr>
@@ -185,19 +201,27 @@ Pay or challenge a Penalty Charge Notice
             <td><a href="payments/endPages/failedPayment">Payment method rejected<br>(customer card at fault - PECS)</a></td>
             <td></td>
             <td>
-              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
             </td>
             <td class="right"><a href="#"></a></td>
          </tr>
-          <tr>
+         <tr>
             <td><a href="payments/endPages/failedPaymentDecs">Payment method rejected<br>(customer card at fault - DECS)</a></td>
             <td></td>
             <td>
-              <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
             </td>
             <td class="right"><a href="#"></a></td>
          </tr>
-
+         <tr>
+            <td><a href="#">User cancels Gov Pay payment</a></td>
+            <td></td>
+            <td>
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-2860">PA233-2860</a> -->
+            </td>
+            <td class="right"><a href="#"></a></td>
+         </tr>
+      </tbody>
    </table>
 </main>
 {% endblock %}

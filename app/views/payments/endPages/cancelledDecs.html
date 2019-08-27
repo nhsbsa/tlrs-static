@@ -1,0 +1,62 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div class="heading-group">
+            <h1 class="heading-xlarge">You have cancelled your payment</h1>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div class="text">
+            <p>We have not taken any money from your account.</p>
+            <p>You can try to make the payment again. 
+            </p>
+            <p class="panel panel-border-wide">
+               Penalty Charge Notice reference number:<br>
+               <span class="strong">123456789</span><br><br>
+               So far you've paid:<br>
+               <span class="strong">£0</span><br><br>
+               You still need to pay:<br>
+               <span class="strong">£68.60</span><br>
+            </p>
+            <br>
+            <form class="form" action="#">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Try payment again">
+               </div>
+            </form>
+            <ul class="list options-list">
+               <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+            </ul>
+
+
+            <p>If you want to pay over the phone or have any questions, contact us:</p>
+            <p><span class="bold">Telephone:</span> 0300 330 1293 (this call will be charged at a local rate). Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm.
+            </p>
+            <p>
+               <span class="bold">Email:</span> <a href="mailto:nhsbsa.decs@nhsbsa.nhs.uk">nhsbsa.decs@nhsbsa.nhs.uk</a>
+            </p>
+            <!-- <div class="panel panel-border-wide">
+               <p>Phone: 0300 330 9291 (this call will be charged at a local rate)</p>
+               <p>Opening hours are Monday to Friday 8am to 6pm, and Saturday 9am to 3pm.</p>
+               <p>Email us at: nhsbsa.pecs@nhsbsa.nhs.uk</p>
+               </div> -->
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

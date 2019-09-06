@@ -1,0 +1,39 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div class="heading-group">
+          <p>Pay or Challenge an NHS Penalty Charge Notice</p>
+            <h1 class="heading-xlarge">   You'll need to start again</h1>
+         </div>
+      </div>
+
+      <div class="column-two-thirds">
+         <div class="text">
+            <p>
+               You've been timed out as you stopped using the service for 30 minutes.
+            </p>
+            <form class="form" action="start">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Pay or challenge now">
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

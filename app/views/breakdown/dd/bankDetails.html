@@ -3,6 +3,17 @@
 Pay a Penalty Charge Notice
 {% endblock %}
 {% block content %}
+
+<style type="text/css">
+
+p.dash:before { 
+content: "-"; 
+margin-right:10px;
+float: left;
+}
+
+</style>
+
 <main id="content" role="main">
    <div class="grid-row">
       <div class="column-full">
@@ -14,20 +25,20 @@ Pay a Penalty Charge Notice
          </div>
       </div>
       <!--
-      <div class="column-third right-floater">
-         <div class="payment-summary-small">
-            <h2>Payment summary</h2>
-            <h3>First payment</h3>
-            <p class="payment-info">£21.05</p>
-            <h3>Followed by 5 monthly payments of</h3>
-            <p class="payment-info">£21.07</p>
-            <h3>First payment</h3>
-            <p class="payment-info"><span class="name">XX</span> January 2019</p>
-            <h3>Last payment</h3>
-            <p class="payment-info"><span class="name">XX</span> June 2019</p>
+         <div class="column-third right-floater">
+            <div class="payment-summary-small">
+               <h2>Payment summary</h2>
+               <h3>First payment</h3>
+               <p class="payment-info">£21.05</p>
+               <h3>Followed by 5 monthly payments of</h3>
+               <p class="payment-info">£21.07</p>
+               <h3>First payment</h3>
+               <p class="payment-info"><span class="name">XX</span> January 2019</p>
+               <h3>Last payment</h3>
+               <p class="payment-info"><span class="name">XX</span> June 2019</p>
+            </div>
          </div>
-      </div>
-      -->
+         -->
       <div class="column-two-thirds left-floater">
          <div id="back">
             <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
@@ -35,7 +46,6 @@ Pay a Penalty Charge Notice
                document.getElementById('back-button');
             </script>
          </div>
-
          <div class="text">
             <div class="heading-group">
                <p>Pay an NHS Penalty Charge Notice</p>
@@ -44,9 +54,7 @@ Pay a Penalty Charge Notice
                </h1>
             </div>
          </div>
-
          <p>Equifax will perform a check to verify the bank account details you give us. A record of this will be left on your credit record for 12 months but will not affect your credit rating.</p>
-
          <form class="form" method="get" action="confirm">
             <div class="form-group">
                <label class="form-label-bold" style ="padding: 10px 0;" for="cardnumber">Account number</label>
@@ -74,7 +82,6 @@ Pay a Penalty Charge Notice
                </label>
                <input class="form-control max-width" id="holdername" name="holdername" type="text">
             </div>
-            
             <details>
                <summary>
                   <span class="summary">View the Direct Debit Guarantee</span>
@@ -85,16 +92,23 @@ Pay a Penalty Charge Notice
                   </p>
                   <h2 class="heading-small">The Direct Debit Guarantee</h2>
                   <br>
-                  <ul class="list list-bullet">
-                     <li>This Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits</li>
-                     <br>
-                     <li>If there are any changes to the amount, date or frequency of your Direct Debit NHS Business Services Authority will notify you 10 working days in advance of your account being debited or as otherwise agreed. If you request NHS Business Services Authority to collect a payment, confirmation of the amount and date will be given to you at the time of the request</li>
-                     <br>
-                     <li>If an error is made in the payment of your Direct Debit, by NHS Business Services Authority or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society
-                        <br>- if you receive a refund you are not entitled to, you must pay it back when NHS Business Services Authority asks you to</li>
-                     <br>
-                     <li>You can cancel a Direct Debit at any time by simply contacting your bank or building society. Written confirmation may be required. Please also notify us.</li>
-                  </ul>
+                  <div class="dash">
+                     <ul class="list list-bullet" style="margin-bottom: 0;">
+                        <li>This Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits</li>
+                        <br>
+                        <li>If there are any changes to the amount, date or frequency of your Direct Debit NHS Business Services Authority will notify you 10 working days in advance of your account being debited or as otherwise agreed. If you request NHS Business Services Authority to collect a payment, confirmation of the amount and date will be given to you at the time of the request</li>
+                        <br>
+                        <li>If an error is made in the payment of your Direct Debit, by NHS Business Services Authority or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society</li>
+                     </ul>
+                     <p class="dash" style="margin: 0;">
+                        <ul class="list list-bullet" style="margin-top: 0;">
+                           <p >If you receive a refund you are not entitled to, you must pay it back when NHS Business Services Authority asks you to</p>
+                        </ul>
+                     </p>
+                     <ul class="list list-bullet">
+                        <li>You can cancel a Direct Debit at any time by simply contacting your bank or building society. Written confirmation may be required. Please also notify us.</li>
+                     </ul>
+                  </div>
                </div>
             </details>
             <br>

@@ -3,6 +3,17 @@
 Pay a Penalty Charge Notice
 {% endblock %}
 {% block content %}
+
+<style type="text/css">
+
+p.dash:before { 
+content: "-"; 
+margin-right:10px;
+float: left;
+}
+
+</style>
+
 <main id="content" role="main">
    <div class="grid-row">
       <div class="column-full">
@@ -142,16 +153,23 @@ Pay a Penalty Charge Notice
                   </p>
                   <h2 class="heading-small">The Direct Debit Guarantee</h2>
                   <br>
-                  <ul class="list list-bullet">
-                     <li>This Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits</li>
-                     <br>
-                     <li>If there are any changes to the amount, date or frequency of your Direct Debit NHS Business Services Authority will notify you 10 working days in advance of your account being debited or as otherwise agreed. If you request NHS Business Services Authority to collect a payment, confirmation of the amount and date will be given to you at the time of the request</li>
-                     <br>
-                     <li>If an error is made in the payment of your Direct Debit, by NHS Business Services Authority or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society
-                        <br>- if you receive a refund you are not entitled to, you must pay it back when NHS Business Services Authority asks you to</li>
-                     <br>
-                     <li>You can cancel a Direct Debit at any time by simply contacting your bank or building society. Written confirmation may be required. Please also notify us.</li>
-                  </ul>
+                  <div class="dash">
+                     <ul class="list list-bullet" style="margin-bottom: 0;">
+                        <li>This Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits</li>
+                        <br>
+                        <li>If there are any changes to the amount, date or frequency of your Direct Debit NHS Business Services Authority will notify you 10 working days in advance of your account being debited or as otherwise agreed. If you request NHS Business Services Authority to collect a payment, confirmation of the amount and date will be given to you at the time of the request</li>
+                        <br>
+                        <li>If an error is made in the payment of your Direct Debit, by NHS Business Services Authority or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society</li>
+                     </ul>
+                     <p class="dash" style="margin: 0;">
+                        <ul class="list list-bullet" style="margin-top: 0;">
+                           <p >If you receive a refund you are not entitled to, you must pay it back when NHS Business Services Authority asks you to</p>
+                        </ul>
+                     </p>
+                     <ul class="list list-bullet">
+                        <li>You can cancel a Direct Debit at any time by simply contacting your bank or building society. Written confirmation may be required. Please also notify us.</li>
+                     </ul>
+                  </div>
                </div>
             </details>
             <br>

@@ -1,0 +1,87 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay or challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<style>
+   table tr td {
+   border: none;
+   display: table-cell;
+   vertical-align: text-top;
+   padding: 2rem 3rem 0 0;
+   }
+   table tr td:nth-child(1) {
+   width: 30%;
+   }
+   table tr td:nth-child(2) {
+   padding-right: 3rem;
+   width: 30%; 
+   }
+   table tr td:nth-child(3) {
+   padding-right: 3rem;
+   }
+</style>
+<main id="content" role="main">
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Pay or Challenge Prototype</p>
+      <h1 class="heading-xlarge">
+         Gov Notify Journeys
+      </h1>
+   </div>
+   <div class="panel panel-border-narrow">
+      <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly. There is ongoing discussion regarding these pages/journeys. They have not been signed off.</p>
+   </div>
+   <!-- <h1 class="heading-large">LRS process changes</h1> -->
+   <table id="review-table-one" class="check-table">
+      <thead>
+         <tr>
+            <th>Confirmation</th>
+            <th></th>
+            <!-- <th>URL</th> -->
+            <!-- <th class="right" style="padding-right:0px;">JIRA ticket number</th> -->
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><a href="experiments/#">Successful payment - full</a></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a href="experiments/#">Successful payment - partial</a></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a href="experiments/#">Successful Direct Debit set-up</a></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a href="experiments/#">Record on hold for 60 days (need to provide proof of benefits)</a></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a href="experiments/#">We will contact you - Record on hold (found not matched)</a></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a href="experiments/#">PCN review</a></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a href="experiments/#">Exemption found and matched - PCN closed</a></td>
+            <td></td>
+         </tr>
+      </tbody>
+   </table>
+</main>
+{% endblock %}
+
+
+
+
+
+
+
+

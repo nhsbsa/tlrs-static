@@ -3,6 +3,7 @@
 Pay or challenge a Penalty Charge Notice
 {% endblock %}
 {% block content %}
+
 <style>
    table tr td {
    border: none;
@@ -21,58 +22,55 @@ Pay or challenge a Penalty Charge Notice
    padding-right: 3rem;
    }
 </style>
+
 <main id="content" role="main">
    <p>
       <a href="index"> Back to all prototypes</a>
    </p>
    <div class="heading-group">
       <p>Pay or Challenge Prototype</p>
-      <h1 class="heading-xlarge">
-         Gov Notify
-      </h1>
+      <h1 class="heading-xlarge">Gov Notify</h1>
+      <h2 class="heading-medium" style="margin-top: 20px;">Changes to current pages - Notify app not yet set up</h2>
    </div>
    <div class="panel panel-border-narrow">
       <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly. There is ongoing discussion regarding these pages/journeys. They have not been signed off.</p>
    </div>
-   <!-- <h1 class="heading-large">LRS process changes</h1> -->
    <table id="review-table-one" class="check-table">
       <thead>
          <tr>
-            <th>Scenario</th>
-            <th></th>
-            <!-- <th>URL</th> -->
-            <!-- <th class="right" style="padding-right:0px;">JIRA ticket number</th> -->
+            <th>Scenario / Page</th>
+            <th>Changes</th>
          </tr>
       </thead>
       <tbody>
          <tr>
-            <td><a href="notify/notifyPaidFull">Successful payment - full</a></td>
+            <td><a href="notify/paidFull">Success - full payment</a></td>
+            <td>Redesigned layout and 'Send me an email confirmation' link</td>
+         </tr>
+         <tr>
+            <td><a href="notify/paidPartially">Success - partial payment</a></td>
+            <td>Redesigned layout and 'Send me an email confirmation' link</td>
+         </tr>
+         <tr>
+            <td><a href="notify/ddSetup">Success - Direct Debit set up</a></td>
+            <td>'Send me an email confirmation' link under blue panel</td>
+         </tr>
+         <!-- <tr>
+            <td><a href="notify/#">Record on hold for 60 days (need to provide proof of benefits)</a></td>
             <td></td>
          </tr>
          <tr>
-            <td><a href="experiments/#">Successful payment - partial</a></td>
+            <td><a href="notify/#">We will contact you - Record on hold (found not matched)</a></td>
             <td></td>
          </tr>
          <tr>
-            <td><a href="experiments/#">Successful Direct Debit set-up</a></td>
+            <td><a href="notify/#">PCN review</a></td>
             <td></td>
          </tr>
          <tr>
-            <td><a href="experiments/#">Record on hold for 60 days (need to provide proof of benefits)</a></td>
+            <td><a href="notify/#">Exemption found and matched - PCN closed</a></td>
             <td></td>
-         </tr>
-         <tr>
-            <td><a href="experiments/#">We will contact you - Record on hold (found not matched)</a></td>
-            <td></td>
-         </tr>
-         <tr>
-            <td><a href="experiments/#">PCN review</a></td>
-            <td></td>
-         </tr>
-         <tr>
-            <td><a href="experiments/#">Exemption found and matched - PCN closed</a></td>
-            <td></td>
-         </tr>
+         </tr> -->
       </tbody>
    </table>
 </main>

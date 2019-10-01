@@ -3,6 +3,16 @@
 Pay an NHS Penalty Charge Notice
 {% endblock %}
 {% block content %}
+
+<style type="text/css">
+   .breakdown tr td:nth-child(1n){
+   width: 35%;
+   }
+   .breakdown tr td:nth-child(2n){
+   width: 15%;
+   }
+</style>
+
 <main id="content" role="main">
    <div class="grid-row">
       <div class="column-full">
@@ -27,7 +37,30 @@ Pay an NHS Penalty Charge Notice
          <!-- <span class="strong">Payment reference no. 123456789</span><br><br> -->
          <!--   Prescription charge: £8.60<br>Penalty charge: £60<br><span class="strong">Total amount: £68.60</span>
             </p> -->
-         <p class="panel panel-border-wide">
+
+
+            <div class="info-panel highlight ">
+            <table class="breakdown">
+               <tr>
+                  <td style="padding-top: 0;">Penalty Charge Notice reference number:</td>
+                  <td style="padding-top: 0;">02895593233</td>
+               </tr>
+               <tr>
+                  <td>You've paid:</td>
+                  <td>£68.60</td>
+               </tr>
+              
+            </table>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            <ul class="list options-list">
+               <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+            </ul>
+            <a href="email">Send me an email confirmation</a>
+         </div>
+
+
+
+         <!-- <p class="panel panel-border-wide">
             Penalty Charge Notice reference number:<br>
             <span class="strong">123456789</span><br><br>
             You've paid:<br>
@@ -52,7 +85,7 @@ Pay an NHS Penalty Charge Notice
                   <input class="button" type="submit"  value="Submit">
                </div>
             </div>
-         </details>
+         </details> -->
          <h3 class="heading-medium">How to avoid a penalty charge in the future</h3>
          <p>Make sure that your:</p>
          <ul class="list list-bullet">
@@ -60,7 +93,11 @@ Pay an NHS Penalty Charge Notice
             <li>exemption certificate or prescription prepayment certificate is still valid, if you have one</li>
          </ul>
          <p>You can <a href="www.nhsbsa.nhs.uk/penaltycharges">view more information on penalty charges</a></p>
-         <h2 class="heading-medium">Feedback</h2>
+
+                  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+         <h3 class="heading-medium">Feedback</h3>
          <p>
             Answer a few questions to <a href="#">help us improve this service</a>.
          </p>

@@ -2,35 +2,7 @@ var express = require('express');
 var router = express.Router();
 var attempt = 0;
 
-// GOV NOTIFY --------------
-
-// The URL here needs to match the URL of the page that the user is on
-// when they type in their email address
-router.post('/email-address-page', function (req, res) {
-
-  notify.sendEmail(
-    // this long string is the template ID, copy it from the template
-    // page in GOV.UK Notify. It’s not a secret so it’s fine to put it
-    // in your code.
-    '6634b662-b84b-4ae5-82a3-be8c67860bc6', 
-    // `emailAddress` here needs to match the name of the form field in
-    // your HTML page
-    req.body.emailAddress
-  );
-
-  // This is the URL the users will be redirected to once the email
-  // has been sent
-  res.redirect('/confirmation-page');
-
-});
-// END GOV NOTIFY --------------
-
-
 module.exports = router;
-
-var NotifyClient = require('notifications-node-client').NotifyClient,
-    notify = new NotifyClient(process.env.NOTIFYAPIKEY);
-
 
 //import the content
 var Content = require('./content.js');

@@ -1,0 +1,168 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<style type="text/css">
+   .breakdown tr td:nth-child(1n){
+   width: 35%;
+   }
+   .breakdown tr td:nth-child(2n){
+   width: 15%;
+   }
+</style>
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div class="done-panel">
+            <h1 class="heading-large"><span id="done-tick"> </span>Penalty charge cancelled</h1>
+            <h2 class="heading-medium">You do not have to pay any charges</h2>
+         </div>
+         <p class="">Thank you, we have found your exemption using new details you have given us today. 
+         <!-- This could have been: -->
+       </p>
+         <!-- <ul class="list list-bullet">
+            <li>
+               up to date personal details
+            </li>
+            <li>
+               your certificate number, which wasn’t previously available to us
+            </li>
+         </ul> -->
+
+
+         <div class="info-panel highlight ">
+            <p><span class="">Michelle Doe</span></p>
+            <p>Penalty Charge Notice 7489202837 has now been cancelled.</p>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            <ul class="list options-list">
+               <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+            </ul>
+            <a href="email">Send me an email confirmation</a>
+         </div>
+
+
+         <h3 class="heading-medium">
+            Why did I receive a Penalty Charge Notice?
+         </h3>
+
+         <p>The details on your exemption certificate do not match those taken from your prescription. Checks for exemptions are done automatically using these details from your prescription:</p>
+         <ul class="list list-bullet">
+            <li>
+               <span class="bold">Name</span>
+               <!-- <p>Your name on your certificate may have been different to the one on your prescription.</p> -->
+            </li>
+            <li>
+               <span class="bold">Address</span>
+               <!-- <p>Your address on your certificate may have been different to the one on your prescription.</p> -->
+            </li>
+            <li>
+               <span class="bold">Date of birth</span>
+               <!-- <p>Your date of birth on your certificate may have been different to the one on your prescription.</p> -->
+            </li>
+            <p>One or more of the above details on your certificate may be different to the details on your prescription.</p>
+         </ul>
+         
+         <ul class="list list-bullet">
+            <li>
+               <span class="bold">NHS number</span>
+               <p>Your NHS number may have been missing from your prescription.</p>
+            </li>
+         </ul>
+         <p>Make sure these are correct on your NHS exemption certificate, and at your GP surgery, dental practice, and any benefits organisations. If they’re not, you might get another Penalty Charge Notice.</p>
+
+<!--          <p>Checks for exemptions are done automatically using details from your prescription. It could be that one or more of these details differ on your exemption certiicate or your exemption certificate number was not previously available to us.</p>
+
+         <p style="font-weight: bold;">Name</p>
+         <p>If your name has changed or your name differs on your exemption certificate, this will result in a mismatch.</p>
+         <p style="font-weight: bold;">Address</p>
+         <p>If your address has changed or your address differs on your exemption certificate, this will result in a mismatch.</p>
+         <p style="font-weight: bold;">Date of birth</p>
+         <p>If your date of birth differs on your exemption certificate, this will result in a mismatch.</p>
+         <p style="font-weight: bold;">NHS number</p>
+         <p>If your name has changed or your name differs on your exemption certificate, this will result in a mismatch.</p> -->
+
+         <div class="panel2">
+            <div class="callout callout--subtle">
+               <!-- <h3 class="heading-small">Universal Credits- important information</h3> -->
+               <details style="padding-top: 0;">
+                  <summary><span class="summary">How to check these details are correct on your NHS exemption</span></summary>
+                  <div class="panel panel-border-narrow">
+                     <h3 class="heading-small">For medical and maternity exemption certificates, and prescription prepayment certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1341</li>
+                     </ul>
+                     <h3 class="heading-small">For NHS tax credit exemption certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1347</li>
+                     </ul>
+                     <h3 class="heading-small">For HC2 and HC3 certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1343</li>
+                     </ul>
+                     <p>Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm (Your call will be charged at a local rate).</p>
+                  </div>
+               </details>
+            </div>
+         </div>
+         
+         <!-- <h3 class="heading-medium">
+            How to avoid a future Penalty Charge Notice
+         </h3>
+         <p>We match exemptions automatically using a combination of your:</p>
+         <ul class="list list-bullet">
+            <li>name</li>
+            <li>address</li>
+            <li>date of birth</li>
+            <li>NHS number</li>
+         </ul>
+         <p>Make sure these are correct at your GP surgery, dental practice, and any benefits organisations.</p>
+         <div class="panel2">
+            <div class="callout callout--subtle" >
+               <details>
+                  <summary><span class="summary">Contact us to check these details are correct on your NHS exemption</span></summary>
+                  <div class="panel panel-border-narrow">
+                     <h3 class="heading-small">For medical and maternity exemption certificates, and prescription prepayment certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1341</li>
+                     </ul>
+                     <h3 class="heading-small">For NHS tax credit exemption certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1347</li>
+                     </ul>
+                     <h3 class="heading-small">For HC2 and HC3 certificates</h3>
+                     <ul class="list list-bullet">
+                        <li>Call us on 0300 330 1343</li>
+                     </ul>
+                     <p>Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm (Your call will be charged at a local rate).</p>
+                  </div>
+               </details>
+            </div>
+         </div>
+         <p>If any of your details are not up to date, you may receive another Penalty Charge Notice in the future.</p> -->
+
+
+
+         <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+         <h3 class="heading-medium">Feedback</h3>
+         <p>
+            Leaving feedback only takes 5 minutes. Your comments are extremely helpful and will help us to provide a better service.
+         </p>
+         <p>
+            <a class="" href="feedback">Leave feedback</a>
+         </p>
+         <p id="usermail"class="visually-hidden">{{hasmail}}</p>
+      </div>
+   </div>
+</main>
+{% endblock %}1

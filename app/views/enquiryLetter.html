@@ -1,0 +1,105 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay or challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<!-- bsa table style overrides -->
+<style>
+   table tr td {
+   border: none;
+   display: table-cell;
+   vertical-align: text-top;
+   padding: 2rem 3rem 0 0;
+   }
+   table tr td:nth-child(1) {
+   width: 30%;
+   }
+   table tr td:nth-child(2) {
+   padding-right: 3rem;
+   width: 30%; 
+   }
+   table tr td:nth-child(3) {
+   padding-right: 3rem;
+   }
+</style>
+<main id="content" role="main">
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Enquiry/Third letter/Pre-CN Prototype</p>
+      <h1 class="heading-xlarge">
+         Page by page breakdown
+      </h1>
+   </div>
+   <div class="panel panel-border-narrow">
+      <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
+   </div>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">Verification</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="enquiryLetter/start">Start</a>
+            </td>
+            <td>Pay or Challenge a Penalty Charge Notice</td>
+            <td>/start</td>
+            <td class="right">
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-3047">PA233-3047</a> -->
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="enquiryLetter/enterPcnNumber">Enter PCN number</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <!-- <a href="https://bsa2468.atlassian.net/browse/PA233-3047">PA233-3047</a> -->
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="enquiryLetter/enterPcnNumberNoRecord">Enter PCN number<br>(error - does not exist)</a>
+            </td>
+            <td>What is your Penalty Charge Notice reference number?</td>
+            <td>/enter-pcn-number</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/LR3LP-3">LR3LP-3</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th id="viewPages">Kickout</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="enquiryLetter/kickout">Enquiry letter kickout</a>
+            </td>
+            <td>You will need to call us</td>
+            <td>?</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/LR3LP-3">LR3LP-3</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+</main>
+{% endblock %}

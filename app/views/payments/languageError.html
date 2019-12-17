@@ -1,0 +1,65 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div class="error-summary" role="alert" aria-labelledby="error-summary-heading" tabindex="-1">
+            <h2 class="heading-medium error-summary-heading" id="error-summary-heading">
+               There is an error
+            </h2>
+            <p>You need to:</p>
+            <ul class="error-summary-list">
+               <li><a href="#error-message">Select a language to proceed</a></li>
+            </ul>
+         </div>
+         <div class="heading-group">
+            <p>Pay a Penalty Charge Notice</p>
+            <h1 class="heading-large">Select a language to proceed</h1>
+         </div>
+         <p>Our payment provider GOV.UK Pay is available in English and Welsh (Cymraeg).</p>
+         <form action="https://products.payments.service.gov.uk/pay/caf2378bad5646bfa9a1777f4ff43db1" method="get" class="form">
+            <div class="form-group">
+               <div class="form-item-wrapper">
+                  <div class="form-group error" style="border-left: 5px solid #b10e1e;
+                     padding-left: 15px; margin-top: 15px; margin-bottom:0px;">
+                     <span class="error-message" id="error-pcnAmount" style="padding-bottom: 15px;">Enter an amount up to the total due</span>
+                     <div class="multiple-choice single-line">
+                        <input type="radio" id="2" value="2" name="plan">
+                        <label class="form-control-radio minor-checkbox" for="2">
+                        English
+                        </label>
+                     </div>
+                     <div class="multiple-choice single-line" data-target="pay-dd">
+                        <input type="radio" id="3" value="3" name="plan">
+                        <label class="form-control-radio minor-checkbox" for="3">
+                        Welsh (Cymraeg)
+                        </label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Pay Penalty Charge Notice">
+                  <span class="form-hint" style="padding-top: 10px;">On the GOV.UK secure payment site</span>
+               </div>
+            </div>
+            <div class="form-group">
+               <p class="navigation"><a class="cancel" href="pcnPage">Cancel</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
+</main>
+{% endblock %}

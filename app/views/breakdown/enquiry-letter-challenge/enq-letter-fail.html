@@ -1,0 +1,65 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <h1 class="heading-large">More information needed</h1>
+         <p>
+            We have been unable to confirm your identity using the information you've provided.
+            To deal with your letter you need to contact us:
+         </p>
+         <div class="panel panel-border-wide">
+            <p>
+               <span class="strong">
+               For a prescriptions
+               </span>
+            </p>
+            <a href="mailto:nhsbsa.pecs@nhsbsa.nhs.uk">nhsbsa.pecs@nhsbsa.nhs.uk</a></li>
+  </ul>
+            <p>
+               Call us on: 0300 330 9291
+            </p>
+         </div>
+         <div class="panel panel-border-wide">
+            <p>
+               <span class="strong">
+               For dental treatment 
+               </span>
+            </p>
+            <a href="mailto:nhsbsa.decs@nhsbsa.nhs.uk">nhsbsa.decs@nhsbsa.nhs.uk</a></li>
+  </ul>
+            <p>
+               Call us on: 0300 330 1293
+            </p>
+         </div>
+      </div>
+   </div>
+   <h2 class="heading-medium">Feedback</h2>
+  
+   <p>
+     Leaving feedback only takes 5 minutes. Your comments are extremely helpful and will help us to provide a better service.
+   </p>
+   <p>
+     <a class="" href="feedback">Leave feedback</a>
+   </p> 
+       
+   <p id="usermail"class="visually-hidden">{{hasmail}}</p>
+       </div>
+     
+   </div>
+ 
+</main>
+{% endblock %}

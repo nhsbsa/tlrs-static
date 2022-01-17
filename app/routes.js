@@ -143,7 +143,7 @@ router.get('/breakdown/dd/update-address-handler/', function (req, res) {
 
 router.get('/payments/dd_v2/update-address-handler/', function (req, res) {
   if (req.query.exemption == 'yes') {
-    res.redirect('summary');
+    res.redirect('address-error');
   }
   else if (req.query.exemption == 'no') {
     res.redirect('manualAddress');

@@ -1,0 +1,104 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">BETA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+    </div>
+  </div>
+  <div class="heading-group">
+        
+    <p>Challenge an enquiry letter</p>
+    
+    <h1 class="heading-large">An exemption has been found</h1>
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+      
+
+      <div class="done-panel">
+        
+        <h1 class="heading-large"><span id="done-tick"> </span>Thank you</h1>
+        <h2 class="heading-medium">Your case has now been closed.</h2>
+    
+      </div>
+
+    
+      <p class="">We have matched an exemption based on the details you have given.</p>
+      
+    </p>
+   </p>
+        </div>
+    </div>
+  </div>
+        
+                <p class="panel panel-border-wide"><span class="">Michelle Doe</span><br>
+      Reference number 7489202837</p>
+
+      
+      <ul class="list options-list">
+        <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+      </ul>
+    
+
+      <h3 class="heading-medium">
+        How to avoid a future enquiry letter
+      </h3>
+        
+        <p>We match exemptions automatically using a combination of your:</p>
+      
+      <ul class="list list-bullet">
+        <li>
+          name
+        </li>
+       <li>
+         address
+        </li>
+                 <li>
+         date of birth
+        </li>
+          <li>
+          NHS number
+          </li>
+      </ul>
+        
+        <p>Make sure these are correct at your GP surgery, dental practice, and any benefits organisations.</p>
+        
+  
+
+
+
+
+        
+        
+        <p>If any of your details are not up to date, you may receive another enquiry letter in the future.</p>
+        
+  <h2 class="heading-medium">Feedback</h2>
+  
+  <p>
+    Leaving feedback only takes 5 minutes. Your comments are extremely helpful and will help us to provide a better service.
+  </p>
+  <p>
+    <a class="" href="feedback">Leave feedback</a>
+  </p> 
+      
+  <p id="usermail"class="visually-hidden">{{hasmail}}</p>
+      </div>
+    
+  </div>
+
+</main>
+
+{% endblock %}

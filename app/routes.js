@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var attempt = 0;
 
-module.exports = router;
+
 
 //import the content
 var Content = require('./content.js');
@@ -356,3 +356,5 @@ router.get(/dwp-exemptions-handler/, function (req, res) {
 
     
 });
+
+module.exports = router;

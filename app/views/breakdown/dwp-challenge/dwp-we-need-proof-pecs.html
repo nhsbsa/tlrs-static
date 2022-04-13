@@ -1,0 +1,85 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+      <div class="grid-row">
+      <div class="column-full">
+        <div class="phase-banner">
+            <p>
+              <strong class="phase-tag">BETA</strong>
+              <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+          </div>
+      </div>
+    </div>
+
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+        
+              <div class="heading-group">
+        <p>Challenge an enquiry letter</p> 
+    <h1 class="heading-large">We cannot find your details.</h1>
+        </div>
+        
+        <p>The information you've given us does not prove you were entitled to free prescriptions between 1 November and 30 November 2017</p>
+        <h2 class="heading-medium">What to do next</h2>
+        <p>Send us proof to show that you were entitled to free prescriptions between 1 November and 30 November 2017</p>
+ 
+                        <form action="end-pages-updated/proof/isesa-proof-scen0">
+<!--
+            Send us proof that you were named on a claim for Income Support or income-related Employment and Support Allowance. If your proof is valid you won’t have to pay your Penalty Charge.
+            <br>       
+-->
+            <div class="form-group" style="margin-top:0.5em">
+              <a class="button" href="../dwp-examples.html">How to send proof</a>
+            </div>
+        </form>
+                   
+<!--    <h2 class="heading-medium">What to do next</h2>-->
+
+<!--
+    <p>
+     Choose one of the following options:
+    </p>
+-->
+
+
+
+
+        <p> If you do not send us proof, or we can not find your exemption, you will be sent a penalty charge notice.
+
+
+        <p>If you were not entitled to prescriptions but have an exceptional reason why you made the claim, you can ask us to review your enquiry letter. <a href="../dwp-challenge/dwp-who-can-ask-decs.html">Find out if you can ask for a review.</a></p>
+        
+      </div>
+    
+    </div>
+    <ul class="list options-list">
+      <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+    </ul> 
+    
+    </div>
+    <h2 class="heading-medium">Feedback</h2>
+    
+     <p>
+       Leaving feedback only takes 5 minutes. Your comments are extremely helpful and will help us to provide a better service.
+     </p>
+     <p>
+       <a class="" href="feedback">Leave feedback</a>
+     </p> 
+         
+     <p id="usermail"class="visually-hidden">{{hasmail}}</p>
+         </div>
+       
+     </div>
+  </main>
+  
+  {% endblock %}           

@@ -357,4 +357,58 @@ router.get(/dwp-exemptions-handler/, function (req, res) {
     
 });
 
+
+router.get(/dwp-type/, function (req, res) {
+  res.render('breakdown/dwp-challenge/dynamic-pages/dwp-check-name', {
+    title : content.title,
+    benType : content.benType
+  });
+});
+
+router.get(/dwp-new-handler/, function (req, res) {
+  var bens = req.query.benefits;
+  var topCat;
+    var hasBen;
+
+    if (bens == "is") {
+      topCat = "IS";
+        content.updateContent(topCat);
+        res.redirect('dwp-type');
+    } else if (bens == "esa") {
+      topCat = "ESA";
+        content.updateContent(topCat);
+        res.redirect('dwp-type');
+    } else if (bens == "uc") {
+      topCat = "UC";
+        content.updateContent(topCat);
+        res.redirect('dwp-type');
+    }else if (bens == "jsa") {
+      topCat = "JSA";
+        content.updateContent(topCat);
+        res.redirect('dwp-type');
+    } else if (bens == "pc") {
+      topCat = "PC";
+        content.updateContent(topCat);
+        res.redirect('dwp-type');
+    } else
+      res.redirect('dwp-we-need-proof-pecs');
+    });
+
+    router.get(/dwp-type/, function (req, res) {
+      res.render('breakdown/dwp-challenge/dynamic-pages/update-name', {
+        title : content.title,
+        benType : content.benType
+      });
+    });
+
+
+    router.get('breakdown/dwp-challenge/dynamic-pages/dwp-check-name', function (req, res) {
+      if (req.query.details == 'yes') {
+        res.redirect('address-error');
+      }
+      else if (req.query.details == 'no') {
+        res.redirect('dynamic-update-name');
+      }
+    });
+
 module.exports = router;

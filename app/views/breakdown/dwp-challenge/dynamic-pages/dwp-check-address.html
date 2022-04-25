@@ -6,7 +6,6 @@
 
 {% block content %}
 
-
 <main id="content" role="main">
     
   <div class="grid-row">
@@ -29,19 +28,21 @@
         <p>Challenge an enquiry letter</p>
         <h1 class="heading-large">
 
-          Is this how your name was written on your {{ data['benefits'] }} benefit?
+          Was this your address when you had a {{ data['benefits'] }} benefit? 
         </h1>
       </div>
       
+
+      
       <div class="panel panel-border-wide">
 
-        <p>Michellle Doe</p>
+        <p>12 Old Oak Road, Throckley, NE67 9AD</p>
       
       </div>
       
       <br>
       
-      <form action="change-name" method="get" class="form">
+      <form action="change-address" method="get" class="form">
 
           <div class="form-group">
 

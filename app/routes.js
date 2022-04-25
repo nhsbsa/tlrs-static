@@ -402,13 +402,49 @@ router.get(/dwp-new-handler/, function (req, res) {
     });
 
 
-    router.get('breakdown/dwp-challenge/dynamic-pages/dwp-check-name', function (req, res) {
+    router.get(/change-name/, function (req, res) {
       if (req.query.details == 'yes') {
-        res.redirect('address-error');
+        res.redirect('dwp-check-dob');
       }
       else if (req.query.details == 'no') {
-        res.redirect('dynamic-update-name');
+        res.redirect('update-name');
       }
     });
+
+    router.get(/change-dob/, function (req, res) {
+      if (req.query.details == 'yes') {
+        res.redirect('dwp-check-address');
+      }
+      else if (req.query.details == 'no') {
+        res.redirect('update-dob');
+      }
+    });
+
+    router.get(/change-address/, function (req, res) {
+      if (req.query.details == 'yes') {
+        res.redirect('check-your-answers');
+      }
+      else if (req.query.details == 'no') {
+        res.redirect('update-address');
+      }
+    });
+
+    router.get(/claim-isa/, function (req, res) {
+      if (req.query.details == 'yes') {
+        res.redirect('dwp-check-name');
+      }
+      else if (req.query.details == 'no') {
+        res.redirect('dwp-bsa-exemptions');
+      }
+    });
+
+    
+    
+        router.get(/dwp-type/, function (req, res) {
+          res.render('breakdown/dwp-challenge/dynamic-pages/update-name', {
+            title : content.title,
+            benType : content.benType
+          });
+        });
 
 module.exports = router;
